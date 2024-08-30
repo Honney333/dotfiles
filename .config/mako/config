@@ -1,0 +1,50 @@
+# General settings
+background-color=#000000
+text-color=#FFFFFF
+font=Monospace 10
+padding=10
+margin=10
+width=350
+
+# Rounded corners
+border-radius=10
+
+# Anchor position (top-right corner)
+anchor=top-right
+
+# Default timeout (in milliseconds)
+default-timeout=5000
+
+# Low urgency notifications (less important)
+[urgency=low]
+background-color=#00ff00
+border-color=#4f4f4f
+text-color=#b0b0b0
+default-timeout=3000
+
+# Normal urgency notifications (default)
+[urgency=normal]
+background-color=#000000
+border-color=#0000FF
+text-color=#FFFFFF
+default-timeout=5000
+
+# Normal urgency notifications (default)
+[urgency=high]
+background-color=#000000
+border-color=#FF0000
+text-color=#FFFFFF
+default-timeout=10000
+
+# Critical urgency notifications (urgent)
+[urgency=critical]
+background-color=#5c0000
+border-color=#FF0000
+text-color=#FFD700
+default-timeout=0
+
+# Specify the icon location for different urgency levels
+icon-location=left
+
+# Positioning and stacking
+history=1

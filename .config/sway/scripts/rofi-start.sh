@@ -1,0 +1,12 @@
+#!/bin/bash
+monitor=$(swaymsg -t get_outputs | jq '.[] | select(.focused) | .name' -r)  
+rofi \
+    -monitor "$monitor" $@\
+    -show drun \
+    -modi run,drun,ssh \
+    -scroll-method 0 \
+    -drun-match-fields all \
+    -drun-display-format "{name}" \
+    -no-drun-show-actions \
+    -terminal kitty \
+    -theme "$HOME"/.config/rofi/config/launcher.rasi
