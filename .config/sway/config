@@ -22,7 +22,7 @@ set $menu "~/.config/sway/scripts/rofi-start.sh"
 
 # Set theme
 set $gnome-schema org.gnome.desktop.interface
-set $system_theme "Graphite-Dark"
+set $system_theme "adwaita-dark-amoled-master" # Graphite-Dark/adwaita-dark-amoled-master
 set $system_icons "BeautyLine-V3"
 set $system_dpi_scaling_factor 1
 set $cursor_theme "DJ-FOX-C"
