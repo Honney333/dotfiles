@@ -139,11 +139,7 @@ end
 # all the other alias
 
 	# Replace some more things with better alternatives
-	alias cat 'bat --style header --style snip --style changes --style header'
+	# alias cat 'bat --style header --style snip --style changes --style header'
 	alias yay 'paru'
 
-# Fish done Configuration
-set -U __done_allow_nongraphical 1
-set -U __done_min_cmd_duration 5000 # 5000  # default: 5000 ms  # 5 seconds
-set -U __done_notify_sound 1
-set -U __done_sway_ignore_visible 0
+set -x QT_QPA_PLATFORMTHEME qt6ct
