@@ -34,7 +34,7 @@
 }
 
 .background:backdrop {
-    color: #000000;
+    color: #ffffff;
     background-color: #000000;
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -59,11 +59,11 @@
 
 .gtkstyle-fallback:active {
     color: #ffffff;
-    background-color: #0e0e0e;
+    background-color: #000000;
 }
 
 .gtkstyle-fallback:disabled {
-    color: #c0c0c0;
+    color: #ffffff;
     background-color: #000000;
 }
 
@@ -95,7 +95,7 @@ iconview:backdrop:disabled,
 .view text:backdrop:disabled,
 iconview text:backdrop:disabled,
 textview text:backdrop:disabled {
-    color: #000000;
+    color: #ffffff;
 }
 
 .view:disabled,
@@ -172,7 +172,7 @@ label selection {
 }
 
 label:disabled {
-    color: #c0c0c0;
+    color: #ffffff;
 }
 
 button label:disabled {
