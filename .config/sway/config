@@ -114,6 +114,9 @@ font pango:$font $font_size
     # Start logout screen
     bindsym $mod+shift+Escape exec wlogout
 
+    # Start Calculator
+    bindsym $mod+shift+r exec $HOME/.local/bin/qalculate
+
     # Umlaute
     bindsym $mod+a exec wtype "ä"
     bindsym $mod+shift+a exec wtype "Ä"

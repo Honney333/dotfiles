@@ -18,7 +18,7 @@
 }
 {
     "label" : "shutdown",
-    "action" : "$HOME/.config/fish/scripts/umount.sh && $HOME/.config/fish/scripts/shutdown-server.sh && systemctl poweroff",
+    "action" : "$HOME/.config/fish/scripts/umount.sh && sleep 2 && $HOME/.config/fish/scripts/shutdown-server.sh && systemctl poweroff",
     "text" : "Shutdown",
     "keybind" : "s"
 }
@@ -30,7 +30,7 @@
 }
 {
     "label" : "reboot",
-    "action" : "$HOME/.config/fish/scripts/umount.sh && systemctl reboot",
+    "action" : "$HOME/.config/fish/scripts/umount.sh && sleep 2 && systemctl reboot",
     "text" : "Reboot",
     "keybind" : "r"
 }
