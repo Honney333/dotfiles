@@ -105,6 +105,9 @@ font pango:$font $font_size
     # Start KeePassXC
     bindsym $mod+shift+k exec keepassxc
 
+    # Start Steam
+    bindsym $mod+ctrl+s exec $HOME/.config/sway/scripts/steam-start.sh
+
     # Connect to 2nd PC
     bindsym $mod+ctrl+v exec $HOME/.config/sway/scripts/remmina_server.sh
 

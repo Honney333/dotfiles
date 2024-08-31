@@ -60,6 +60,8 @@ if status is-interactive
 
 		alias tasks='btop'
 
+        alias update_git='git add -u && git commit -m 'update' && git push'
+
 		alias remount='sudo mount -a'
 		alias available_mounts='smbclient -L 192.168.0.1 -U Honney'
 		alias mount_all='$HOME/.config/fish/scripts/mount.sh'
