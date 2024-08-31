@@ -24,7 +24,7 @@ set $system_dpi_scaling_factor 1
 set $cursor_theme "DJ-FOX-C"
 set $cursor_size 36
 set $font "DejaVuSansM Nerd Font"
-set $font_size 12
+set $font_size 14
 
 ### Output configuration
 #
@@ -80,7 +80,7 @@ exec_always {
     gsettings set $gnome-schema cursor-size $cursor_size
 }
 
-font pango:SourceCodePro Medium 11
+font pango:$font $font_size
 
 ### Key bindings
 #
@@ -244,6 +244,8 @@ bar {
 
 include /etc/sway/config.d/*
 
+exec sleep 2
+exec $HOME/.config/sway/scripts/onedrive-gui.sh
 exec sleep 4
 exec $HOME/.config/sway/scripts/mount-start.sh
 exec sleep 2

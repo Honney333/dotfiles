@@ -17,9 +17,9 @@ default-timeout=5000
 
 # Low urgency notifications (less important)
 [urgency=low]
-background-color=#00ff00
+background-color=#000000
 border-color=#4f4f4f
-text-color=#b0b0b0
+text-color=#FFFFFF
 default-timeout=3000
 
 # Normal urgency notifications (default)
@@ -28,13 +28,6 @@ background-color=#000000
 border-color=#0000FF
 text-color=#FFFFFF
 default-timeout=5000
-
-# Normal urgency notifications (default)
-[urgency=high]
-background-color=#000000
-border-color=#FF0000
-text-color=#FFFFFF
-default-timeout=10000
 
 # Critical urgency notifications (urgent)
 [urgency=critical]
