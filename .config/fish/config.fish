@@ -60,7 +60,7 @@ if status is-interactive
 
 		alias tasks='btop'
 
-        alias update_git='git add -u && git commit -m 'update' && git push'
+        alias update_git='pacman -Qqe > installed-packages.txt && paru -Qqe >> installed-packages.txt && git add -u && git commit -m 'update' && git push'
 
 		alias remount='sudo mount -a'
 		alias available_mounts='smbclient -L 192.168.0.1 -U Honney'
