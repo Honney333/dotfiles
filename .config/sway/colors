@@ -1,0 +1,10 @@
+# Shortcut              Color-hex
+set $background         #000000
+set $border_active      #74c7ec
+set $border_inactive    #11111b
+set $border_urgent      #fab387
+set $text               #000000
+set $text_urgent        #fab387
+set $indicator          #f5e0dc
+set $indicator_urgent   #a6adc8
+# Credit catppuccin-mocha
