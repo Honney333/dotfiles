@@ -250,6 +250,31 @@ bar {
 
 include /etc/sway/config.d/*
 
+# Set colors modified catpuccino
+include colors
+# target                 title              bg          text         indicator          border
+client.focused           $border_active     $background $text        $indicator         $border_active
+client.focused_inactive  $border_inactive   $background $text        $indicator         $border_inactive
+client.unfocused         $border_inactive   $background $text        $indicator         $border_inactive
+client.urgent            $border_urgent     $background $text_urgent $indicator_urgent  $border_urgent
+client.placeholder       $border_inactive   $background $text        $indicator_urgent  $border_inactive
+client.background                           $background
+
+# Audio Control
+    # Output
+    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+    # Input
+    bindsym $mod+XF86AudioRaiseVolume exec pactl set-source-volume @DEFAULT_SOURCE@ +5%
+    bindsym $mod+XF86AudioLowerVolume exec pactl set-source-volume @DEFAULT_SOURCE@ -5%
+# Media Control
+    # Pause/Play
+    bindsym XF86AudioPlay exec playerctl play-pause
+    # Fast forward
+    bindsym XF86AudioNext exec playerctl position 10+
+    # Rewind
+    bindsym XF86AudioPrev exec playerctl position 10-
+
 exec sleep 2
 exec $HOME/.config/sway/scripts/onedrive-gui.sh
 exec sleep 4
