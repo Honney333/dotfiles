@@ -251,13 +251,13 @@ bar {
 include /etc/sway/config.d/*
 
 # Set colors modified catpuccino
-include colors
-# target                 title              bg          text         indicator          border
-client.focused           $border_active     $background $text        $indicator         $border_active
-client.focused_inactive  $border_inactive   $background $text        $indicator         $border_inactive
-client.unfocused         $border_inactive   $background $text        $indicator         $border_inactive
-client.urgent            $border_urgent     $background $text_urgent $indicator_urgent  $border_urgent
-client.placeholder       $border_inactive   $background $text        $indicator_urgent  $border_inactive
+include $HOME/.config/sway/colors
+# target                 title              bg          text                indicator          border
+client.focused           $border_active     $background $text               $indicator         $border_active
+client.focused_inactive  $border_inactive   $background $text               $indicator         $border_inactive
+client.unfocused         $border_inactive   $background $text_unimportant   $indicator         $border_inactive
+client.urgent            $border_urgent     $background $text_urgent        $indicator_urgent  $border_urgent
+client.placeholder       $border_inactive   $background $text               $indicator_urgent  $border_inactive
 client.background                           $background
 
 # Audio Control
