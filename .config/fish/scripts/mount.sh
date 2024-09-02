@@ -41,7 +41,7 @@ function mount_all() {
             send_low_notification "Already Mounted" "SSD is already mounted at $MOUNT_POINT_SSD."
         fi
     else
-        send_high_notification "Connection Failed" "Could not connect to IP: $SERVER_IP."
+        send_normal_notification "Connection Failed" "Could not connect to IP: $SERVER_IP."
         exit 1
     fi
 }

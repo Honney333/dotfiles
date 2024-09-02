@@ -42,9 +42,6 @@ output DP-1 pos 0 343 res 1920x1080@60Hz scale 0.9
 output DP-3 pos 2137 0 res 1920x1080@143.981Hz scale 0.7
 output DP-2 pos 918 1545 res 3440x1440@174.962Hz scale 1
 
-workspace 1 output DP-2
-workspace 2 output DP-3
-
 ### Idle configuration
 #
 # Example configuration:
@@ -283,5 +280,7 @@ exec sleep 2
 exec $HOME/.config/sway/scripts/onedrive-gui.sh
 exec $HOME/.config/sway/scripts/goxlr-start.sh
 exec sleep 4
+exec goxlr-client profiles device load 'Default'
 exec $HOME/.config/sway/scripts/mount-start.sh
 exec sleep 2
+6;10u
