@@ -38,12 +38,12 @@ output * bg #000000 solid_color
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
 output HDMI-A-1 pos 0 343 res 1920x1080@60Hz scale 0.9
-output DP-1 pos 0 343 res 1920x1080@60Hz scale 0.9
-output DP-3 pos 2137 0 res 1920x1080@143.981Hz scale 0.7
-output DP-2 pos 918 1545 res 3440x1440@174.962Hz scale 1
+output DP-3 pos 0 343 res 1920x1080@60Hz scale 0.9
+output DP-2 pos 2137 0 res 1920x1080@143.981Hz scale 0.7
+output DP-1 pos 918 1545 res 3440x1440@174.962Hz scale 1
 
-workspace 1 output DP-2
-workspace 2 output DP-3
+workspace 1 output DP-1
+workspace 2 output DP-2
 
 ### Idle configuration
 #
@@ -112,6 +112,9 @@ font pango:$font $font_size
     # Start Steam
     bindsym $mod+ctrl+s exec $HOME/.config/sway/scripts/steam-start.sh
 
+    # Start Discord
+    bindsym $mod+shift+d exec $HOME/.config/sway/scripts/discord-start.sh
+
     # Connect to 2nd PC
     bindsym $mod+ctrl+v exec $HOME/.config/sway/scripts/remmina_server.sh
 
@@ -120,6 +123,10 @@ font pango:$font $font_size
 
     # Start Calculator
     bindsym $mod+shift+r exec $HOME/.local/bin/qalculate
+
+    # Switch between Headphones and Speaker
+    bindsym $mod+shift+h exec $HOME/.config/sway/scripts/goxlr/headphones.sh
+    bindsym $mod+shift+s exec $HOME/.config/sway/scripts/goxlr/speaker.sh
 
     # Umlaute
     bindsym $mod+a exec wtype "ä"
@@ -281,7 +288,7 @@ client.background                           $background
 
 exec sleep 2
 exec $HOME/.config/sway/scripts/onedrive-gui.sh
-exec $HOME/.config/sway/scripts/goxlr-start.sh
+exec $HOME/.config/sway/scripts/goxlr/goxlr-start.sh
 exec sleep 4
 exec $HOME/.config/sway/scripts/mount-start.sh
 exec sleep 2
