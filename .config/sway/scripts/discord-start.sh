@@ -4,5 +4,5 @@ source "$HOME/.config/function_helper.sh"
 
 SCRIPT="/usr/bin/vesktop"
 
-send_normal_notification "Starting Steam" "Starting the Script to run Steam"
+send_normal_notification "Starting Discord" "Starting the Script to run Vesktop"
 nohup "$SCRIPT" &
