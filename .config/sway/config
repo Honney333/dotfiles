@@ -25,6 +25,7 @@ set $cursor_theme "DJ-FOX-C"
 set $cursor_size 36
 set $font "DejaVuSansM Nerd Font"
 set $font_size 14
+set $color-scheme "prefer-dark"
 
 ### Output configuration
 #
@@ -74,9 +75,11 @@ workspace 2 output DP-2
 
 input type:keyboard xkb_numlock enabled
 
+### Set theme settings
+
 seat seat0 xcursor_theme $cursor_theme $cursor_size
-set $gnome-schema org.gnome.desktop.interface
 exec_always {
+    gsettings set $gnome-schema color-scheme $color-scheme
     gsettings set $gnome-schema gtk-theme $system_theme
     gsettings set $gnome-schema icon-theme $system_icons
     gsettings set $gnome-schema text-scaling-factor $system_dpi_scaling_factor
@@ -107,13 +110,15 @@ font pango:$font $font_size
     bindsym $mod+ctrl+o exec env QT_QPA_PLATFORMTHEME=qt6ct /usr/bin/octopi
 
     # Start KeePassXC
-    bindsym $mod+shift+k exec keepassxc
+    bindsym $mod+shift+k exec keepassxc -platform xcb
 
     # Start Steam
     bindsym $mod+ctrl+s exec $HOME/.config/sway/scripts/steam-start.sh
 
     # Start Discord
     bindsym $mod+shift+d exec $HOME/.config/sway/scripts/discord-start.sh
+    # Mute Discord
+    bindsym $mod+shift+m exec $HOME/.config/sway/scripts/discord-mute.sh
 
     # Connect to 2nd PC
     bindsym $mod+ctrl+v exec $HOME/.config/sway/scripts/remmina_server.sh
@@ -140,6 +145,7 @@ font pango:$font $font_size
 
     bindsym $mod+s exec wtype "ß"
 
+    bindsym $mod+Shift+e exec wtype "€"
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -152,7 +158,7 @@ font pango:$font $font_size
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    # bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #
