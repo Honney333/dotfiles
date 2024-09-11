@@ -60,7 +60,7 @@ if status is-interactive
 
 		alias tasks='btop'
 
-        alias git_update='pacman -Qqe > installed-packages.txt && paru -Qqe >> installed-packages.txt && cp /etc/fstab $HOME/.root/etc/ && cp -r /boot/grub/themes/* $HOME/.root/boot/grub/themes/ && git add -u && git commit -m 'update' && git push'
+        alias git_update='$HOME/.config/fish/scripts/git-update.sh'
 
 		alias remount='sudo mount -a'
 		alias available_mounts='smbclient -L 192.168.0.1 -U Honney'
