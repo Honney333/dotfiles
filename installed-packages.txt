@@ -3,6 +3,7 @@ amf-amdgpu-pro
 balena-etcher
 base
 base-devel
+bc
 betterbird-bin
 blender
 blueman
@@ -40,6 +41,7 @@ hip-runtime-amd
 htop
 inkscape
 iwd
+jq
 keepassxc
 kitty
 krita
@@ -62,6 +64,7 @@ nemo-fileroller
 nemo-preview
 nemo-share
 nemo-terminal
+network-manager-applet
 nfs-utils
 nm-connection-editor
 ntfs-3g
@@ -94,11 +97,13 @@ slurp
 smartmontools
 sshpass
 steam
+stress
 sway
 swaybg
 swayidle
 swaylock
 swaync
+ttf-clear-sans
 ugrep
 vencord
 ventoy
@@ -128,6 +133,7 @@ amf-amdgpu-pro
 balena-etcher
 base
 base-devel
+bc
 betterbird-bin
 blender
 blueman
@@ -165,6 +171,7 @@ hip-runtime-amd
 htop
 inkscape
 iwd
+jq
 keepassxc
 kitty
 krita
@@ -187,6 +194,7 @@ nemo-fileroller
 nemo-preview
 nemo-share
 nemo-terminal
+network-manager-applet
 nfs-utils
 nm-connection-editor
 ntfs-3g
@@ -219,11 +227,13 @@ slurp
 smartmontools
 sshpass
 steam
+stress
 sway
 swaybg
 swayidle
 swaylock
 swaync
+ttf-clear-sans
 ugrep
 vencord
 ventoy

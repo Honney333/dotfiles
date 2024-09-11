@@ -301,6 +301,7 @@ client.background                           $background
     # Rewind
     bindsym XF86AudioPrev exec playerctl position 10-
 
+exec nm-applet
 exec swaync
 exec sleep 2
 exec $HOME/.config/sway/scripts/onedrive-gui.sh
