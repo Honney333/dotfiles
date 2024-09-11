@@ -38,3 +38,14 @@ Set in sway config
 
 ### [Swaylock](https://github.com/swaywm/swaylock)
 >used and edited: [Catppuccin](https://github.com/catppuccin/swaylock)
+
+### Cursor
+Set in sway config
+
+[Theme Collection - KDE](https://store.kde.org/s/KDE%20Store/browse?cat=107&ord=latest)
+>used and edited: [DJ-FOX-C](https://store.kde.org/s/KDE%20Store/p/2113007)
+
+### Icons
+Set in sway config
+
+>used and edited: [BeautyLine](https://github.com/gvolpe/BeautyLine)
