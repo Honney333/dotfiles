@@ -1,0 +1,32 @@
+{
+  "Steam-WebKit": "webkit.css",
+  "UseDefaultPatches": true,
+
+  "author": "SaiyajinK",
+  "description": "Dark minimalist skin for Steam",
+  "name": "Minimal Dark",
+  "version": "3.0.9",
+
+  "github": {
+    "owner": "SaiyajinK",
+    "repo_name": "Minimal-Dark-for-Steam"
+  },
+  
+  "discord_support": {
+    "inviteCodeExcludingLink": "uwvCkSnvYY"
+  },
+  
+  "funding": { 
+    "kofi": "saiyajink"
+  },
+  
+  "tags": [
+    "Minimal",
+    "Dark",
+    "Color",
+    "Customizable"
+  ],
+  
+  "header_image": "https://i.imgur.com/3mPRQUz.png",
+  "splash_image": "https://i.imgur.com/3mPRQUz.png"
+}

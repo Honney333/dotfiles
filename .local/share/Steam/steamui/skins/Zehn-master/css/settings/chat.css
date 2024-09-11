@@ -1,0 +1,376 @@
+/* GROUP CHAT SETTINGS */
+.APT8A-fjMRZ55HRAs5T1i {
+  background: rgb(var(--color-settings)) !important;
+}
+
+._3o6fvTcJst7E2CI8mm7R5T {
+  background-color: transparent !important;
+  padding: 0px !important;
+}
+
+._3o6fvTcJst7E2CI8mm7R5T::before, ._3o6fvTcJst7E2CI8mm7R5T::after {
+  content: "" !important;
+  position: absolute !important;
+  z-index: -1 !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+}
+
+._3o6fvTcJst7E2CI8mm7R5T::before {
+  background-color: rgba(var(--color-white), 0.1) !important;
+  backdrop-filter: blur(var(--option-blur-radius)) !important;
+  background-blend-mode: exclusion !important;
+}
+
+._3o6fvTcJst7E2CI8mm7R5T::after {
+  background-image: var(--image-acrylic) !important;
+}
+
+._2sEAgtM7FebEn2IJoa0oaU {
+  color: rgb(var(--color-primary)) !important;
+  font-weight: 400 !important;
+  font-size: var(--size-24) !important;
+  text-transform: capitalize !important;
+  letter-spacing: unset !important;
+  margin: 0px 0px 16px 0px !important;
+  line-height: 32px !important;
+}
+
+._3fv1M26fHlQ7NKvBtfDvqO ._3fC6eKGc6Sr_gO9y6-PDLG {
+  padding: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+}
+
+._3fv1M26fHlQ7NKvBtfDvqO ._1LHfzcokoxGlmETGMPRkYP {
+  background-color: rgba(var(--color-accent), 0.4) !important;
+  margin: 0px 16px 16px 16px !important;
+}
+
+._3fv1M26fHlQ7NKvBtfDvqO ._2VmGxXQsz-437nyIfMltK {
+  color: rgb(var(--color-secondary)) !important;
+  font-weight: 400 !important;
+  font-size: var(--size-14) !important;
+  top: 83px !important;
+  width: 180px !important;
+}
+
+.GeneralChatSettings {
+  margin-left: 0px !important;
+  display: grid !important;
+  gap: 16px !important;
+}
+
+.GeneralChatSettings .DialogLabel {
+  line-height: 32px !important;
+}
+
+._3U0C5lMs9_TAIfywcurLn7 .DialogLabel {
+  line-height: 32px !important;
+}
+
+._397vQTdMFDpXS3w23ADm1k {
+  width: auto !important;
+}
+
+._397vQTdMFDpXS3w23ADm1k .ContextMenuButton {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+._3o6fvTcJst7E2CI8mm7R5T {
+  min-width: 160px !important;
+  max-width: 200px !important;
+}
+
+._3o6fvTcJst7E2CI8mm7R5T ._35flyR8QkcLS-uAVkJV1y {
+  color: rgb(var(--color-primary)) !important;
+  padding: 16px 0px !important;
+  font-size: var(--size-14) !important;
+  color: rgb(var(--color-primary)) !important;
+  font-weight: 600 !important;
+  margin-bottom: 0px !important;
+  line-height: 32px !important;
+  padding-left: 16px !important;
+  text-transform: capitalize !important;
+}
+
+._3o6fvTcJst7E2CI8mm7R5T ._35rqZT0pAY4hJLqHRbaEQg {
+  margin-top: 0px !important;
+}
+
+._3o6fvTcJst7E2CI8mm7R5T ._35rqZT0pAY4hJLqHRbaEQg ._2tYhabG7rEAJB2eolDND0O {
+  font-size: var(--size-14) !important;
+  font-weight: 400 !important;
+  color: rgb(var(--color-primary)) !important;
+  margin-bottom: 0px !important;
+  height: 40px !important;
+  padding: 0px 0px 0px 48px !important;
+  min-width: 160px !important;
+  text-transform: capitalize !important;
+  background-repeat: no-repeat !important;
+  background-position: 16px 12px !important;
+  background-size: 16px !important;
+  line-height: 40px !important;
+}
+
+._3o6fvTcJst7E2CI8mm7R5T ._35rqZT0pAY4hJLqHRbaEQg ._2tYhabG7rEAJB2eolDND0O:hover {
+  color: rgb(var(--color-primary)) !important;
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+._3o6fvTcJst7E2CI8mm7R5T ._35rqZT0pAY4hJLqHRbaEQg ._2tYhabG7rEAJB2eolDND0O:active {
+  color: rgb(var(--color-primary)) !important;
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+/* GENERAL */
+._3o6fvTcJst7E2CI8mm7R5T ._35rqZT0pAY4hJLqHRbaEQg ._2tYhabG7rEAJB2eolDND0O:nth-of-type(1) {
+  background-image: var(--icon-home) !important;
+}
+
+/* CHANNELS */
+._3o6fvTcJst7E2CI8mm7R5T ._35rqZT0pAY4hJLqHRbaEQg ._2tYhabG7rEAJB2eolDND0O:nth-of-type(2) {
+  background-image: var(--icon-channels) !important;
+}
+
+/* PERMISSIONS */
+._3o6fvTcJst7E2CI8mm7R5T ._35rqZT0pAY4hJLqHRbaEQg ._2tYhabG7rEAJB2eolDND0O:nth-of-type(3) {
+  background-image: var(--icon-lock) !important;
+}
+
+/* INVITE LINKS */
+._3o6fvTcJst7E2CI8mm7R5T ._35rqZT0pAY4hJLqHRbaEQg ._2tYhabG7rEAJB2eolDND0O:nth-of-type(4) {
+  background-image: var(--icon-link) !important;
+}
+
+/* INVITED ACCOUNTS */
+._3o6fvTcJst7E2CI8mm7R5T ._35rqZT0pAY4hJLqHRbaEQg ._2tYhabG7rEAJB2eolDND0O:nth-of-type(5) {
+  background-image: var(--icon-account) !important;
+}
+
+/* BANS */
+._3o6fvTcJst7E2CI8mm7R5T ._35rqZT0pAY4hJLqHRbaEQg ._2tYhabG7rEAJB2eolDND0O:nth-of-type(6) {
+  background-image: var(--icon-ban) !important;
+}
+
+._2tYhabG7rEAJB2eolDND0O._22BLe9DAiRwH1vJMpWz-Ko::before {
+  position: relative !important;
+  width: 0px !important;
+  height: 20px !important;
+  outline: 2px solid rgb(var(--color-accent)) !important;
+  content: "" !important;
+  left: -46px !important;
+  background: rgb(var(--color-accent)) !important;
+}
+
+._2Vi7csvNy_HVkg923w0xxv {
+  color: rgb(var(--color-primary)) !important;
+  font-weight: 400 !important;
+  font-size: var(--size-14) !important;
+  padding: 0px 16px 0px 16px !important;
+  margin-bottom: 0px !important;
+  line-height: 40px !important;
+  margin-left: 0px !important;
+}
+
+._2Vi7csvNy_HVkg923w0xxv:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+._2Vi7csvNy_HVkg923w0xxv:active {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+._2Vi7csvNy_HVkg923w0xxv:hover ._2Vi7csvNy_HVkg923w0xxv:active {
+ color: rgb(var(--color-primary)) !important;
+}
+
+._2Vi7csvNy_HVkg923w0xxv svg {
+  height: 16px !important;
+  width: 16px !important;
+  margin-right: 16px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 16px !important;
+  background-image: var(--icon-chat-leave) !important;
+}
+
+._2Vi7csvNy_HVkg923w0xxv svg * {
+  stroke: transparent !important;
+  fill: transparent !important;
+  opacity: 0 !important;
+  display: none !important;
+}
+
+/* GROUP CHAT CHANNELS */
+.uTColL2CLXcH-oVddrfdD {
+  margin-bottom: 16px !important;
+  gap: 16px !important;
+}
+
+button.DialogButton.DialogButtonTall {
+  height: 38px !important;
+  max-width: 100% !important;
+  min-width: fit-content !important;
+}
+
+.ChatGroupSettingsChannels_Row ._DialogRow {
+  background: rgba(var(--color-white), 0.1) !important;
+  color: rgb(var(--color-primary)) !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 16px !important;
+  line-height: 32px !important;
+  height: 32px !important;
+  border-radius: 0px !important;
+}
+
+.ChatGroupSettingsChannels_Row:nth-child(2n) ._DialogRow {
+  background: rgba(var(--color-white), 0.2) !important;
+}
+
+.ChatGroupSettingsChannels_Row .ChannelDeleteButton {
+  color: rgb(var(--color-primary)) !important;
+  font-weight: 400 !important;
+  font-size: var(--size-14) !important;
+  line-height: 32px !important;
+  margin-right: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.ChatGroupSettingsChannels_Row .ChannelDeleteButton:hover {
+  color: rgb(var(--color-secondary)) !important;
+}
+
+.ChatGroupSettingsChannels_Row .ChannelDeleteButton:active {
+  color: rgb(var(--color-tertiary)) !important;
+}
+
+._DialogRow ._DialogRowSecondaryLabel, ._DialogRow ._DialogRowLabel {
+  font-size: var(--size-14) !important;
+  text-align: right !important;
+  margin: 0px !important;
+  line-height: 32px !important;
+}
+
+._DialogRowLabel .HomeChannel {
+  font-style: normal !important;
+  font-weight: 400 !important;
+}
+
+.rolePriorityButton {
+  width: 24px !important;
+  height: 16px !important;
+}
+
+.rolePriorityButton.Disabled:active, .rolePriorityButton.Disabled:hover, .rolePriorityButton.Disabled {
+  background-color: rgba(var(--color-white), 0.1) !important;
+  opacity: 1 !important;
+}
+
+.rolePriorityButton {
+  background-color: rgba(var(--color-white), 0.1) !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+}
+
+.rolePriorityButton:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+.rolePriorityButton:active {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+.rolePriorityButton svg {
+  fill: rgb(var(--color-white)) !important;
+  opacity: 0.6 !important;
+  height: 16px !important;
+}
+
+.rolePriorityButton:hover svg {
+  opacity: 1.0 !important;
+}
+
+.rolePriorityContainer {
+  width: 24px !important;
+  height: 32px !important;
+}
+
+.rolePriorityContainer .rolePriorityButton.roleDown {
+  top: 16px !important;
+}
+
+.rolePriorityButton.roleUp svg {
+  padding-bottom: 0px !important;
+}
+
+.rolePriorityButton.roleDown svg {
+  padding-top: 0px !important;
+}
+
+.uTColL2CLXcH-oVddrfdD .SVGIcon_Button.SVGIcon_TextRoom, .uTColL2CLXcH-oVddrfdD .SVGIcon_Button.SVGIcon_VoiceRoom {
+  width: 0px !important;
+  height: 0px !important;
+  display: none !important;
+}
+
+.ChatGroupSettingsChannels_Row .SVGIcon_Button.SVGIcon_TextRoom, .ChatGroupSettingsChannels_Row .SVGIcon_Button.SVGIcon_VoiceRoom {
+  background-size: 16px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  opacity: 1 !important;
+}
+
+.ChatGroupSettingsChannels_Row .SVGIcon_TextRoom {
+  opacity: 1 !important;
+  background-image: var(--icon-chat-bubbles) !important;
+}
+
+.ChatGroupSettingsChannels_Row .SVGIcon_VoiceRoom {
+  opacity: 1 !important;
+  background-image: var(--icon-volume) !important;
+}
+
+/* GROUP CHAT PERMISSIONS */
+button.DialogButton.roleButton .SVGIcon_Crown {
+  width: 0px !important;
+  height: 0px !important;
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.meKey .SVGIcon_Crown, .meKey .SVGIcon_DialogCheck, button.DialogButton.roleButton .SVGIcon_DialogCheck {
+  width: 0px !important;
+  height: 0px !important;
+  opacity: 0 !important;
+  display: none !important;
+}
+
+button.DialogButton.roleButton {
+  padding: 0px 16px !important;
+  width: calc(100% - 32px) !important;
+}
+
+.roleButton:last-child {
+  margin-bottom: 16px !important;
+}
+
+._1ZUG9SQOcVeJoZcGN7bFr0 {
+  margin-bottom: 0px !important;
+  margin-top: 16px !important;
+  min-height: 32px !important;
+}
+
+.DialogLabel._DialogLayout.meKey {
+  font-size: var(--size-14) !important;
+  color: rgb(var(--color-secondary)) !important;
+}
+
+/* INVITED */
+.InvitedUsersTable .hoverRow {
+  height: 38px !important;
+}

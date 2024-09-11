@@ -1,0 +1,137 @@
+/* WHAT'S NEW SETTINGS */
+._2JKpGzeAiwmBdY73bfRXz- {
+  background: rgb(var(--color-settings)) !important;
+}
+
+._1I-uT20jYsj5wUT4VIGjW8 {
+  padding: 38px 16px 0px 16px !important
+}
+
+/* HEADER */
+._2JKpGzeAiwmBdY73bfRXz- .DialogHeader {
+    position: absolute !important;
+    top: 0px !important;
+    left: 0px !important;
+    padding: 0px 12px !important;
+    line-height: 38px !important;
+    font-size: var(--size-12) !important;
+    margin-bottom: 0px !important;
+}
+
+._1n-sV5GdQis4Wh9XN3GJ7L > div:last-child {
+  margin: 0px !important;
+}
+
+._1n-sV5GdQis4Wh9XN3GJ7L {
+  padding: 16px 0px !important;
+  gap: 16px !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.DialogToggleField_NewUIContainer ._3jXWQl2Xun5nCqu_XZuWlx {
+  margin-right: 0px !important;
+}
+
+._DialogInputContainer ._3Hf53stS1-9flruoPqwO0O, .DialogLabel._3Hf53stS1-9flruoPqwO0O {
+  color: rgb(var(--color-secondary)) !important;
+  font-weight: 400 !important;
+  font-size: var(--size-14) !important;
+  line-height: 16px !important;
+}
+
+.displayColumn > ._3Hf53stS1-9flruoPqwO0O {
+  color: rgb(var(--color-primary)) !important;
+}
+
+._1n-sV5GdQis4Wh9XN3GJ7L > ._3Hf53stS1-9flruoPqwO0O, .displayColumn > ._3Hf53stS1-9flruoPqwO0O {
+  margin-bottom: 0px !important;
+}
+
+.DialogToggle_Description {
+  color: rgb(var(--color-secondary)) !important;
+  font-weight: 400 !important;
+  font-size: var(--size-14) !important;
+  padding-top: 0px !important;
+  line-height: 22px !important;
+}
+
+.VwcCoDMU0ROCpRAJ_cXTx ._2C3-Rj_GA3KP7GklMymoPM .DialogToggle_Description {
+  color: rgb(var(--color-primary)) !important;
+  line-height: 32px !important;
+  padding: 0px 8px !important;
+}
+
+.VwcCoDMU0ROCpRAJ_cXTx ._3XBggeqHxK4fIrbu_ULi1y {
+  margin-top: 0px !important;
+  width: 32px !important;
+  height: 32px !important;
+  padding: 0px !important;
+  opacity: 1 !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  border-radius: 0px !important;
+  background-size: 12px !important;
+  background-image: var(--icon-clear) !important;
+  background-position: right !important;
+  background-repeat: no-repeat !important;
+  background-color: transparent !important;
+}
+
+.VwcCoDMU0ROCpRAJ_cXTx ._3XBggeqHxK4fIrbu_ULi1y:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+  opacity: 1.0 !important;
+}
+
+.VwcCoDMU0ROCpRAJ_cXTx ._3XBggeqHxK4fIrbu_ULi1y:active {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+.VwcCoDMU0ROCpRAJ_cXTx ._3XBggeqHxK4fIrbu_ULi1y svg line {
+  stroke-width: 26px !important;
+  display: none !important;
+}
+
+/* VISIBILITY SETTINGS */
+._1I-uT20jYsj5wUT4VIGjW8 ._DialogInputContainer:not(._1tiuYeMmTc9DMG4mhgaQ5w):not(.DialogToggleField), ._1I-uT20jYsj5wUT4VIGjW8 ._DialogInputContainer:not(._1tiuYeMmTc9DMG4mhgaQ5w):not(.DialogToggleField):hover:hover, ._1I-uT20jYsj5wUT4VIGjW8 ._DialogInputContainer:not(._1tiuYeMmTc9DMG4mhgaQ5w):not(.DialogToggleField):hover:active {
+  background: transparent !important;
+  padding: 0px !important;
+  outline: unset !important;
+}
+
+/* PRIORITY SETTINGS */
+._25JfLo9lwRM2V_2fUDsAaA {
+  outline: unset !important;
+  background: transparent !important;
+  padding: 0px !important;
+}
+
+.VwcCoDMU0ROCpRAJ_cXTx {
+  padding: 0px !important;
+  margin-top: 0px !important;
+  max-height: unset !important;
+  overflow: visible !important;
+  line-height: 32px !important;
+  gap: 8px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+}
+
+ ._25JfLo9lwRM2V_2fUDsAaA > .displayColumn {
+   gap: 16px !important;
+   display: flex !important;
+   flex-direction: column !important;
+ }
+
+ .VwcCoDMU0ROCpRAJ_cXTx ._2C3-Rj_GA3KP7GklMymoPM {
+   background-color: rgba(var(--color-white), 0.1) !important;
+ }
+
+ .VwcCoDMU0ROCpRAJ_cXTx ._2C3-Rj_GA3KP7GklMymoPM:hover {
+   background-color: rgba(var(--color-white), 0.2) !important;
+ }
+
+ .VwcCoDMU0ROCpRAJ_cXTx ._2C3-Rj_GA3KP7GklMymoPM:active {
+   background-color: rgba(var(--color-white), 0.4) !important;
+ }

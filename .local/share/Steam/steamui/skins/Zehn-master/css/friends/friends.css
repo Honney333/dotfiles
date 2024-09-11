@@ -1,0 +1,1914 @@
+/* BORDER */
+.chat_main_flex {
+  border: 1px solid rgba(var(--color-white), 0.1) !important;
+}
+
+.WindowFocus .chat_main_flex {
+  border: 1px solid rgb(var(--color-accent)) !important;
+}
+
+.singleWindowFocusBar {
+  height: 0px !important;
+  background: transparent !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+/* BACKGROUND */
+.friendlist {
+}
+
+.friendsListContainer {
+}
+
+.friendsui-container {
+  background-color: rgb(var(--color-background)) !important;
+}
+
+/* TITLEBAR */
+.friendListHeaderContainer {
+  border: unset !important;
+  background-color: transparent !important;
+}
+
+body:not(.WindowFocus) .titleBarContainer .ContextMenuButton {
+  filter: brightness(0.5) !important;
+}
+
+.friendlist>* {
+  transition: all 0.25s ease-in-out !important;
+}
+
+.friendlist .friendListHeaderContainer .friendListCollapse {
+  transition: none !important;
+}
+
+.friendListHeaderContainer .title-area {
+  margin-left: 38px !important;
+}
+
+/* SETTINGS PICKER */
+.FriendPicker_ChosenFriend span {
+  color: rgba(var(--color-white), 0.75) !important;
+}
+
+.FriendPicker_ChosenFriend:hover span {
+  color: rgb(var(--color-primary)) !important;
+}
+
+.FriendPicker_ChosenFriend {
+  background: rgb(var(--color-accent)) !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+  padding: 4px 12px !important;
+}
+
+.FriendPicker_ChosenFriend .SVGIcon_X_Line line {
+  stroke: rgba(var(--color-white), 0.75) !important;
+}
+
+.FriendPicker_ChosenFriend:hover .SVGIcon_X_Line line, .FriendPicker_ChosenFriend:active .SVGIcon_X_Line line {
+  stroke: rgb(var(--color-primary)) !important;
+}
+
+.FriendPicker_Focus .FriendPicker_SuggestedFriend.Focus {
+  background: rgba(var(--color-white), 0.1) !important;
+}
+
+.insetShadow {
+  background: transparent !important;
+}
+
+.FriendPicker_SuggestedFriend {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+.FriendPicker_SuggestedFriend:hover, .FriendPicker_SuggestedFriend:active {
+  background: rgba(var(--color-white), 0.1) !important;
+}
+
+._1ZCj8QAT3c4jW87Ot7caON {
+  -webkit-mask: none !important;
+}
+
+.friend.offline > div {
+  /* opacity: 0.5 !important; */
+}
+
+/* AVATAR */
+._3atbNcPD1_nRVTjOvryjWe ._338kJp62vHY5iDbsraaiKD {
+  display: none !important;
+}
+
+.friend.offline .avatarHolder img.avatar  {
+  filter: none !important;
+}
+
+.quickAccessFriends .friend.friend.awayOrSnooze .avatarHolder img {
+  opacity: 1 !important;
+}
+
+/* AVATAR STATUS */
+.friendlistListContainer .friend .avatarHolder .avatarStatus, .CompactFriendsList .friend .avatarHolder .avatarStatus, .FriendNotificationsDialog .friend .avatarHolder .avatarStatus {
+  top: unset !important;
+}
+
+.CompactFriendsList .avatarHolder .avatarStatus {
+  min-width: 0px !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-width: 2px !important;
+}
+
+.friend.quickAccessFriend .avatarHolder {
+  margin: 0px auto !important;
+}
+
+.friend.quickAccessFriend .avatarHolder .avatarStatus {
+  height: inherit !important;
+  width: inherit !important;
+}
+
+.compactQuickAccess .friend.quickAccessFriend .avatarHolder .avatarStatus {
+  height: inherit !important;
+  width: inherit !important;
+}
+
+.ChatTabContent .avatarHolder .avatarStatus {
+  width: 100% !important;
+  height: 100% !important;
+  border-width: 2px !important;
+}
+
+/* HEADER */
+.friendListHeaderContainer {
+  min-height: 0px !important;
+  background-color: rgba(var(--color-black), 0.75) !important;
+  backdrop-filter: blur(var(--option-blur-radius)) !important;
+  background-image: var(--image-acrylic) !important;
+}
+
+/* CURRENT USER */
+.currentUserContainer {
+  border-bottom: unset !important;
+  height: 48px !important;
+  min-height: 48px !important;
+  max-height: 48px !important;
+  padding: 0px 16px !important;
+  align-items: center !important;
+  display: flex !important;
+  margin-top: 38px !important;
+  transition: all 0.25s ease-in-out !important;
+}
+
+.compactView .currentUserContainer {
+  height: 38px !important;
+  min-height: 38px !important;
+  max-height: 38px !important;
+}
+
+.statusHeaderGlow {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.currentUserAvatar {
+  border-radius: 0px !important;
+  width: 32px !important;
+  height: 32px !important;
+  margin-right: 16px !important;
+}
+
+.currentUserAvatar:hover {
+  transform: none !important;
+  filter: none !important;
+}
+
+.currentUserAvatar ._1YGAHSfGavQI6MODJq-pJB {
+  transform: none !important;
+  height: 32px !important;
+  width: 32px !important;
+  margin: auto !important;
+}
+
+.AvatarAndUser {
+  width: fit-content !important;
+  line-height: 38px !important;
+  max-width: 100% !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  padding: 0px !important;
+}
+
+.compactView .AvatarAndUser {
+  padding: 0px !important;
+}
+
+.friendlist .ContextMenuButton {
+  margin-left: 0px !important;
+  opacity: 1 !important;
+  position: absolute !important;
+  left: 0px !important;
+  top: 0px !important;
+  display: none !important;
+}
+
+.currentUserContainer .r62qzcdJQ0qezZglOtiUX, .currentUserContainer ._3T-9PkwXmTHyFu3b1pAn2O {
+  line-height: 16px !important;
+}
+
+.currentUserContainer ._3n8q82Bm3oNKRPFbrZOlo8 {
+  margin-bottom: 0px !important;
+  margin-left: 0px !important;
+}
+
+.currentUserContainer ._3n8q82Bm3oNKRPFbrZOlo8, .currentUserContainer .r62qzcdJQ0qezZglOtiUX  {
+  font-size: var(--size-14) !important;
+  font-weight: 500 !important;
+}
+
+.currentUserContainer .r62qzcdJQ0qezZglOtiUX {
+  margin-left: 0px !important;
+}
+
+.currentUserContainer ._2nrSdZqzl3e01VZleoVaWp {
+  margin: 0px !important;
+}
+
+._1YsWjZbxFewllb2PX6ZhNm {
+  margin-top: 0px !important;
+  margin-bottom: auto !important;
+  margin-top: auto !important;
+  margin-left: 0px !important;
+}
+
+.currentUserContainer ._1YsWjZbxFewllb2PX6ZhNm {
+  line-height: 16px !important;
+}
+
+._1YsWjZbxFewllb2PX6ZhNm svg {
+  width: 38px !important;
+  height: 38px !important;
+  color: transparent !important;
+  fill: transparent !important;
+  stroke: transparent !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 16px !important;
+  background-image: var(--icon-vr) !important;
+  display: none !important;
+}
+
+._1YsWjZbxFewllb2PX6ZhNm svg * {
+  fill: transparent !important;
+  stroke: transparent !important;
+}
+
+.currentUserContainer ._1YsWjZbxFewllb2PX6ZhNm._3pGV8dWHnZMYHcytHxo6pw, .currentUserContainer ._1YsWjZbxFewllb2PX6ZhNm.personastatusicons_VRIcon_, .currentUserContainer ._1YsWjZbxFewllb2PX6ZhNm.personastatusicons_BigPictureIcon_ {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.currentUserContainer .labelHolder {
+  margin: 0px !important;
+}
+
+.friendlist .ContextMenuButton {
+  opacity: 1 !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 38px !important;
+  height: 38px !important;
+}
+
+.friendlist .ContextMenuButton .SVGIcon_DownArrowContextMenu {
+  padding-left: 0px !important;
+  margin-bottom: 0px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  background-image: var(--icon-navigation) !important;
+  background-size: 16px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  filter: none !important;
+  height: 38px !important;
+  width: 38px !important;
+}
+
+.friendlist .ContextMenuButton .SVGIcon_DownArrowContextMenu * {
+  fill: transparent !important;
+}
+
+.currentUserContainer .ContextMenuButton:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+.currentUserContainer .ContextMenuButton:focus {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+.currentUserContainer .ContextMenuButton:active {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+.FriendsListContent .ContextMenuButton, .MemberListColumn .ContextMenuButton, .VoiceChannelParticipants .ContextMenuButton {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+._12iWKn1QT-c-GZZ135BQJd {
+  width: 16px !important;
+  height: 38px !important;
+  margin-top: 0px !important;
+  margin-left: 8px !important;
+  padding-left: 0px !important;
+  line-height: 38px !important;
+  display: none !important;
+}
+
+.online .SVGIcon_DoNotDisturb circle, .online .SVGIcon_DoNotDisturb line {
+  stroke: rgb(var(--color-secondary)) !important;
+}
+
+/* QUICK ACCESS */
+.quickAccessFriends.emptyQuickAccess.hintDismissed {
+  margin-top: 0px !important;
+}
+
+.quickAccessFriendsMessage {
+  color: rgb(var(--color-primary)) !important;
+  text-transform: uppercase !important;
+  border-radius: 0 !important;
+  border: unset !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  font-weight: 400 !important;
+  font-size: var(--size-14) !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  display: block !important;
+  text-align: center !important;
+  line-height: 38px !important;
+}
+
+body.in_global_drag .quickAccessFriends.emptyQuickAccess {
+  height: 38px !important;
+}
+
+.quickAccessFriends.emptyQuickAccess .quickAccessFriendsMessageDismiss {
+  font-weight: 400 !important;
+  font-size: var(--size-14) !important;
+  color: rgb(var(--color-primary)) !important;
+  padding: 0px 8px !important;
+  border-radius: 0px !important;
+  background: rgb(var(--color-accent)) !important;
+  text-align: center !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  line-height: 38px !important;
+  opacity: 0 !important;
+  transition: opacity 0.2s ease-in-out !important;
+}
+
+.quickAccessFriends.emptyQuickAccess.compactQuickAccess .quickAccessFriendsMessageDismiss {
+  line-height: 30px !important;
+}
+
+.quickAccessFriends.emptyQuickAccess .quickAccessFriendsMessageDismiss:hover {
+  background: rgb(var(--color-accent)) !important;
+  opacity: 1 !important;
+}
+
+.quickAccessFriends {
+  margin-left: 0px !important;
+  width: 100% !important;
+  padding: 0px !important;
+  background-color: transparent !important;
+  min-height: fit-content !important;
+}
+
+.quickAccessFriends:not(.emptyQuickAccess) {
+  justify-content: space-evenly !important;
+  display: flex !important;
+}
+
+.quickAccessFriends .favoriteElement:hover .friend .avatarHolder {
+  transform: scale(1.2) !important;
+}
+
+.quickAccessFriends::before, .quickAccessFriends::after {
+  content: "" !important;
+  position: absolute !important;
+  z-index: -1 !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+}
+
+.quickAccessFriends::before {
+  background-color: rgba(var(--color-black), 0.75) !important;
+  backdrop-filter: blur(var(--option-blur-radius)) !important;
+  background-blend-mode: exclusion !important;
+}
+
+.quickAccessFriends::after {
+  background-image: var(--image-acrylic) !important;
+}
+
+.favoriteElement {
+  height: 38px !important;
+  width: 38px !important;
+}
+
+.compactQuickAccess .favoriteElement {
+  width: 32px !important;
+  height: 38px !important;
+}
+
+.favoriteElement .ChatRoomGroupAvatar {
+  padding: 0px !important;
+  width: 32px !important;
+  height: 32px !important;
+  margin: 3px !important;
+}
+
+.favoriteElement .ChatRoomGroupAvatar_initials {
+  width: 32px !important;
+  height: 32px !important;
+  padding-top: 0px !important;
+  border-width: 0px !important;
+  line-height: 32px !important;
+  font-size: 16px !important;
+}
+
+.friend.quickAccessFriend {
+  width: 32px !important;
+  margin: 3px !important;
+  height: 32px !important;
+  align-items: center !important;
+}
+
+.compactQuickAccess .friend.quickAccessFriend {
+  width: 24px !important;
+  height: 32px !important;
+  margin: 4px !important;
+}
+
+.compactQuickAccess .friend.quickAccessFriend ._1YGAHSfGavQI6MODJq-pJB {
+  height: 24px !important;
+  width: 24px !important;
+}
+
+.quickAccessFriends.compactQuickAccess ._1YGAHSfGavQI6MODJq-pJB.Medium {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.FavoriteFriend_GameIcon {
+  background-color: transparent !important;
+  display: none !important;
+}
+
+.dropTargetBox {
+  border-radius: 0 !important;
+  border: unset !important;
+  transform: none !important;
+  margin: 0px !important;
+}
+
+.playerNameQuickAccessContainer {
+  color: rgb(var(--color-primary)) !important;
+  line-height: 16px !important;
+  width: fit-content !important;
+  position: absolute !important;
+  display: none !important;
+}
+
+.compactQuickAccess .playerNameQuickAccessContainer {
+  display: none !important;
+}
+
+.quickAccessFriend .clanName, .friend.quickAccessFriend .playerName {
+  width: fit-content !important;
+  margin: 0px !important;
+  font-size: var(--size-14) !important;
+  bottom: 0px !important;
+  text-overflow: ellipsis !important;
+  -webkit-mask: none !important;
+  padding: 0px !important;
+  opacity: 0 !important;
+  transition: opacity 0.25s ease-in-out !important;
+}
+
+.quickAccessFriends .favoriteElement:hover .friend .playerName {
+  color: rgb(var(--color-primary)) !important;
+}
+
+.favoriteElement:hover .quickAccessFriend .clanName, .favoriteElement:hover .friend.quickAccessFriend .playerName {
+  opacity: 1 !important;
+}
+
+.friend.awayOrSnooze .playerNameQuickAccessContainer {
+  opacity: 1 !important;
+}
+
+.quickAccessFriend .clanName {
+  display: none !important;
+  color: rgb(var(--color-primary)) !important;
+}
+
+/* QUICK ACCESS SNOOZE */
+.quickAccessFriends .friend .SnoozeContainer {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+/* QUICK ACCESS HOVER */
+.quickAccessFriend.friendStatusHover:hover, .quickAccessFriend.friendStatusHover:active {
+  background-color: transparent !important;
+}
+
+/* ACTIVE VOICE CONTROLS */
+.friendListHeaderContainer .activeVoiceControls {
+  height: 32px !important;
+  transition: all 0.25s ease-in-out !important;
+  background-color: transparent !important;
+  border: unset !important;
+  border-image: url() !important;
+}
+
+.friendListHeaderContainer .activeVoiceControls::before {
+  height: 0px !important;
+  width: 0px !important;
+  background: transparent !important;
+}
+
+.activeVoiceFlexBox {
+  height: 32px !important;
+}
+
+.activeVoiceControls .connectionStatusLabels, .chatRoomVoiceChannel .connectionStatusLabels {
+  font-size: var(--size-12) !important;
+  color: rgb(var(--color-primary)) !important;
+}
+
+.friendListHeaderContainer .activeVoiceLabels {
+  display: inline-flex !important;
+  font-size: var(--size-14) !important;
+  line-height: 32px !important;
+  padding: 0px 16px !important;
+}
+
+.activeVoiceLabels .activeVoiceHeader {
+  letter-spacing: normal !important;
+  color: rgb(var(--color-primary)) !important;
+  font-size: var(--size-14) !important;
+}
+
+.activeVoiceLabels .activeVoiceName {
+  color: rgb(var(--color-primary)) !important;
+  font-size: var(--size-14) !important;
+  line-height: inherit !important;
+  max-height: 32px !important;
+}
+
+.activeVoiceLabels .activeVoiceName::before {
+  content: "\00a0" !important;
+  font-size: var(--size-14) !important;
+}
+
+.friendListHeaderContainer .activeVoiceButtons {
+  min-width: 96px !important;
+}
+
+.VoiceControlPanelButton {
+  background-size: 16px !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.VoiceControlPanelButton:focus {
+  background-color: transparent !important;
+}
+
+.VoiceControlPanelButton:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+.VoiceControlPanelButton:active {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+.activeVoiceFlexBox .activeVoiceButtons button {
+  margin-top: 0px !important;
+  padding: 0px !important;
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  border: unset !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+}
+
+.VoiceControlPanelButton.ToggleMicrophoneButton.Focusable {
+  background-image: var(--icon-mic) !important;
+}
+
+.VoiceControlPanelButton.ToggleMicrophoneButton.disabled.Focusable {
+  background-image: var(--icon-mic-mute) !important;
+}
+
+.VoiceControlPanelButton.ToggleVoiceOutputButton.Focusable {
+  background-image: var(--icon-volume) !important;
+}
+
+.VoiceControlPanelButton.ToggleVoiceOutputButton.disabled.Focusable {
+  background-image: var(--icon-volume-mute) !important;
+}
+
+.VoiceControlPanelButton.chatEndVoiceChat.Focusable {
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-image: var(--icon-chat-leave) !important;
+}
+
+.activeVoiceButtons .SVGIcon_Button {
+  fill: rgb(var(--color-white)) !important;
+  display: none !important;
+}
+
+.VoiceControlPanelButton.ToggleVoiceOutputButton .SVGIcon_Headphones, .VoiceControlPanelButton.ToggleMicrophoneButton .SVGIcon_Microphone {
+  width: 32px !important;
+  height: 32px !important;
+  padding-top: 0px !important;
+  display: none !important;
+}
+
+.friendListHeaderContainer .SVGIcon_Button.SVGIcon_VoiceRoom  {
+  width: 32px !important;
+  height: 32px !important;
+  padding-top: 0px !important;
+  display: none !important;
+}
+
+/* SEARCH */
+.socialTabSearchContainer {
+  background: rgb(var(--color-background)) !important;
+}
+
+.activeTab {
+  color: rgb(var(--color-primary)) !important;
+  background-color: transparent !important;
+}
+
+.TabSearchButton .ColorSelector {
+  stroke: rgb(var(--color-primary)) !important;
+  fill: rgb(var(--color-primary)) !important;
+}
+
+.socialListTab {
+  margin-top: 0px !important;
+  height: 32px !important;
+  font-weight: 400 !important;
+  color: rgb(var(--color-primary)) !important;
+  font-size: var(--size-14) !important;
+  line-height: 32px !important;
+  text-transform: uppercase !important;
+  padding-left: 16px !important;
+}
+
+.socialListTab .tabLabel {
+  cursor: pointer !important;
+  font-weight: 400 !important;
+  color: rgb(var(--color-primary)) !important;
+  font-size: var(--size-14) !important;
+  line-height: 32px !important;
+}
+
+.socialListTab.TabSearchActive .tabLabel {
+  width: 0px !important;
+}
+
+.socialListTab.TabSearchActive {
+  padding-left: 0px !important;
+}
+
+.TabSearchButton {
+  background-color: transparent !important;
+  padding: 0px !important;
+  height: 32px !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+}
+
+.searchIconButton {
+  background-color: transparent !important;
+}
+
+.searchIconButton:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+.searchIconButton:active {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+.TabSearchButton .searchIconButton {
+  cursor: pointer !important;
+  height: 32px !important;
+  width: 32px !important;
+  margin-top: 0px !important;
+  margin-right: 0px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 12px !important;
+  background-image: var(--icon-search) !important;
+  transition: none !important;
+}
+
+.TabSearchActive .TabSearchButton .searchIconButton {
+  width: 0px !important;
+  opacity: 0 !important;
+}
+
+.friendsTabButtonsContainer {
+  padding-right: 0px !important;
+}
+
+.friendsTabButtonsContainer .TabSearchButton .SVGIcon_MagnifyingGlass {
+  height: 32px !important;
+  width: 32px !important;
+  margin-top: 0px !important;
+  margin-right: 0px !important;
+  display: none !important;
+}
+
+.socialInputContainer.SearchActive {
+  max-height: 32px !important;
+}
+
+.socialInputContainer .inputContainer {
+  margin: 0px !important;
+}
+
+.socialInputContainer .inputContainer.no-drag {
+  height: 32px !important;
+  border-radius: 0px !important;
+  background-color: transparent !important;
+}
+
+.friendSearchInput[type="text"] {
+  color: rgb(var(--color-primary)) !important;
+  background-color: rgba(var(--color-white), 0.1) !important;
+  font-size: var(--size-14) !important;
+  background-size: 12px !important;
+  background-image: var(--icon-search) !important;
+  background-position: left 10px center !important;
+  padding: 0px 0px 0px 32px !important;
+}
+
+.socialInputContainer .friendSearchInput[type="text"] {
+  padding-right: 0px !important;
+  background-color: transparent !important;
+}
+
+.friendSearchInput::placeholder {
+  color: rgb(var(--color-secondary)) !important;
+  text-transform: uppercase !important;
+  font-size: var(--size-14) !important;
+}
+
+.friendsTabButtonsContainer .friendSearchClear {
+  width: 32px !important;
+  height: 32px !important;
+  right: 0px !important;
+}
+
+.friendSearchNoResultsContainer {
+  color: rgb(var(--color-secondary)) !important;
+}
+
+.friendSearchNoResultsContainer a {
+  color: rgb(var(--color-accent)) !important;
+}
+
+.friendSearchNoResultsContainer a:hover {
+  color: rgb(var(--color-secondary)) !important;
+}
+
+.friendSearchNoResultsContainer a:active {
+  color: rgb(var(--color-tertiary)) !important;
+}
+
+/* FRIENDS ADD */
+.addFriendButton {
+  background-color: transparent !important;
+  padding: 0px !important;
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 16px !important;
+  background-image: var(--icon-contact-add) !important;
+}
+
+.addFriendButton:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+.addFriendButton:active {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+.friendRequestButton {
+  background-color: transparent !important;
+  padding: 0px !important;
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 16px !important;
+  background-image: var(--icon-contact) !important;
+}
+
+.friendRequestButton:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+.friendRequestButton:active {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+.friendRequestButton .SVGIcon_FriendRequest, .addFriendButton .SVGIcon_AddFriend {
+  margin: 0px !important;
+  display: none !important;
+}
+
+.friendRequestButton .SVGIcon_FriendRequest .friendBodyFull, .friendRequestButton .SVGIcon_FriendRequest .friendHead, .friendRequestButton .SVGIcon_FriendRequest .friendArm, .friendRequestButton .SVGIcon_FriendRequest .friendBody, .addFriendButton .SVGIcon_AddFriend .friendHead, .addFriendButton .SVGIcon_AddFriend .friendBody {
+  fill: rgb(var(--color-white)) !important;
+}
+
+.addFriendButton .SVGIcon_AddFriend .plusCircle {
+  fill: rgb(var(--color-white)) !important;
+}
+
+.friendRequestButton .requestsNumber {
+  color: transparent !important;
+  position: absolute !important;
+  top: 5px !important;
+  right: 5px !important;
+  left: unset !important;
+  bottom: unset !important;
+  display: flex !important;
+  align-items: center !important;
+  min-width: 6px !important;
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 50% !important;
+  overflow: hidden;
+  margin: 0px !important;
+  padding: 0px !important;
+  background-color: rgb(var(--color-accent)) !important;
+  letter-spacing: normal !important;
+  font-size: var(--size-10) !important;
+  font-weight: 400 !important;
+  line-height: 10px !important;
+}
+
+.friendRequestButton:hover .requestsNumber {
+  transform: none !important;
+}
+
+/* UNREAD MESSAGE */
+.recentChatsGroup.unreadChatsGroup .groupName {
+  margin-left: 16px !important;
+}
+
+.ChatRoomListGroupItem .FriendMessageCount, .unreadFriend .FriendMessageCount {
+  background: rgb(var(--color-accent)) !important;
+  padding: 0px !important;
+  box-shadow: 0 0 0 0 transparent !important;
+  left: 5px !important;
+  top: calc(50% - 3px) !important;
+  margin-top: 0px !important;
+  margin-right: 0px !important;
+  border-radius: 50% !important;
+  color: transparent !important;
+  font-size: var(--size-14) !important;
+  font-weight: 400 !important;
+  max-width: 6px !important;
+  max-height: 6px !important;
+}
+
+.FriendMessageCount {
+  margin: auto 2px !important;
+  line-height: 24px !important;
+  height: 24px !important;
+  width: 24px !important;
+  color: rgb(var(--color-primary)) !important;
+  font-size: var(--size-14) !important;
+  font-weight: 400 !important;
+}
+
+.unreadMessageViolator {
+  background: rgb(var(--color-accent)) !important;
+  color: rgb(var(--color-primary)) !important;
+  font-size: var(--size-14) !important;
+  font-weight: 400 !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  margin-top: 0px !important;
+  border: unset !important;
+  left: 0px !important;
+  right: 0px !important;
+  width: 100% !important;
+  height: 24px !important;
+  line-height: 24px !important;
+}
+
+/* FRIENDS LIST HEADER */
+.groupHeaderContainer {
+}
+
+/* FRIENDS LIST */
+.friendGroup .groupName {
+  margin-top: 0px !important;
+  line-height: 24px !important;
+  color: rgb(var(--color-primary)) !important;
+  font-size: var(--size-14) !important;
+  text-transform: uppercase !important;
+  border-top: unset !important;
+}
+
+.friendGroup .groupName.CompactFriendsList .friendGroup.taggedGroup .groupName, .CompactFriendsList .friendGroup.gameGroup .groupName {
+  font-size: var(--size-14) !important;
+  padding-bottom: 0px !important;
+  line-height: 24px !important;
+}
+
+.FriendsListContent .friendlistListContainer .friendGroup.onlineFriends {
+  border-top: unset !important;
+  background: transparent !important;
+  margin-top: 0px !important;
+}
+
+.FriendsListContent .friendlistListContainer .friendGroup.offlineFriends {
+  border-top: unset !important;
+  background: transparent !important;
+  margin-top: 0px !important;
+}
+
+.friendlistListContainer {
+  background: transparent !important;
+}
+
+.FriendsListContent .friendlistListContainer .friendGroup.onlineFriends .groupName, .FriendsListContent .friendlistListContainer .friendGroup.offlineFriends .groupName {
+  color: rgb(var(--color-primary)) !important;
+  text-transform: uppercase !important;
+  font-size: var(--size-14) !important;
+  font-weight: 400 !important;
+}
+
+.groupName.Panel.Focusable {
+  margin-left: 16px !important;
+}
+
+.friend .labelHolder {
+ margin-left: 16px !important;
+ height: 32px !important;
+ display: grid !important;
+ align-content: center !important;
+}
+
+.friendlistListContainer .friend .labelHolder {
+  height: fit-content !important;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-right: 0px !important;
+}
+
+.ExpandPlusMinus {
+  color: transparent !important;
+  margin: 0px !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.groupName:hover .ExpandPlusMinus, .Collapsed .ExpandPlusMinus {
+  color: transparent !important;
+  opacity: 0 !important;
+}
+
+.friendlistListContainer .ExpandPlusMinus {
+  display: none !important;
+}
+
+.groupName .groupCount {
+  color: rgb(var(--color-secondary)) !important;
+}
+
+.groupName .groupCount.collapsed {
+  opacity: !important;
+}
+
+.groupName .groupCount:not(.collapsed) {
+  opacity: 0 !important;
+}
+
+.friendGroup.offlineFriends .groupName .groupCount, .friendGroup.onlineFriends .groupName .groupCount, .friendGroup .groupName .groupCount.collapsed {
+  color: rgb(var(--color-secondary)) !important;
+}
+
+.friendGroup .groupName .groupCount {
+  font-size: var(--size-14) !important;
+  margin-left: 4px !important;
+  transform: none !important;
+}
+
+.friendStatusHover:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+.friendStatusHover:active, .friendStatusHover.Friend_ContextMenuActive {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+.friendGroup .friend, .friendGroup .SteamPlayerGroupFooter {
+  margin: 0px !important;
+  padding: 8px 16px 8px 16px !important;
+  align-items: center !important;
+  height: 32px !important;
+}
+
+.friendlistListContainer .friend .avatarHolder {
+  padding-right: 0px !important;
+}
+
+/* VOICE METER */
+.VoiceChannelParticipants .friend .avatarHolder .avatarStatus {
+  transform: none !important;
+}
+
+/* COMPACT */
+.CompactFriendsList .SteamPlayerGroupFooter .SteamPlayerGroupFooterCount {
+  width: 32px !important;
+  height: fit-content !important;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.CompactFriendsList .friend .avatarHolder {
+  width: 32px !important;
+  height: 32px !important;
+  padding-right: 0px !important;
+}
+
+.CompactFriendsList .friend, .CompactFriendsList .friendGroup .friend, .CompactFriendsList .friendGroup .SteamPlayerGroupFooter, .CompactFriendsList .friendGroup.gameGroup:not(.OtherGamesGroup) .friend {
+  height: 32px !important;
+  margin: 0px !important;
+  padding: 3px 16px !important;
+}
+
+.CompactFriendsList .friend.speaking .avatarHolder img.avatar {
+  filter: none !important;
+}
+
+.CompactFriendsList .friend .labelHolder {
+  margin-top: 0px !important;
+  height: 32px !important;
+}
+
+/* GAME GROUP */
+.friendGroup.taggedGroup, .friendGroup.gameGroup {
+  margin-top: 0px !important;
+  border-top: unset !important;
+}
+
+.gameGroup:not(.OtherGamesGroup):not(.NonSteamGamesGroup) .gameGroupContainer {
+  background-color: transparent !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  width: 24px !important;
+  height: 24px !important;
+  margin: 0px 8px 0px 0px !important;
+  display: none !important;
+}
+
+.friend.firstInGroup .SteamPlayerGroupLines, .friend.inGroup .SteamPlayerGroupLines, .friend.lastInGroup .SteamPlayerGroupLines, .SteamPlayerGroupFooter .SteamPlayerGroupLines {
+  border-width: 0px !important;
+  margin: 0px !important;
+  width: 0px !important;
+}
+
+.friend.firstInGroup .SteamPlayerGroupLines {
+  height: 0px !important;
+  margin-top: 0px;
+  border-left: unset !important;
+  border-top: unset !important;
+  border-top-left-radius: 0 !important;
+}
+
+.friendGroup.gameGroup:not(.OtherGamesGroup) .SteamPlayerGroupFooter, .friendGroup.gameGroup:not(.OtherGamesGroup) .friend {
+  padding: 8px 16px 8px 16px !important;
+}
+
+/* GROUP FOOTER */
+.SteamPlayerGroupFooter .SteamPlayerGroupFooterCount {
+  height: fit-content !important;
+  border: unset !important;
+  width: 32px !important;
+  margin: 0px !important;
+  transform: none !important;
+}
+
+.SteamPlayerGroupFooterCount .count {
+  width: 100% !important;
+  display: table-cell !important;
+  line-height: 16px !important;
+  font-weight: 400 !important;
+  font-size: var(--size-16) !important;
+  text-align: center !important;
+  color: rgb(var(--color-secondary)) !important;
+  margin-top: 0px !important;
+}
+
+.SteamPlayerGroupFooterLabel {
+  align-self: center !important;
+  padding: 0px !important;
+  vertical-align: middle !important;
+  height: initial !important;
+  margin-left: 8px !important;
+  font-size: var(--size-14) !important;
+  text-align: left !important;
+  color: rgb(var(--color-secondary)) !important;
+  -webkit-mask: none !important;
+  width: calc(100% - 72px) !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+}
+
+/* GROUPED FRIENDS */
+.FriendInGameIcon {
+  line-height: 54px !important;
+  width: 24px !important;
+  height: 24px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  margin: 0px 8px 0px 0px !important;
+  background-color: transparent !important;
+  display: none !important;
+}
+
+.groupName .gameGroupContainer .groupIcon, .FriendInGameIcon img {
+  width: 24px !important;
+  height: 24px !important;
+  margin: 0px !important;
+  border-radius: 0px !important;
+  border: unset !important;
+}
+
+/* INVITES */
+.friendGroup.friendOutgoingRequests .groupName, .friendGroup.friendRequests .groupName {
+  padding: 0px !important;
+  line-height: 32px !important;
+}
+
+/* GROUP CHATS HEADER */
+.friendsListSectionTitle {
+  color: rgb(var(--color-primary)) !important;
+}
+
+.ToggleGroupChatList {
+  width: 0px !important;
+  padding: 0px !important;
+}
+
+.FriendsListChatSection.ChatRoomListContainerParent.Collapsed .ToggleGroupChatList .SVGIcon_DoubleArrow, .ToggleGroupChatList .SVGIcon_DoubleArrow {
+  color: rgb(var(--color-white)) !important;
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.ToggleGroupChatList .SVGIcon_DoubleArrow polyline {
+  stroke: rgb(var(--color-white)) !important;
+}
+
+.groupChatSectionTitle {
+  font-weight: 400 !important;
+}
+
+.friendsListSectionTitle.chatSectionTitle .groupChatSectionTitle {
+  padding-top: 0px !important;
+  margin-top: 0px !important;
+  margin-left: 16px !important;
+  font-weight: 400 !important;
+  font-size: var(--size-14) !important;
+}
+
+.createChatRoomButton {
+  color: rgb(var(--color-white)) !important;
+  margin-top: 0px !important;
+  padding: 0px !important;
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  border: unset !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 16px !important;
+  background-image: var(--icon-add-list) !important;
+}
+
+.createChatRoomButton, .createChatRoomButton:hover, .createChatRoomButton:active {
+  background-color: transparent !important;
+}
+
+.createChatRoomButton:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+.createChatRoomButton:active {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+.friendsListSectionTitle .SVGIcon_NewChatGroup line {
+  display: none !important;
+  stroke: rgb(var(--color-white)) !important;
+}
+
+.friendsListSectionTitle .SVGIcon_NewChatGroup {
+  display: none !important;
+  fill: transparent !important;
+  stroke: rgb(var(--color-white)) !important;
+}
+
+.friendsListSectionTitle.chatSectionTitle {
+  height: 32px !important;
+  border: unset !important;
+}
+
+.friendsListSectionTitle.chatSectionTitle, .friendsListSectionTitle.chatSectionTitle:hover {
+  background-color: transparent !important;
+}
+
+.voiceRoomDragBar {
+  align-items: center !important;
+}
+
+/* UNREAD INDICATOR */
+.chatSectionTitle .ChatUnreadMessageIndicator .chatUnreadCircle, .ChatRoomListGroupItem_header .ChatUnreadMessageIndicator .chatUnreadCircle,.friendCategoryContainer .ChatUnreadMessageIndicator .chatUnreadCircle {
+  left: 5px !important;
+  top: calc(50% - 3px) !important;
+  margin: 0px !important;
+  position: absolute !important;
+}
+
+/* GROUP CHATS LIST */
+._17ewzMiLZXQiOFFbpXAZdw {
+  display: none !important;
+}
+
+.chatRoomListContainer {
+  background: transparent !important;
+}
+
+.ChatRoomListGroupItem {
+  background-color: transparent !important;
+}
+
+.ChatRoomListGroupItem_header {
+  background-color: transparent !important;
+  margin: 0px !important;
+  padding: 8px 16px !important;
+}
+
+.ChatRoomListGroupItem_header:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+.ChatRoomListGroupItem_header:active {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+.ChatRoomList {
+  padding-top: 0px !important;
+}
+
+.ChatRoomListGroupItem .groupNameStatusContainer .chatRoomName {
+  margin-left: 0px !important;
+}
+
+.ChatRoomListGroupItem:not(.NonGroupHovered) .ChatRoomListGroupItem_header:hover .chatRoomName {
+  color: rgb(var(--color-primary)) !important;
+  font-size: var(--size-14) !important;
+  font-weight: 400 !important;
+}
+
+.ChatRoomListGroupItem .ChatRoomListGroupItem_header .chatRoomName {
+  color: rgb(var(--color-primary)) !important;
+  font-size: var(--size-14) !important;
+  font-weight: 400 !important;
+}
+
+.ChatRoomListGroupItemChatRooms .chatRoomVoiceChannel:not(.ActiveVoiceChannel):hover {
+  background-color: transparent !important;
+}
+
+.ChatRoomListGroupItem .ChatRoomMultiFriendAvatar.Small {
+  width: 32px !important;
+  height: 32px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.ChatRoomListGroupItem .ChatRoomGroupAvatar.HasAvatar {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.ChatRoomListGroupItem .ChatRoomGroupAvatar {
+  width: 32px !important;
+  height: 32px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.ChatRoomListGroupItem .ChatRoomGroupAvatar .ChatRoomGroupAvatar_initials {
+  width: 32px !important;
+  height: 32px !important;
+  padding-top: 0px !important;
+  border-width: 0px !important;
+  line-height: 32px !important;
+}
+
+.ChatRoomGroupAvatar.Smaller .ChatRoomGroupAvatar_initials {
+  font-size: var(--size-14) !important;
+}
+
+.ChatRoomMultiFriendAvatar {
+  margin: 0px !important;
+  background: transparent !important;
+  border: unset !important;
+  border-radius: 50% !important;
+  background-color: rgba(var(--color-accent), 0.5) !important;
+}
+
+.ChatRoomGroupAvatar {
+  margin: 0px !important;
+  background: transparent !important;
+  border-radius: 50% !important;
+  border: unset !important;
+  background-color: rgba(var(--color-accent), 0.5) !important;
+}
+
+.groupNameStatusContainer {
+  padding-left: 0px !important;
+  margin-left: 12px !important;
+}
+
+.HasLinkedBroadcast .groupNameStatusContainer {
+  margin-left: 4px !important;
+}
+
+.ChatRoomListGroupItem .openGroupButton {
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  width: 32px !important;
+  height: 32px !important;
+  margin: 0px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 16px !important;
+  background-image: var(--icon-chevron-down) !important;
+}
+
+.ChatRoomListGroupItem.ShowAllChannels .openGroupButton {
+  transform: rotateZ(180deg) !important;
+}
+
+.ChatRoomListGroupItem .openGroupButton:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+.ChatRoomListGroupItem .openGroupButton:active {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+.openGroupButton .SVGIcon_DoubleArrow {
+  width: 32px !important;
+  height: 32px !important;
+  margin: 0px !important;
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.ChatRoomListGroupItem .openGroupButton .SVGIcon_DoubleArrow polyline {
+  stroke: rgb(var(--color-white)) !important;
+}
+
+.ChatRoomListGroupItem.HasLinkedBroadcast .groupNameStatusContainer .displayRow {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.ChatRoomListGroupItem.HasLinkedBroadcast .steamTVSubtitle {
+  color: rgb(var(--color-primary)) !important;
+  margin-left: 32px !important;
+  font-size: var(--size-14) !important;
+  margin-left: 12px !important;
+  left: unset !important;
+  top: unset !important;
+  position: relative !important;
+}
+
+.ChatRoomListGroupItem.HasLinkedBroadcast .steamTVSubtitle::before {
+  content: "(STEAM TV" !important;
+  color: rgb(var(--color-primary)) !important;
+}
+
+.ChatRoomListGroupItem.HasLinkedBroadcast .steamTVSubtitle::after {
+  content: ")" !important;
+  color: rgb(var(--color-primary)) !important;
+}
+
+.ChatRoomListGroupItem.HasLinkedBroadcast .SVGIcon_SteamTV {
+  display: none !important;
+}
+
+.ChatRoomListGroupItem.HasLinkedBroadcast .SVGIcon_SteamTV .logoBG {
+  fill: transparent !important;
+  stroke: rgb(var(--color-white)) !important;
+}
+
+.ChatRoomListGroupItem.HasLinkedBroadcast .SVGIcon_SteamTV .logo g path {
+  fill: transparent !important;
+  stroke: rgb(var(--color-white)) !important;
+}
+
+.ChatRoomListGroupItem.HasLinkedBroadcast .SVGIcon_SteamTV .steam path {
+  fill: rgb(var(--color-white)) !important;
+}
+
+.ChatRoomListGroupItem.HasLinkedBroadcast .SVGIcon_SteamTV .tv path {
+  fill: rgb(var(--color-white)) !important;
+}
+
+.ChatRoomListGroupItem .detailsView {
+  background-color: transparent !important;
+}
+
+.ChatRoomListGroupItem:hover .detailsView {
+}
+
+.ChatRoomListGroupItem:active .detailsView {
+}
+
+.ChatRoomListGroupItem.ShowAllChannels .detailsView:hover {
+}
+
+.ChatRoomListGroupItem.ShowAllChannels .detailsView:active {
+}
+
+.friendsListContainer .chatRoomVoiceChannelName {
+  margin: 0px 16px !important;
+  text-align: center !important;
+}
+
+.friendsListContainer .CompactFriendsList .chatRoomVoiceChannelNameContainer {
+  height: 32px !important;
+  line-height: 32px !important;
+}
+
+/* COMPACT */
+.compactView .ChatRoomListGroupItem .ChatRoomGroupAvatar {
+  height: 32px !important;
+  width: 32px !important;
+}
+
+.compactView .ChatRoomListGroupItem .ChatRoomMultiFriendAvatar.Small {
+  height: 32px !important;
+  width: 32px !important;
+  border-width: 0px !important;
+}
+
+.compactView .ChatRoomListGroupItem .ChatRoomGroupAvatar .ChatRoomGroupAvatar_initials {
+  width: 32px !important;
+  height: 32px !important;
+  padding-top: 0px !important;
+  border-width: 0px !important;
+  line-height: 32px !important;
+}
+
+.compactView .ChatRoomListGroupItem .groupNameStatusContainer .chatRoomName {
+  margin-left: 0px !important;
+}
+
+.compactView .ChatRoomListGroupItem_header {
+  padding: 3px 16px !important;
+}
+
+.compactView .ChatRoomListGroupItem.HasLinkedBroadcast .groupNameStatusContainer .displayRow {
+  margin-bottom: 0px !important;
+}
+
+.compactView .ChatRoomListGroupItem.HasLinkedBroadcast .steamTVSubtitle {
+  left: unset !important;
+  top: unset !important;
+  margin-left: 8px !important;
+  position: relative !important;
+}
+
+/* CHAT ROOM DROP DOWN */
+.ChatRoomListGroupItemChatRooms {
+  margin-left: 0px !important;
+  font-size: var(--size-14) !important;
+}
+
+.ChatRoomListGroupItem .chatRoomVoiceChannel {
+  border: unset !important;
+}
+
+.ChatRoomListGroupItem.ShowAllChannels .detailsView {
+  padding: 0px !important;
+  border-bottom: unset !important;
+}
+
+.ChatRoomListGroupItemChatRooms .chatRoomVoiceChannel.ActiveVoiceChannel {
+  background-color: transparent !important;
+  border-radius: 0px !important;
+}
+
+.ChatRoomListGroupItemChatRooms .chatRoomVoiceChannel.ActiveVoiceChannel::before, .ChatRoomListGroupItemChatRooms .chatRoomVoiceChannel.ActiveVoiceChannel::after {
+  content: "" !important;
+  position: absolute !important;
+  z-index: -1 !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+}
+
+.ChatRoomListGroupItemChatRooms .chatRoomVoiceChannel.ActiveVoiceChannel::before {
+  background-color: rgba(var(--color-black), 0.75) !important;
+  backdrop-filter: blur(var(--option-blur-radius)) !important;
+  background-blend-mode: exclusion !important;
+}
+
+.ChatRoomListGroupItemChatRooms .chatRoomVoiceChannel.ActiveVoiceChannel::after {
+  background-image: var(--image-acrylic) !important;
+}
+
+.chatRoomVoiceChannelNameContainer {
+  padding-top: 0px !important;
+  height: 32px !important;
+}
+
+div:not(.ActiveVoiceChannel) > .chatRoomVoiceChannelNameContainer:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+div:not(.ActiveVoiceChannel) > .chatRoomVoiceChannelNameContainer:active {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+.chatRoomVoiceChannel.ActiveVoiceChannel .chatRoomVoiceChannelNameContainer .VoiceControlPanelButton {
+  border-radius: 0px !important;
+  width: 38px !important;
+  height: 38px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 16px !important;
+  background-image: var(--icon-navigation) !important;
+}
+
+.VoiceChannelParticipants.CompactFriendsList {
+}
+
+.DropTarget.chatRoomVoiceChannel.ActiveVoiceChannel.Panel.Focusable .VoiceChannelParticipants.CompactFriendsList {
+  margin-top: 0px !important;
+}
+
+.chatRoomGroupNavColumn .DropTarget.chatRoomVoiceChannel.ActiveVoiceChannel.Panel.Focusable .VoiceChannelParticipants.CompactFriendsList {
+  margin-top: 0px !important;
+}
+
+.chatRoomVoiceChannel.ActiveVoiceChannel .VoiceControlPanelButton .SVGIcon_Button {
+  fill: rgb(var(--color-white)) !important;
+  display: none !important;
+}
+
+.VoiceControlPanelButton.chatPinRoom {
+  width: 32px !important;
+  height: 32px !important;
+  margin-top: 0px !important;
+}
+
+.chatRoomVoiceChannelIconGlow {
+  background: transparent !important;
+  width: 0px !important;
+  height: 0px !important;
+}
+
+.chatRoomVoiceChannel {
+  margin: 0px !important;
+  width: 100% !important;
+}
+
+.chatRoomVoiceChannel.ActiveVoiceChannel {
+  width: 100% !important;
+}
+
+.ChatRoomListGroupItem .chatRoomVoiceChannelIcon {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  display: none !important;
+}
+
+.ChatRoomListGroupItem .chatRoomVoiceChannelName {
+  font-size: var(--size-14) !important;
+  color: rgb(var(--color-primary)) !important;
+}
+
+.chatRoomVoiceChannelName, .chatRoomTextChannel, .chatRoomDirectMessageEntry {
+  border: unset !important;
+}
+
+.chatRoomVoiceChannelName, .chatRoomTextChannelName, .chatRoomGroupName {
+  margin-top: 0px !important;
+  margin-right: 0px !important;
+}
+
+.emptyChannelNotice.Visible {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  height: 24px !important;
+  line-height: 24px !important;
+}
+
+.emptyChannelNotice {
+  color: rgb(var(--color-secondary)) !important;
+  font-size: var(--size-10) !important;
+  margin-left: 16px !important;
+  font-weight: 400 !important;
+}
+
+.chatRoomVoiceChannel.ActiveVoiceChannel .activeVoiceFlexBox {
+  height: 32px !important;
+}
+
+.chatRoomVoiceChannel.ActiveVoiceChannel .activeVoiceControls {
+  background: transparent !important;
+  margin-top: 0px !important;
+}
+
+.chatRoomVoiceChannel.ActiveVoiceChannel .VoiceControlPanelButton.chatEndVoiceChat {
+  border-left: unset !important;
+  min-width: 32px !important;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.chatRoomVoiceChannel.ActiveVoiceChannel .activeVoiceButtons button .VoiceControlPanelButton, .chatRoomVoiceChannel.ActiveVoiceChannel .activeVoiceButtons button {
+  background-color: transparent !important;
+  width: 32px !important;
+  height: 32px !important;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  margin: 0px !important;
+}
+
+.chatRoomVoiceChannel .chatRoomTextChannel {
+  min-width: 32px !important;
+  min-height: 32px !important;
+}
+
+.chatRoomVoiceChannel.ActiveVoiceChannel .VoiceControlPanelButton.chatEndVoiceChat {
+  min-width: 32px !important;
+  min-height: 32px !important;
+}
+
+.chatRoomVoiceChannel .chatRoomTextChannel .chatRoomTextChannelIcon .SVGIcon_TextRoom {
+  width: 32px !important;
+  height: 32px !important;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  margin-top: 0px !important;
+  margin: 0px !important;
+}
+
+.chatRoomVoiceChannel .SVGIcon_TextRoom .TextLines, .chatRoomVoiceChannel .SVGIcon_TextRoom .ScratchPad {
+  display: none !important;
+}
+
+.chatRoomVoiceChannel.ActiveVoiceChannel .VoiceControlPanelButton .SVGIcon_Button.SVGIcon_VoiceRoom {
+  width: 32px !important;
+  height: 32px !important;
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+  transform: none !important;
+  display: none !important;
+}
+
+.chatRoomVoiceChannel.ActiveVoiceChannel .activeVoiceButtons {
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.activeVoiceButtons {
+  padding-right: 0px !important;
+}
+
+.activeVoiceButtons button {
+  border-radius: 0px !important;
+}
+
+.chatRoomVoiceChannel .chatRoomTextChannel {
+  right: 32px !important;
+  background-color: transparent !important;
+}
+
+.chatRoomVoiceChannel .chatRoomTextChannel:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+.chatRoomVoiceChannel .chatRoomTextChannel:active {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+.ScratchPadConnect {
+  display: none !important;
+  width: 32px !important;
+  height: 32px !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  background-image: var(--icon-notes) !important;
+  background-position: center !important;
+  background-size: 16px !important;
+  background-repeat: no-repeat !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  top: unset !important;
+  right: unset !important;
+}
+
+.InsetWindowOpen .ActiveVoiceChannel .ScratchPadConnect {
+  display: block !important;
+}
+
+/* GO TO CHANNEL BUTTON */
+.chatRoomVoiceChannel .chatRoomTextChannel .chatRoomTextChannelIcon {
+  width: 32px !important;
+  height: 32px !important;
+  margin: 0px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 16px !important;
+  background-image: var(--icon-chat-bubbles) !important;
+  color: transparent !important;
+}
+
+/* END VOICE CHAT BUTTON */
+.chatRoomVoiceChannel.ActiveVoiceChannel .VoiceControlPanelButton.chatEndVoiceChat {
+  width: 32px !important;
+  height: 32px !important;
+  margin: 0px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 16px !important;
+  background-image: var(--icon-chat-leave) !important;
+  color: transparent !important;
+}
+
+/* VOICE ICONS */
+.VoiceIconCtn, .VoiceIconCtn:hover, .VoiceIconCtn:active {
+  color: transparent !important;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.VoiceIconCtn:hover SVG, .VoiceIconCtn:active SVG {
+  color: transparent !important;
+}
+
+.chatRoomVoiceChannel.ActiveVoiceChannel .VoiceControlPanelButton.chatEndVoiceChat:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+.chatRoomVoiceChannel.ActiveVoiceChannel .VoiceControlPanelButton.chatEndVoiceChat:active {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+/* USER LIST AFTER REFRESH */
+.VoiceChannelParticipants .friend {
+  margin-top: 0px !important;
+  height: 38px !important;
+  padding: 8px 16px !important;
+}
+
+.VoiceChannelParticipants.CompactFriendsList .friend {
+  margin-top: 0px !important;
+  height: 32px !important;
+  padding: 3px 16px !important;
+}
+
+.VoiceChannelParticipants.CompactFriendsList:hover {
+  background-color: rgba(var(--color-white), 0.1) !important;
+}
+
+.VoiceChannelParticipants.CompactFriendsList:active {
+  background-color: rgba(var(--color-white), 0.2) !important;
+}
+
+.VoiceChannelParticipants .friend {
+  filter: none !important;
+}
+
+/* FOOTER */
+.friendListFooter {
+  background-color: transparent !important;
+  min-height: 0px !important;
+  display: none !important;
+}
+
+/* OFFLINE CONTAINER */
+._2HYiy2iyfdo7xMy_a1Cjhq {
+  background-color: transparent !important;
+}
+
+._2Wp_Z_M5YNw610Y0lVh5TR {
+  max-width: 324px !important;
+  padding: 16px !important;
+}
+
+._2Wp_Z_M5YNw610Y0lVh5TR .nKXfubhpv_zmmMcEsbg0B {
+  color: rgb(var(--color-primary)) !important;
+  font-weight: 400 !important;
+  font-size: var(--size-14) !important;
+  line-height: 24px !important;
+  margin: 16px 0px !important;
+}
+
+._2Wp_Z_M5YNw610Y0lVh5TR ._2JaMGV2vMu6X_6e2UKmrf_ {
+  color: rgb(var(--color-secondary)) !important;
+  font-weight: 400 !important;
+  font-size: var(--size-12) !important;
+  line-height: 16px !important;
+  margin: 0px 0px 16px 0px !important;
+}
+
+._2Wp_Z_M5YNw610Y0lVh5TR ._1BUWXzey55_H5QKdz6Olrn {
+  background: transparent !important;
+  background-color: rgba(var(--color-white), 0.2) !important;
+  color: rgb(var(--color-primary)) !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+  height: 32px !important;
+  border-radius: 0px !important;
+  width: 100% !important;
+}
+
+._2Wp_Z_M5YNw610Y0lVh5TR ._1BUWXzey55_H5QKdz6Olrn:hover {
+  background-color: rgba(var(--color-white), 0.3) !important;
+  color: rgb(var(--color-primary)) !important;
+  outline: 2px solid rgba(var(--color-white), 0.5) !important;
+  outline-offset: -2px !important;
+}
+
+._2Wp_Z_M5YNw610Y0lVh5TR ._1BUWXzey55_H5QKdz6Olrn:active {
+  background-color: rgba(var(--color-white), 0.4) !important;
+  color: rgb(var(--color-primary)) !important;
+  outline: 2px solid transparent !important;
+  outline-offset: -2px !important;
+}

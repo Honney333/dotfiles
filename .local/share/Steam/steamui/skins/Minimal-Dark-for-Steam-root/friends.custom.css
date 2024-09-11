@@ -1,0 +1,1716 @@
+@import url('config.css');
+
+* {
+	cursor: default !important;
+}
+
+.friendsui-container .title-area .title-bar-actions {
+    margin-right: 3px;
+    margin-top: 1px;
+}
+
+.friendsui-container .title-area-icon .SVGIcon_X_Line {
+	display: none;
+}
+
+.friendsui-container .title-bar-actions .title-area-icon.closeButton {
+    color: var(--minimal_dark_transparent);
+    background-color: var(--minimal_dark_topgrey);
+    -webkit-mask-image: var(--minimal_dark_closebutton);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    transform: scale(0.4);
+}
+
+.friendsui-container .title-bar-actions .title-area-icon.closeButton:hover {
+    color: var(--minimal_dark_transparent);
+    background-color: var(--minimal_dark_red);
+    -webkit-mask-image: var(--minimal_dark_closebutton);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    transform: scale(0.4);
+}
+
+.friendsui-container .title-bar-actions .title-area-icon.closeButton:active {
+    color: var(--minimal_dark_transparent);
+    background-color: var(--minimal_dark_red1);
+    -webkit-mask-image: var(--minimal_dark_closebutton);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    transform: scale(0.3);
+}
+
+.DesktopUI .title-area-icon:hover, .friendsui-container .title-area-icon:hover {
+    background: var(--minimal_dark_blacker);
+    transition: background .15s ease-out;
+}
+
+.friendsui-container .title-bar-actions .title-area-icon.maximizeButton {
+    color: var(--minimal_dark_transparent);
+    background-color: var(--minimal_dark_topgrey);
+    -webkit-mask-image: var(--minimal_dark_maxbutton);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    transform: scale(0.5);
+}
+
+.friendsui-container .title-bar-actions .title-area-icon.maximizeButton:hover {
+    color: var(--minimal_dark_transparent);
+    background-color: var(--minimal_dark_color);
+    -webkit-mask-image: var(--minimal_dark_maxbutton);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    transform: scale(0.5);
+}
+
+.friendsui-container .title-bar-actions .title-area-icon.maximizeButton:active {
+    color: var(--minimal_dark_transparent);
+    background-color: var(--minimal_dark_white);
+    -webkit-mask-image: var(--minimal_dark_maxbutton);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    transform: scale(0.4);
+}
+
+.friendsui-container .title-bar-actions .title-area-icon.minimizeButton {
+    color: var(--minimal_dark_transparent);
+    background-color: var(--minimal_dark_topgrey);
+    -webkit-mask-image: var(--minimal_dark_minbutton);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    transform: scale(0.35);
+	margin-bottom: -2px;
+}
+
+.friendsui-container .title-bar-actions .title-area-icon.minimizeButton:hover {
+    color: var(--minimal_dark_transparent);
+    background-color: var(--minimal_dark_color);
+    -webkit-mask-image: var(--minimal_dark_minbutton);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    transform: scale(0.35);
+	margin-bottom: -2px;
+}
+
+.friendsui-container .title-bar-actions .title-area-icon.minimizeButton:active {
+    color: var(--minimal_dark_transparent);
+    background-color: var(--minimal_dark_white);
+    -webkit-mask-image: var(--minimal_dark_minbutton);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    transform: scale(0.3);
+	margin-bottom: -2px;
+}
+
+.friendsui-container .title-bar-actions .title-area-icon.restoreButton {
+    color: var(--minimal_dark_transparent);
+    background-color: var(--minimal_dark_topgrey);
+    -webkit-mask-image: var(--minimal_dark_restorebutton);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    transform: scale(0.62);
+}
+
+.friendsui-container .title-bar-actions .title-area-icon.restoreButton:hover {
+    color: var(--minimal_dark_transparent);
+    background-color: var(--minimal_dark_color);
+    -webkit-mask-image: var(--minimal_dark_restorebutton);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    transform: scale(0.62);
+}
+
+.friendsui-container .title-bar-actions .title-area-icon.restoreButton:active {
+    color: var(--minimal_dark_transparent);
+    background-color: var(--minimal_dark_white);
+    -webkit-mask-image: var(--minimal_dark_restorebutton);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    transform: scale(0.57);
+}
+
+.friendsui-container ::-webkit-scrollbar-button:vertical:increment,.friendsui-container ::-webkit-scrollbar-button:vertical:decrement {
+	display:none !important;
+}
+
+.friendsui-container ::-webkit-scrollbar-thumb {
+	background-color: var(--minimal_dark_be_grey) !important;
+	border: 4.5px solid transparent !important;
+    border-radius: 20px !important;
+}
+
+.friendsui-container ::-webkit-scrollbar-thumb:hover {
+	background-color: var(--minimal_dark_color) !important;
+	border-radius:20px !important;
+}
+
+.friendlistListContainer {
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    flex-grow: 1;
+    background: var(--minimal_dark_blacker_alt);
+    min-height: 32px;
+}
+
+.friendListHeaderContainer {
+    min-height: 84px;
+    background-color: var(--minimal_dark_blacker_alt);
+    border-bottom: none;
+    box-shadow: inset rgba(61,68,80,.75) 1px 1px 1px 0px, inset rgba(61,68,80,.25) -1px 0px 1px 0px;
+    position: relative;
+    user-select: none;
+    cursor: default;
+    flex-shrink: 0;
+}
+
+.activeTab {
+    background-color: transparent;
+    box-shadow: none !important;
+    color: var(--minimal_dark_less_white);
+    border-bottom: 1px solid var(--minimal_dark_be_grey);
+}
+
+.friendSearchInput[type="text"] {
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 2px 2px 8px #00000075;
+    border: 0px solid transparent;
+    background-color: var(--minimal_dark_black);
+    color: var(--minimal_dark_less_white);
+    font-size: 12px;
+    letter-spacing: .5px;
+    padding-left: 24px;
+    transition-property: background-position,box-shadow,background-color,color,padding;
+    transition-duration: .32s;
+    transition-timing-function: ease-in-out;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAkFBMVEX///9JW1tQU1ZPVFZPU1ZPU1ZPVFdPU1ZPT1hPUlZPU1ZPU1ZOU1ZPU1ZOUlVOU1ZPU1ZQVFdPU1ZPU1ZOU1WAgIBPU1ZQVFZPU1dQU1ZPU1ZQU1dPU1ZPU1VOU1VPVFZPVFhPU1ZOTllPU1VPU1ZOU1dPU1ZNVVVQU1YAAABPU1ZQUFBPUlZOUlZPU1VPU1borkgUAAAAL3RSTlMADly05Ple0x2b/vrQkU6pu0aO73ICcb2iU/WQrMJv6D39F7n83d4enQHuEJ5/zh5EjbMAAAAJcEhZcwAACxIAAAsSAdLdfvwAAADcSURBVDjL5ZPXDoJAEEVBwd5QEbBh73r+/+9cYzSwu+Dqk8Z5m5uT6WNZP2V2oei44DrFgp3Hlco8rVzKxCrVGtQbzVar2ahDrVrJ4NoiTse7O15HOG092YVe3394fr8HXW19Iu8gKQxEdk2ddgChn1T8EAK19wiGXlryhhAp4AjGsjaGkQJOYCprU5goYAwzWZtBrIBzWMjaAuafRzSu0bhr4zkab8Z418r1LFcZ1yPd41o4m62lJ9MXLmy315OpnznkkokvPJ5yyeR4/pjc794iz6+5G3kx4r7DrlHAK3/NAfF8AAAAAElFTkSuQmCC);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 6px 4px;
+}
+
+.friendListFooter {
+    position: relative;
+    min-height: 26px;
+    background-color: var(--minimal_dark_blacker_alt);
+    flex-shrink: 0;
+    box-shadow: inset rgba(61,68,80,.3) 1px 1px 0px 0px;
+}
+
+.chatRoomListContainer {
+    background: radial-gradient(ellipse farthest-corner at 20% 30%, #0a0b0d 0%, #25333a 0%, #182024 100%);
+    background: var(--minimal_dark_blacker_alt);
+    flex-shrink: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.friendsListSectionTitle {
+    background-color: var(--minimal_dark_blacker_alt);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
+    user-select: none;
+    cursor: default;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+    color: var(--minimal_dark_less_white) !important;
+    padding: 0;
+    position: relative;
+    border-top: 1px solid var(--minimal_dark_be_grey);
+}
+
+.friendsListSectionTitle.chatSectionTitle:hover {
+    background-color: var(--minimal_dark_blacker) !important;
+    border-top: 1px solid var(--minimal_dark_color) !important;
+}
+
+.titleBarContainer.ChatTabs {
+    background-color: var(--minimal_dark_blacker_alt) !important;
+    border: none;
+    border-bottom: none;
+    border-left: none;
+    box-shadow: inset 1px 1px 0px rgba(71,71,71,.3); !important;
+}
+
+.chattabs_ChatTab_2Vrcp.chattabs_Active_Lrqoj {
+    background-color: var(--minimal_dark_black) !important;
+    border-top: 1px solid var(--minimal_dark_color) !important;
+}
+
+.chatWindow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-word;
+    background: var(--minimal_dark_blacker_alt) !important;
+    font-size: 14px;
+}
+
+.chatWindow .chatEntry {
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: var(--minimal_dark_blacker) !important;
+    transition: all .21s ease-in-out;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chatWindow .chatHeader {
+    background: var(--minimal_dark_blacker) !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+
+._2gP0DqVyb1aEACymAe6if3 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: var(--minimal_dark_blacker_alt);
+    box-shadow: inset 0px 0px 4px #000;
+    outline-width: 0px;
+    color: #aaa;
+    border: 0px solid transparent;
+    padding-right: 2px;
+    border-radius: 5px !important;
+}
+
+._1IEiKQnjHpIv-m601y6hvP.K-lPMiafCuZRqjfXykujt {
+    flex: 0;
+    min-width: 46px;
+    position: relative;
+    background-color: var(--minimal_dark_black) !important;
+    margin: 0px;
+    margin-top: 0px;
+    max-width: 46px;
+    max-height: 46px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+
+._1IEiKQnjHpIv-m601y6hvP._24xNxnnkSf6A1WY3MnCCeg {
+    flex: 0;
+    min-width: 46px;
+    position: relative;
+    background-color: var(--minimal_dark_black);
+    margin: 0px;
+    margin-top: 0px;
+    max-width: 46px;
+    max-height: 46px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+
+.K-lPMiafCuZRqjfXykujt:hover, .K-lPMiafCuZRqjfXykujt:focus {
+    background-color: var(--minimal_dark_be_grey);
+    color: #fff;
+}
+
+.VoiceToggle {
+    background: var(--minimal_dark_blacker_alt) !important;
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+    border-radius: 5px !important;
+}
+
+._2gP0DqVyb1aEACymAe6if3 ._1IEiKQnjHpIv-m601y6hvP {
+    align-self: flex-end;
+    min-height: 46px;
+    margin-bottom: 2px;
+    background: var(--minimal_dark_blacker_alt);
+    transition: background .3s ease;
+    border: none;
+}
+
+.FriendsListContent .friendlistListContainer .friendGroup.onlineFriends {
+    border-top: .5px solid rgb(15 165 224 / 0%);
+    background: linear-gradient(to bottom, rgba(72, 87, 112, 0) 0, rgba(67, 73, 83, 0) 320px);
+    margin-top: 8px;
+}
+
+.FriendsListContent .friendlistListContainer .friendGroup.offlineFriends {
+    border-top: .5px solid rgba(143 143 143 / 0%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0, rgba(67, 73, 83, 0) 320px);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(67, 73, 83, 0) 320px);
+    margin-top: 8px;
+}
+
+._1IEiKQnjHpIv-m601y6hvP._24xNxnnkSf6A1WY3MnCCeg:hover, ._1IEiKQnjHpIv-m601y6hvP._24xNxnnkSf6A1WY3MnCCeg:focus {
+    background-color: var(--minimal_dark_be_grey);
+    color: #fff;
+}
+
+.VoiceToggle.Inactive:hover {
+    background-color: var(--minimal_dark_be_grey);
+}
+
+.chatFileUploadPreviewContainer {
+    background: var(--minimal_dark_black) !important;
+    border-radius: 5px !important;
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+}
+
+.messages_MsgWithAddons_32Uri:hover {
+    background-color: var(--minimal_dark_black);
+}
+
+.DialogContent, .DialogContentTransition {
+    background: var(--minimal_dark_blacker_alt);
+    user-select: none;
+}
+
+button.DialogButton {
+    background: var(--minimal_dark_black);
+}
+
+button.DialogButton:hover, button.DialogButton.gpfocus {
+    background: var(--minimal_dark_be_grey);
+    color: #fff;
+}
+
+.DialogTextInputBase:not(:disabled):hover {
+    background: var(--minimal_dark_be_grey);
+}
+
+.DesktopUI .DialogTextInputBase:focus, .DialogTextInputBase:focus-within {
+    background: var(--minimal_dark_blacker);
+    box-shadow: inset 1px 1px 4px #000a;
+    padding-left: 11px;
+}
+
+.MultiUserChat .isCurrentUser .msgText {
+    color: #6dcff6;
+}
+
+.msgText {
+    color: var(--minimal_dark_browser_overlay_close);
+    overflow: hidden;
+}
+
+/* context menu ? */
+
+.friendsui-container .contextMenuItem {
+	border-top:0 !important;
+	color: var(--minimal_dark_less_white) !important;
+}
+
+.friendsui-container .contextMenuGameName {
+	color: var(--minimal_dark_white);
+}
+
+.friendsui-container .recentName {
+	color: var(--minimal_dark_light_blue);
+}
+
+.friendsui-container .contextMenuItem:hover, .friendsui-container .contextMenuItem._1KPWUt7wYWSfD3V7sYpsyT {
+	background: var(--minimal_dark_be_grey) !important;
+}
+
+.friendsui-container .contextMenuGameTitle,.friendsui-container .contextMenuSectionContent,.friendsui-container .contextMenuGameOptions {
+	background: var(--minimal_dark_blacker_alt) !important;
+}
+
+.friendsui-container .LQkrbbayZPY11qHm01t7F {
+	background: var(--minimal_dark_black) !important;
+	border: 1px solid var(--minimal_dark_be_grey) !important;
+	border-radius: 5px !important;
+}
+
+.friendSearchInput[type="text"]:focus {
+    background-color: var(--minimal_dark_black);
+    box-shadow: inset 0px 1px 4px #000000aa;
+    outline-width: 0px;
+    color: white;
+    padding-left: 28px;
+    background-position: 4px 4px;
+}
+
+.chattabs_CloseButton_7gMwY:hover .SVGIcon_X_Line line {
+    stroke: var(--minimal_dark_red2);
+    stroke-width: 30px;
+}
+
+.chatTabSelector {
+    background: var(--minimal_dark_blacker_alt) !important;
+    width: 24px !important;
+    border-radius: 5px !important;
+    margin-left: 8px !important;
+    margin-top: 3px !important;
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+}
+
+.chatTabSelector:hover {
+    background: var(--minimal_dark_black) !important;
+}
+
+.messages_SpeakerName_Online_7B6M2 {
+    color: var(--minimal_dark_topgrey);
+    font-weight: 500;
+}
+
+.isCurrentUser .messages_SpeakerName_Online_7B6M2 {
+    color: var(--minimal_dark_topgrey);
+    font-weight: 500;
+}
+
+.friendsListSectionTitle .SVGIcon_NewChatGroup {
+    fill: var(--minimal_dark_less_white) !important;
+}
+
+.ToggleGroupChatList .SVGIcon_DoubleArrow polyline {
+    stroke: var(--minimal_dark_less_white) !important;
+}
+
+.ChatRoomListGroupItem:hover .ChatRoomListGroupItem_header {
+    background-color: var(--minimal_dark_black) !important;
+}
+
+.currentUserContainer {
+    padding-right: 24px;
+    border-bottom: 0px solid rgba(67,73,83,.3);
+}
+
+._17ewzMiLZXQiOFFbpXAZdw {
+    display: none;
+}
+
+.chatRoomButton .SVGIcon_Button {
+    fill: var(--minimal_dark_lightgrey) !important;
+}
+
+.inviteAnotherFriendButton .SVGIcon_Button line, .chatRoomButton .SVGIcon_Button line {
+    stroke: var(--minimal_dark_greygrey) !important;
+}
+
+.inviteAnotherFriendButton:hover .SVGIcon_Button line, .chatRoomButton:hover:not(.Disabled) .SVGIcon_Button line {
+    stroke: var(--minimal_dark_color) !important;
+}
+
+.pagedcontent_Nav_1Vqsn {
+    background: var(--minimal_dark_blacker) !important;
+}
+
+.pagedcontent_Content_2mJpA {
+    background: var(--minimal_dark_blacker_alt) !important;
+}
+
+.inviteLinkContainer .DialogInput_Wrapper._DialogLayout {
+    background: none !important;
+}
+
+.inviteLinkContainer .DialogDropDown._DialogInputContainer {
+    background-color: var(--minimal_dark_black) !important;
+}
+
+.inviteLinkContainer .DialogDropDown._DialogInputContainer:hover {
+    color: #fff;
+    background-color: var(--minimal_dark_be_grey) !important;
+}
+
+.inviteLinkContainer .DialogInputLabelGroup .DialogInput {
+    background: var(--minimal_dark_black) !important;
+}
+
+.DialogTextInputBase:disabled, .DialogTextInputBase:read-only {
+    color: var(--minimal_dark_progress_bar) !important;
+}
+
+.inviteAnotherFriendButton:hover, .chatRoomButton:hover:not(.Disabled) .SVGIcon_Button:hover {
+    fill: var(--minimal_dark_color) !important;
+}
+
+.chatRoomGroupHeaderName {
+    font-size: 14px;
+}
+
+.chatRoomGroupHeaderName {
+    color: var(--minimal_dark_greygrey) !important;
+}
+
+.ToggleGroupChatList {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.FriendsListChatSection.ChatRoomListContainerParent.Collapsed .ToggleGroupChatList .SVGIcon_DoubleArrow {
+    transform: rotateZ(90deg) !important;
+    transition: all .2s ease-in-out;
+}
+
+.FriendsListChatSection.ChatRoomListContainerParent .ToggleGroupChatList .SVGIcon_DoubleArrow {
+    transition: all .2s ease-in-out;
+    transform: rotate(-90deg) !important;
+}
+
+.ScrollToBottomButton>span {
+    background: rgba(var(--minimal_dark_color_rgba),.25);
+    color: var(--minimal_dark_less_white) !important;
+    backdrop-filter: blur(15px);
+}
+
+.chatRoomTextChannel.ActiveTextChannel {
+    background-color: #2e3c44;
+    background-color: var(--minimal_dark_black) !important;
+}
+
+.ChannelTypeTitle {
+    color: var(--minimal_dark_less_white) !important;
+}
+
+.chatRoomGroupNavColumn .chatRoomGroupNavCollapseExpand {
+    margin-right: 6px;
+    right: -12px;
+}
+
+.ChannelTypeTitle .ChannelTypeLabel:hover:not(.NoPermission) {
+    color: var(--minimal_dark_color);
+}
+
+.chatRoomGroupHeaderTagline {
+    color: var(--minimal_dark_browser_overlay_close) !important;
+}
+
+.friendsui-container .SVGIcon_Pin.Pinned .head {
+    fill: var(--minimal_dark_red2) !important;
+}
+.friendsui-container .SVGIcon_Pin .head {
+    stroke: var(--minimal_dark_invisblegrey) !important;
+}
+
+.ChatRoomAddRoomBtn .SVGIcon_PlusCircle {
+    stroke: var(--minimal_dark_color) !important;
+}
+
+.friendsui-container .SVGIcon_Pin .head {
+    fill: var(--minimal_dark_red2) !important;
+    stroke: var(--minimal_dark_invisblegrey) !important;
+}
+
+.friendsui-container .SVGIcon_Pin .point {
+	transition: all .21s ease-in-out;
+    fill: var(--minimal_dark_less_white) !important;
+}
+
+.friendsui-container .SVGIcon_Pin:hover {
+    filter: brightness(1.5);
+}
+
+.chatRoomGroupNavCollapsed .chatRoomTextChannel.ActiveTextChannel:hover {
+    background: var(--minimal_dark_color) !important;
+}
+
+.namedGroup .chatRoomGroupHeader {
+    /* padding: 0px 3px 3px 5px; */
+    padding: 6px 12px 6px 12px !important
+}
+
+.ChatRoomAddRoomBtn:hover:not(.NoPermission) .SVGIcon_PlusCircle {
+    filter: brightness(1.2);
+}
+
+.groupName:hover .ExpandPlusMinus .SVGIcon_PlusCircle line {
+    stroke: var(--minimal_dark_color);
+}
+
+.addFriendButton:hover .SVGIcon_AddFriend .friendHead, .addFriendButton:hover .SVGIcon_AddFriend .friendBody {
+    color: var(--minimal_dark_color);
+}
+
+.friendsListSectionTitle .createChatRoomButton:hover .SVGIcon_NewChatGroup {
+    fill: var(--minimal_dark_color) !important;
+}
+
+.friendsListSectionTitle .SVGIcon_NewChatGroup:hover line {
+    stroke: white !important;
+}
+
+.ExpandPlusMinus .SVGIcon_PlusCircle {
+    margin-left: -5px !important;
+	transform: scale(1.25) !important;
+}
+
+.friendGroup .groupName {
+    margin-left: 15px !important;
+    padding-bottom: 10px !important;
+    margin-top: 0px !important;
+}
+
+.friendlistListContainer .friend .avatarHolder .avatarStatus, .FriendNotificationsDialog .friend .avatarHolder .avatarStatus {
+    /* display: block; */
+	display: none !important;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    left: 29px;
+    bottom: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 5px !important;
+}
+
+._2nrSdZqzl3e01VZleoVaWp {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 30px);
+}
+
+.titleBarContainer .currentUserContainer ._27M2GicEvwcoEI5R0FSKi9 ._1k82NiWym4STegDGxRBHz2 {
+    margin-top: 0px;
+    opacity: .75;
+}
+
+.groupMemberList ._27M2GicEvwcoEI5R0FSKi9 ._1k82NiWym4STegDGxRBHz2 {
+    font-size: 12px;
+}
+
+.CompactFriendsList .friend .avatarHolder .avatarStatus {
+	display:none !important;
+}
+
+.msg.serverMsg .msgText {
+    display: none !important;
+}
+
+.chattabs_CloseButton_7gMwY {
+    width: 14px;
+    height: 14px;
+}
+
+.online ._1yIzy56YfJIliF6ykwhP2r {
+    /* background: linear-gradient(to bottom, #6dcff6 0%, #6dcff6 30%, #6dcff6 70%, #6dcff6 100%) !important; */
+    background: transparent !important;
+	box-shadow: none !important;
+}
+
+.ingame ._1yIzy56YfJIliF6ykwhP2r {
+    /* background: linear-gradient(to bottom, #8cd61d 0%, #a1f410 30%, #a1f410 70%, #8cd61d 100%) !important; */
+    background: transparent !important;
+}
+
+.ingame.awayOrSnooze ._1yIzy56YfJIliF6ykwhP2r {
+    /* background: orange !important; */
+	background: transparent !important;
+}
+
+.awayOrSnooze ._1yIzy56YfJIliF6ykwhP2r {
+    /* background: orange !important; */
+	background: transparent !important;
+}
+
+.offline ._1yIzy56YfJIliF6ykwhP2r {
+    /* background: #7a7a7a !important; */
+    background: transparent !important;
+}
+
+.chattabs_ChatTabContent_Friend_2ZiZ7 .friend .avatarHolder .avatarStatus {
+    right: 1px !important;
+    top: 1px !important;
+    width: 6px !important;
+    height: 6px !important;
+}
+
+._3atbNcPD1_nRVTjOvryjWe ._338kJp62vHY5iDbsraaiKD {
+    display: none !important;
+}
+
+._2nrSdZqzl3e01VZleoVaWp {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 30px);
+    margin-left: 0px !important;
+}
+
+._3atbNcPD1_nRVTjOvryjWe ._338kJp62vHY5iDbsraaiKD {
+    display: none !important;
+}
+
+._2nrSdZqzl3e01VZleoVaWp {
+    margin-left: 0px !important;
+}
+
+.friend.firstInGroup .SteamPlayerGroupLines {
+    height: 24px;
+    margin-top: 18px;
+    border-left: 1px solid var(--minimal_dark_color);
+    border-top: 1px solid var(--minimal_dark_color);
+    border-top-left-radius: 6px;
+}
+
+.friend.lastInGroup .SteamPlayerGroupLines, .SteamPlayerGroupFooter .SteamPlayerGroupLines {
+    height: 24px;
+    border-left: 1px solid var(--minimal_dark_color);
+    border-bottom: 1px solid var(--minimal_dark_color);
+    margin-top: -15px;
+    border-bottom-left-radius: 6px;
+}
+
+.speakerTimeStamp {
+    color: var(--minimal_dark_less_white) !important;
+}
+
+._3EzTyjJx_tZUEIHygPwAeC.online ._1DArl3Gs9lXPcZdmCIlDJa {
+    color: orange !important;
+}
+
+.awayOrSnooze ._1k82NiWym4STegDGxRBHz2 {
+    color: orange !important;
+	opacity: .75 !important;
+}
+
+._1YsWjZbxFewllb2PX6ZhNm._3pGV8dWHnZMYHcytHxo6pw {
+    margin-top: -2px;
+    margin-left: -1px;
+    opacity: .75;
+}
+
+
+
+.awayOrSnooze .r62qzcdJQ0qezZglOtiUX {
+    color: orange !important;
+}
+
+._1YsWjZbxFewllb2PX6ZhNm.online .SVGIcon_MobilePhone path {
+    fill: #4c91ac !important;
+}
+
+._1YsWjZbxFewllb2PX6ZhNm.awayOrSnooze .SVGIcon_MobilePhone path {
+    fill: orange !important;
+}
+
+.MultiUserChat .msg:not(.ChatMsgSlashEmote) {
+    padding-left: 36px;
+}
+
+._3EzTyjJx_tZUEIHygPwAeC.in-game ._1DArl3Gs9lXPcZdmCIlDJa {
+    color: orange !important;
+}
+
+.chatDialogs {
+    background: var(--minimal_dark_blacker_alt) !important;
+}
+
+.singleWindowDivider {
+    background-color: var(--minimal_dark_so_black) !important;
+}
+
+.resizingSingleWindow .singleWindowDivider, .singleWindowDivider:hover {
+    background-color: var(--minimal_dark_be_grey) !important;
+}
+
+._1ZlvfuG4Q4e9GfTYNuNI5b, ._3Z36hMlC0g5rhADc86JeV8 ._1ZlvfuG4Q4e9GfTYNuNI5b {
+    color: var(--minimal_dark_color) !important;
+}
+
+.X2iywwN7fcdh9zXpXVsrk {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-top: 1px solid var(--minimal_dark_greyblack1) !important;
+    margin-left: 6px !important;
+    border-radius: 5px !important;
+    border-left: 1px solid var(--minimal_dark_be_grey) !important;
+    border-right: 1px solid var(--minimal_dark_be_grey) !important;
+    border-bottom: 1px solid var(--minimal_dark_be_grey) !important;
+	height: 40px !important;
+	margin: 2px 0px 2px 6px !important;
+}
+
+.X2iywwN7fcdh9zXpXVsrk._1BNlZUYDbVr8VhCTmq7ksk {
+    border: 1px solid var(--minimal_dark_color) !important;
+    border-radius: 5px !important;
+    height: 40px !important;
+    margin: 2px 0px 2px 6px !important;
+    background: radial-gradient(circle, rgba(2,0,36,0) -147%, rgba(var(--minimal_dark_color_rgba),.1) 100%) !important;
+    background-color: var(--minimal_dark_blacker_alt) !important;
+}
+
+.X2iywwN7fcdh9zXpXVsrk._1BNlZUYDbVr8VhCTmq7ksk:before, .X2iywwN7fcdh9zXpXVsrk._1BNlZUYDbVr8VhCTmq7ksk+.X2iywwN7fcdh9zXpXVsrk:before, .X2iywwN7fcdh9zXpXVsrk._1BNlZUYDbVr8VhCTmq7ksk:last-of-type:after, .X2iywwN7fcdh9zXpXVsrk:first-of-type:before {
+    display: none !important;
+}
+
+.X2iywwN7fcdh9zXpXVsrk::before, .X2iywwN7fcdh9zXpXVsrk:last-of-type::after {
+    background: var(--minimal_dark_be_grey) !important;
+    top: 0px !important;
+    bottom: 0px !important;
+    width: 1px !important;
+	display: none !important;
+}
+
+.VUHcmgCbu1oxey7ydJHP2 {
+    background-color: var(--minimal_dark_blacker) !important;
+    background: var(--minimal_dark_blacker) !important;
+    box-shadow: none !important;
+    padding: 0px !important;
+}
+
+._3kEgIPZCMTtXeWWzzRLo4K:hover {
+    background-color: var(--minimal_dark_black) !important;
+    border-radius: 5px !important;
+}
+
+.inviteAnotherFriendButton:hover .SVGIcon_Button {
+    fill: var(--minimal_dark_color) !important;
+}
+
+.FriendChatTypingNotification {
+    background-color: none !important;
+    background: none !important;
+}
+
+._1IEiKQnjHpIv-m601y6hvP:not(._2GM2kkVRqL-SdkG4oQjUzY) .SVGIcon_Button.SVGIcon_Submit path {
+    fill: var(--minimal_dark_color) !important;
+}
+
+._2gP0DqVyb1aEACymAe6if3 ._1IEiKQnjHpIv-m601y6hvP:not(._2GM2kkVRqL-SdkG4oQjUzY) {
+    background: none !important;
+}
+
+._3o6fvTcJst7E2CI8mm7R5T {
+    background: var(--minimal_dark_blacker) !important;
+}
+
+.APT8A-fjMRZ55HRAs5T1i {
+    background: none !important;
+}
+
+._DialogRow._DialogRowBackground {
+    background: var(--minimal_dark_blacker) !important;
+}
+
+.DialogSpanningTable.BannedUsersTable tr.hoverRow, .DialogSpanningTable.InvitedUsersTable tr.hoverRow, .DialogSpanningTable.InviteLinksTable tbody tr {
+    background: var(--minimal_dark_blacker) !important;
+}
+
+._1IEiKQnjHpIv-m601y6hvP:not(._2GM2kkVRqL-SdkG4oQjUzY) .SVGIcon_Button.SVGIcon_Submit path:hover {
+    fill: rgba(var(--minimal_dark_color_rgba), 1) !important;
+    filter: brightness(1.25) !important;
+}
+
+.confirmInviteRequestContainer .confirmInviteButton {
+    background-color: var(--minimal_dark_black) !important;
+	border-radius: 5px !important;
+}
+
+.confirmInviteRequestContainer .confirmInviteButton:hover {
+    background-color: var(--minimal_dark_be_grey) !important;
+}
+
+.friendInviteButton.bright.acceptFriendInvite, .friendInviteButton.bright.declineFriendInvite {
+    background-color: var(--minimal_dark_black) !important;
+}
+
+.friendInviteButton.bright.acceptFriendInvite:hover, .friendInviteButton.bright.declineFriendInvite:hover {
+    background-color: var(--minimal_dark_be_grey) !important;
+}
+
+.confirmInviteButton.confirmInvites {
+    background: var(--minimal_dark_color) !important;
+    color: white !important;
+	text-shadow: 0px 1px 4px black;
+}
+
+.friendRequestButton:hover .SVGIcon_FriendRequest .friendHead, .friendRequestButton:hover .SVGIcon_FriendRequest .friendArm, .friendRequestButton:hover .SVGIcon_FriendRequest .friendBody, .friendRequestButton:hover .SVGIcon_FriendRequest .friendBodyFull {
+    fill: var(--minimal_dark_color) !important;
+}
+
+.TabSearchButton:hover .ColorSelector {
+    stroke: var(--minimal_dark_color) !important;
+    fill: var(--minimal_dark_color) !important;
+}
+
+.friendSearchClear .SVGIcon_X_Line line {
+    stroke: var(--minimal_dark_white) !important;
+}
+
+.socialInputContainer .friendSearchInput[type="text"] {
+    border-radius: 5px !important;
+}
+
+.TabSearchButton:hover {
+    background-color: transparent !important;
+}
+
+.friendGroup .friend, .friendGroup .SteamPlayerGroupFooter {
+    margin: 2px 16px 2px 16px !important;
+    border: 1px solid #262626c9 !important;
+    border-radius: 5px !important;
+    padding-right: 12px !important;
+}
+
+.friendStatusHover.online:hover, .friendStatusHover.online.Friend_ContextMenuActive {
+    border-radius: 5px !important;
+    border: 1px solid rgb(109 207 246 / 20%)  !important;
+}
+
+.friendStatusHover.offline:hover, .friendStatusHover.offline.Friend_ContextMenuActive {
+    background-color: rgb(64 64 64 / 20%) !important;
+    border-radius: 5px !important;
+    border: 1px solid rgb(122 122 122 / 30%) !important;
+}
+
+.addFriendButton:hover .SVGIcon_AddFriend .plusCircle {
+    color: var(--minimal_dark_browser_overlay_close) !important;
+}
+
+.friendStatusHover.ingame:hover, .friendStatusHover.ingame.Friend_ContextMenuActive {
+    border: 1px solid rgb(227 255 194 / 20%) !important;
+    border-radius: 5px !important;
+}
+
+.friendStatusHover.awayOrSnooze:hover, .friendStatusHover.awayOrSnooze.Friend_ContextMenuActive {
+    border: 1px solid rgb(255 192 76 / 20%) !important;
+    border-radius: 5px !important;
+    background-color: rgb(255 192 76 / 2%) !important;
+}
+
+.friendGroup.gameGroup:not(.OtherGamesGroup) .SteamPlayerGroupFooter, .friendGroup.gameGroup:not(.OtherGamesGroup) .friend {
+    padding: 2px 0px 2px 20px !important;
+}
+
+.ChatMessageEntryVoice {
+    border-radius: 5px !important;
+}
+
+._1X1-nhi0oX1Wy7y1mEIc1o, ._3grea2u6WuuGLHj9gJFmzY {
+    border-radius: 5px !important;
+}
+
+.pewyBQoFSgFWo_Ms99aRm {
+    padding-left: 10px !important;
+}
+
+._2HYiy2iyfdo7xMy_a1Cjhq {
+    background-color: var(--minimal_dark_blacker_alt) !important;
+}
+
+._2Wp_Z_M5YNw610Y0lVh5TR ._1BUWXzey55_H5QKdz6Olrn {
+    background: var(--minimal_dark_be_grey) !important;
+    border: 1px solid var(--minimal_dark_color) !important;
+    border-radius: 5px !important;
+}
+
+._2Wp_Z_M5YNw610Y0lVh5TR ._1BUWXzey55_H5QKdz6Olrn:hover {
+    background: rgba(var(--minimal_dark_color_rgba),.75) !important;
+}
+
+._2Wp_Z_M5YNw610Y0lVh5TR ._1BUWXzey55_H5QKdz6Olrn:active {
+    background: rgba(var(--minimal_dark_color_rgba),.25) !important;
+}
+
+._2Wp_Z_M5YNw610Y0lVh5TR .nKXfubhpv_zmmMcEsbg0B {
+    color: var(--minimal_dark_red2) !important;
+}
+
+._1p_QrI3ixF-RAwnxad9pEm {
+    border-radius: 5px !important;
+}
+
+html.client_chat_frame body {
+    /* background: var(--minimal_dark_blacker_alt) !important; */
+    background: transparent !important;
+    border-radius: 5px !important;
+}
+
+html.web_chat_frame body {
+    background: var(--minimal_dark_blacker_alt) !important;
+    /* background: transparent !important; */
+    border-radius: 5px !important;
+}
+
+.HoverPositionPopup .miniProfileHoverInner {
+    border-radius: 5px !important;
+	border: 1px solid var(--minimal_dark_be_grey) !important;
+}
+
+._2SW_Y5HHBZR-uC8LI36lQM {
+    background-color: transparent !important;
+}
+
+._3QoRRxsgnDolcCPCrAPm47 {
+    width: 326px !important;
+    height: auto !important;
+}
+
+._3QoRRxsgnDolcCPCrAPm47 .TzmYo1OP0E5U3PkUBq2zY {
+    height: auto !important;
+}
+
+.SRcc1TnUvlXq7c7R6TRb ._2kAtv5HfuuXs5emJMlmah7 {
+    background-color: rgba(var(--minimal_dark_color_rgba),.25) !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 9px !important;
+    color: var(--minimal_dark_color) !important;
+    font-weight: 400 !important;
+    text-shadow: 0px 2px 3px rgb(0 0 0 / 30%) !important;
+    font-size: 11px !important;
+    border-radius: 5px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    border: 2px solid var(--minimal_dark_blacker) !important;
+}
+
+.SRcc1TnUvlXq7c7R6TRb ._2kAtv5HfuuXs5emJMlmah7 .o_39qE2DKxFG3q0A-UZCM {
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+}
+
+.SRcc1TnUvlXq7c7R6TRb ._2kAtv5HfuuXs5emJMlmah7:hover {
+    color: white !important;
+    text-shadow: 2px 1px 1px rgb(0 0 0 / 30%) !important;
+    background-color: rgba(var(--minimal_dark_color_rgba),1) !important;
+	border: 2px solid var(--minimal_dark_be_grey) !important;
+	border-radius: 5px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+._3uFt_Oop_phBX9z6ihWdKR {
+    color: var(--minimal_dark_color) !important;
+}
+
+._2NVbSaqD0yWMMczl37cIAE {
+    background-color: var(--minimal_dark_black) !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    border: 2px solid var(--minimal_dark_be_grey) !important;
+}
+
+._1Bb6hYT7xcWUmYUrQmo6nl {
+    border-radius: 5px !important;
+    border: 2px solid var(--minimal_dark_be_grey) !important;
+}
+
+._3o7CShdvV_024QlCPNanTb.IqjmSkutoVlArzd8wO2Xa {
+    background-color: var(--minimal_dark_black) !important;
+    border-radius: 5px !important;
+    color: white !important;
+}
+
+._3o7CShdvV_024QlCPNanTb.IqjmSkutoVlArzd8wO2Xa:hover {
+    background-color: var(--minimal_dark_be_grey) !important;
+    border-radius: 5px !important;
+    color: white !important;
+}
+
+.qOHK85tePDcrS6OEMTwm2 {
+    padding: 2px !important;
+    background-color: var(--minimal_dark_be_grey) !important;
+    border-radius: 5px !important;
+}
+
+.qOHK85tePDcrS6OEMTwm2 .TwOz2KVAfp2GEs9Mve3r- {
+    background-color: var(--minimal_dark_blacker) !important;
+	border-radius: 5px !important;
+	border: 2px solid var(--minimal_dark_be_grey) !important
+}
+
+._2NVbSaqD0yWMMczl37cIAE.ZF6iJ9yWqNVdzAbXdJ_sR:hover {
+    background-color: var(--minimal_dark_be_grey) !important;
+	border: 2px solid var(--minimal_dark_color) !important;
+}
+
+._22LMC4oK3LB708upCdiF7L .I3s3okfGPF7NnDguZz-by {
+    background-color: var(--minimal_dark_blacker_alt) !important;
+    border-radius: 5px !important;
+}
+
+._1Kiq19PmYWDOc9bBZN33cj {
+    background-color: var(--minimal_dark_black) !important;
+    border-radius: 5px !important;
+}
+
+._33TDStSlMjInp-NnLby0r8 ._1sqgWu-dTq9FLrOuXhpEjr, ._33TDStSlMjInp-NnLby0r8 ._3MoFsAdYDk6q_0Lm2zAGSa {
+    background-color: var(--minimal_dark_black) !important;
+}
+
+.DialogSlider_Grabber {
+    background: var(--minimal_dark_color) !important;
+    box-shadow: 0px 0px 0px 2px rgb(0 0 0 / 40%) !important;
+}
+
+.DialogSlider_Value {
+    background: var(--minimal_dark_color) !important;
+}
+
+._22LMC4oK3LB708upCdiF7L .I3s3okfGPF7NnDguZz-by .K3lo5ez7fmmWgDQ1yQP4B {
+    background-color: var(--minimal_dark_blacker_alt) !important;
+}
+
+.chatFileUploadProgressContainer {
+    background: var(--minimal_dark_blacker_alt) !important;
+    border-radius: 5px !important;
+	border: 1px solid var(--minimal_dark_be_grey) !important;
+	box-shadow: none !important;
+}
+
+button.DialogButton.Primary {
+    background: var(--minimal_dark_color) !important;
+    border-radius: 5px !important;
+}
+
+.BBCodeAlreadyCollapsedText {
+    background-color: var(--minimal_dark_blacker) !important;
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+}
+
+.BBCodeAlreadyCollapsed.Minimized:hover .BBCodeAlreadyCollapsedText, .BBCodeResizableComponent.Minimized:hover .BBCodeCollapsed {
+    background-color: var(--minimal_dark_be_grey) !important;
+    color: #fff;
+}
+
+.friendsui-container .statusHeaderGlow {
+	opacity:.6 !important;
+}
+
+.friendsui-container [class*=ingame] .statusHeaderGlow stop:first-child {
+    stop-color: #9aff23 !important;
+    stop-opacity: .6 !important;
+}
+
+.friendsui-container [class*=ingame] .statusHeaderGlow stop:last-child {
+	stop-color: #9aff23 !important;
+}
+
+.friendsui-container [class*=online] .statusHeaderGlow stop:first-child {
+	stop-color: #6dcff6 !important;
+	stop-opacity: .6 !important;
+}
+
+.friendsui-container [class*=online] .statusHeaderGlow stop:last-child {
+	stop-color: #6dcff6 !important;
+}
+
+.friendsui-container [class*=offline] .statusHeaderGlow stop:first-child {
+	stop-color: #a0a0a0 !important;
+	stop-opacity: .6 !important;
+}
+
+.friendsui-container [class*=offline] .statusHeaderGlow stop:last-child {
+	stop-color: #a0a0a0 !important;
+}
+
+.friendsui-container [class*=away] .statusHeaderGlow stop:first-child {
+	stop-color: orange !important;
+	stop-opacity:.6 !important;
+}
+
+.friendsui-container [class*=away] .statusHeaderGlow stop:last-child {
+	stop-color: orange !important;
+}
+
+.inviteAnotherFriendButton {
+    background-color: var(--minimal_dark_blacker_alt) !important;
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+}
+
+.inviteAnotherFriendButton .SVGIcon_Button {
+    fill: var(--minimal_dark_be_grey) !important;
+}
+
+._1AMAp6cciTbpuVe8FTH3rK {
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+    border-radius: 5px !important;
+}
+
+.ChatTabs.HasWindowControls {
+    height: 43px !important;
+    padding-left: 9px !important;
+}
+
+.chatTabSelector .SVGIcon_DownArrowContextMenu {
+    margin-left: 6px !important;
+    margin-top: 14px !important;
+}
+
+._18EIcuUAoTtqjzcDzsTcdy:hover .SVGIcon_X_Line line {
+    stroke: var(--minimal_dark_red2) !important;
+}
+
+.unreadMessageViolator {
+    color: white !important;
+    background: #1919194f !important;
+    height: 28px !important;
+    top: 109px !important;
+    border-radius: 5px !important;
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+    /* line-height: 24px !important; */
+    left: 5px !important;
+    backdrop-filter: blur(25px) !important;
+}
+
+.unreadMessageViolator:hover {
+    filter: brightness(1.1) !important;
+    color: var(--minimal_dark_color) !important;
+    background: #1919194f !important;
+    height: 28px !important;
+    top: 109px !important;
+    border-radius: 5px !important;
+    border: 1px solid var(--minimal_dark_color) !important;
+    /* line-height: 24px !important; */
+    left: 5px !important;
+    backdrop-filter: blur(25px) !important;
+}
+
+._2z-o5GLHkTjJrgQAgz2uqh {
+    background: radial-gradient(ellipse farthest-corner at 98% 90%, rgba(var(--minimal_dark_color_rgba), 0.8) 0%, rgba(var(--minimal_dark_color_rgba), 0.2) 40%, rgba(233, 154, 35, 0) 70%) !important;
+	border-radius: 5px !important
+}
+
+._2NKkBU2gEImqo4YaPQ9Lck {
+    display: none !important;
+}
+
+.ChatRoomListGroupItem .FriendMessageCount, .unreadFriend .FriendMessageCount {
+    /* background: rgba(var(--minimal_dark_color_rgba),.35) !important; */
+    /* box-shadow: 0 0 14px 1px rgba(var(--minimal_dark_color_rgba),.5) !important; */
+    border-radius: 20px !important;
+}
+
+.friend .labelHolder {
+    width: 10px !important;
+}
+
+.friendGroup.taggedGroup, .friendGroup.gameGroup {
+    border-top: none !important;
+    margin-top: 12px !important;
+}
+
+.friendGroup .groupName .groupCount {
+    color: rgb(68 209 131 / 85%) !important;
+    opacity: 1 !important;
+    margin-left: 10px !important;
+}
+
+.gameGroup .gameGroupContainer {
+    display: flex;
+    color: #c5d6d4 !important;
+	/* rgb(68 209 131 / 85%) !important; */
+}
+
+.friendGroup.gameGroup .groupName {
+    color: #c5d6d4 !important;
+	/* color: rgb(68 209 131 / 85%) !important; */
+    padding-right: 10px !important;
+}
+
+.FriendsListContent .friendlistListContainer .friendGroup.offlineFriends .groupName {
+    color: #c5d6d4 !important;
+	/* color: rgb(133 133 133 / 100%) !important; */
+}
+
+.FriendsListContent .friendlistListContainer .friendGroup.onlineFriends .groupName {
+    color: #c5d6d4 !important;
+	/* color: rgb(109 207 246 / 75%) !important; */
+}
+
+.FriendsListContent .friendlistListContainer .friendGroup.ingameFriends .groupName {
+    color: #c5d6d4 !important;
+	/* color: rgb(145 194 87 / 75%) !important; */
+}
+
+.friendGroup.onlineFriends .groupName .groupCount, .friendGroup .groupName .groupCount.collapsed {
+    opacity: 1;
+    transform: translateX(0px);
+    color: rgb(109 207 246 / 75%) !important;
+}
+
+.friendGroup.offlineFriends .groupName .groupCount, .friendGroup .groupName .groupCount.collapsed {
+    opacity: 1;
+    transform: translateX(0px);
+    color: rgb(129 129 129 / 75%) !important;
+}
+
+.recentChatsGroup .friendGroup .groupName, .friendGroup.taggedGroup .groupName {
+    color: #c5d6d4 !important;
+	/* color: rgb(255 218 38 / 75%) !important; */
+}
+
+.recentChatsGroup .friendGroup .groupName .groupCount {
+    color: rgb(255 218 38 / 75%) !important;
+}
+
+.socialListTab .tabLabel {
+    opacity: 0 !important;
+}
+
+.AvatarAndUser {
+    padding-left: 26px !important;
+    padding-top: 9px !important;
+    padding-bottom: 0px !important;
+    transform: scale(1) !important;
+}
+
+.currentUserContainer .r62qzcdJQ0qezZglOtiUX {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.titleBarContainer .currentUserContainer ._1k82NiWym4STegDGxRBHz2 {
+    font-size: 14px !important;
+}
+
+.currentUserAvatar {
+    width: 58px !important;
+    height: 0px !important;
+    transform: scale(1.5) !important;
+    filter: brightness(1.1) !important;
+}
+
+.currentUserAvatar:hover {
+    width: 58px !important;
+    height: 0px !important;
+    transform: scale(1.48) !important;
+    filter: brightness(1.2);
+}
+
+.socialInputContainer .inputContainer {
+    padding-left: 85px !important;
+}
+
+.title-area-highlight {
+    background: var(--minimal_dark_color) !important;
+}
+
+.currentUserContainer .labelHolder {
+    margin-top: 16px !important;
+}
+
+:not(.friendInviteContainer) .awayOrSnooze .ContextMenuButton .SVGIcon_DownArrowContextMenu {
+    fill: orange !important;
+}
+
+._3kEgIPZCMTtXeWWzzRLo4K ._3nIwHFIw4nSXC_DUrzO_a6 {
+    background: var(--minimal_dark_blacker_alt) !important;
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+    border-radius: 5px !important;
+}
+
+.msg.isCurrentUser.ChatMessageErrorSending {
+    background: linear-gradient(to bottom, rgba(68, 44, 44, 0.4) 0%, rgba(61, 22, 22, 0.2) 60%, rgba(66, 58, 58, 0.05) 100%);
+    border-radius: 5px !important;
+    border: 1px dashed var(--minimal_dark_redsettings) !important;
+}
+
+.msg.isCurrentUser.ChatMessageErrorSending .msgText {
+    color: var(--minimal_dark_redsettings) !important;
+}
+
+.ChatMessageErrorSendingAlert {
+    background-color: #f1244624 !important;
+    color: var(--minimal_dark_red2) !important;
+}
+
+._3n80SfAwzFqelSuprYLFQv {
+    height: 44px !important;
+}
+
+.X2iywwN7fcdh9zXpXVsrk:hover:not(._1BNlZUYDbVr8VhCTmq7ksk) {
+    background-color: var(--minimal_dark_black) !important;
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+    border-bottom: 1px solid var(--minimal_dark_color) !important;
+}
+
+.timeDivision.time_passes .preHorizDivider, .timeDivision.time_passes .horizDivider {
+    border: 1px dashed rgba(var(--minimal_dark_color_rgba),0.5) !important;
+	margin-right: -6px !important;
+}
+
+.friendInviteBlockContainer .DialogCheckbox {
+    border-radius: 12px !important;
+}
+
+.friendInviteBlockContainer .blockCommunicationLabel {
+    color: var(--minimal_dark_redsettings) !important;
+}
+
+.confirmInviteRequestContainer .cancelAddFriends {
+    top: 11px !important;
+    right: 5px !important;
+    width: 24px !important;
+    height: 20px !important;
+}
+
+.quickAccessFriends:not(.emptyQuickAccess) {
+    padding-top: 32px !important;
+    padding-left: 14px !important;
+}
+
+._3Ule3rolhZJiBN4yNNtk1s {
+    background-color: var(--minimal_dark_blacker_alt) !important;
+    padding-right: 2px;
+    border-radius: 5px !important;
+}
+
+._3Ule3rolhZJiBN4yNNtk1s .RVIs84dAE6wHcjH9tkinc {
+    background: transparent !important;
+    border-radius: 5px !important;
+    border: transparent !important;
+}
+
+._2XZq-_f6npaQdAgeRzKIkz {
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+    margin-right: 10px !important;
+    border-radius: 5px !important;
+}
+
+._2XZq-_f6npaQdAgeRzKIkz:before, ._2XZq-_f6npaQdAgeRzKIkz:last-of-type:after {
+    background: transparent !important;
+}
+
+.HorizontalMiniSliderScroll {
+    overflow-x: initial !important;
+}
+
+._2QPdq7GZ_03AD1ioPixVXW {
+    border-radius: 5px !important;
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+	transition: all 0.2s ease-out !important;
+}
+
+._2XZq-_f6npaQdAgeRzKIkz:hover:not(.Yd-DsWkYiFiYwpci--Yk_) {
+    background-color: var(--minimal_dark_black) !important;
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+    transition: all 0.2s ease-out !important;
+    border-bottom: 1px solid var(--minimal_dark_color) !important;
+}
+
+._2XZq-_f6npaQdAgeRzKIkz.Yd-DsWkYiFiYwpci--Yk_:hover {
+    background-color: var(--minimal_dark_black) !important;
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+    border-radius: 5px !important;
+	transition: all 0.2s ease-out !important;
+	border-bottom: 1px solid var(--minimal_dark_color) !important;
+}
+
+._2XZq-_f6npaQdAgeRzKIkz.Yd-DsWkYiFiYwpci--Yk_ {
+    background-color: var(--minimal_dark_black) !important;
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+    border-radius: 5px !important;
+    border-bottom: 1px solid var(--minimal_dark_color) !important;
+    transition: all 0.2s ease-out !important;
+}
+
+.RVIs84dAE6wHcjH9tkinc:not(.jaQN2IyN4P8LZXJ6P11qy):focus .SVGIcon_Button.SVGIcon_Submit path, .RVIs84dAE6wHcjH9tkinc:not(.jaQN2IyN4P8LZXJ6P11qy):hover .SVGIcon_Button.SVGIcon_Submit path, .RVIs84dAE6wHcjH9tkinc:not(.jaQN2IyN4P8LZXJ6P11qy) .SVGIcon_Button.SVGIcon_Submit path {
+    fill: var(--minimal_dark_color) !important;
+}
+
+.Aupswi7-c-w3XwNO5cp2i:hover, .Aupswi7-c-w3XwNO5cp2i:focus {
+    background-color: var(--minimal_dark_be_grey) !important;
+    color: #fff;
+}
+
+.RVIs84dAE6wHcjH9tkinc {
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+}
+
+._1DsumfIa3MlkzUV9EXY5W9.online ._2n0EiKMGRP-r_BI5tDtttu {
+    color: orange !important;
+}
+
+.online .awayOrSnooze .nOdcT-MoOaXGePXLyPe0H {
+    color: #f7a24b !important;
+}
+
+.online .awayOrSnooze ._2Ri005Wg_uXDTa71kdRbcN {
+    color: #cd9a5a !important;
+}
+
+._1DsumfIa3MlkzUV9EXY5W9.in-game ._2n0EiKMGRP-r_BI5tDtttu {
+    color: orange !important;
+}
+
+.GreenEnvelopeMenu, .PP7LM0Ow1K5qkR8WElLpt {
+    background: var(--minimal_dark_blacker_alt) !important;
+	border-radius: 5px !important;
+	padding: 0px !important;
+}
+
+.friend.awayOrSnooze .labelHolder {
+    opacity: 1 !important;
+}
+
+/* .ingame .awayOrSnooze .nOdcT-MoOaXGePXLyPe0H { */
+    /* color: #f7a24b !important; */
+/* } */
+
+._3QoRRxsgnDolcCPCrAPm47 ._25tjYDzXV5ikVRTYuo3gkg.online.awayOrSnooze .drAAsgW-ufgBGjQ4mIfiJ, ._3QoRRxsgnDolcCPCrAPm47 ._25tjYDzXV5ikVRTYuo3gkg.online.awayOrSnooze ._2TAMH-SbRqivpq6WNRR-VH {
+    color: var(--minimal_dark_orange) !important;
+}
+
+._3QoRRxsgnDolcCPCrAPm47 ._25tjYDzXV5ikVRTYuo3gkg.online.awayOrSnooze ._1oD1aSbwaTNwncgaVdaSv8 ._1nBxb6NZrm5NL86Cmgo4g2 {
+    color: #f7a24b !important;
+}
+
+._3QoRRxsgnDolcCPCrAPm47 ._25tjYDzXV5ikVRTYuo3gkg.in-game.awayOrSnooze ._1oD1aSbwaTNwncgaVdaSv8 ._1nBxb6NZrm5NL86Cmgo4g2 {
+    color: #f7a24b !important;
+}
+
+._3QoRRxsgnDolcCPCrAPm47 ._25tjYDzXV5ikVRTYuo3gkg.in-game.awayOrSnooze .K3kJzGQ5wihTMCijNJlBv:not(._2lhxiWpu1TQo8jSZm2VHsN) ._1NqKJdLf1QCef95pyZZwmL, ._3QoRRxsgnDolcCPCrAPm47 ._25tjYDzXV5ikVRTYuo3gkg.in-game .K3kJzGQ5wihTMCijNJlBv._1oOq4b51Mdj1pZboaWOvOL ._1NqKJdLf1QCef95pyZZwmL {
+    color: var(--minimal_dark_orange) !important;
+}
+
+.ingame.awayOrSnooze ._1k82NiWym4STegDGxRBHz2, .ingame ._1k82NiWym4STegDGxRBHz2, .ingame ._1k82NiWym4STegDGxRBHz2 a, .ingame ._1k82NiWym4STegDGxRBHz2 a:hover, .ingame ._1k82NiWym4STegDGxRBHz2 a:active, .ingame ._1k82NiWym4STegDGxRBHz2 a:visited {
+    color: #91c257 !important;
+}
+
+._1xTATKELHR-lRS_s3A4yzd ._2jZ0A5VjGTNGTQm03FbLrF.online.awayOrSnooze ._1SWhpi9ByGQrwHGQgTJCF5, ._1xTATKELHR-lRS_s3A4yzd ._2jZ0A5VjGTNGTQm03FbLrF.online.awayOrSnooze ._3c5GOobmMUyjAWTosaUKUS {
+    color: #f7a24b !important;
+}
+
+._1xTATKELHR-lRS_s3A4yzd ._2jZ0A5VjGTNGTQm03FbLrF.online.awayOrSnooze ._2-pwJCHlrc7zxN4iup2TR7 ._1FgWIOIaRCAekjhGj0zFWq {
+    color: var(--minimal_dark_orange) !important;
+}
+
+._1xTATKELHR-lRS_s3A4yzd ._2jZ0A5VjGTNGTQm03FbLrF.in-game.awayOrSnooze .qiP8aEgNz331tt6X4NMNW:not(._2TAWSrfSd1CiZ9WSYsc69c) ._2VUw8xyYCaD1WduLCK3nlW, ._1xTATKELHR-lRS_s3A4yzd ._2jZ0A5VjGTNGTQm03FbLrF.in-game.awayOrSnooze .qiP8aEgNz331tt6X4NMNW.h_So5GaEfmXOgB9hCC0Is ._2VUw8xyYCaD1WduLCK3nlW {
+    color: #f7a24b !important;
+}
+
+._1xTATKELHR-lRS_s3A4yzd ._2jZ0A5VjGTNGTQm03FbLrF.in-game.awayOrSnooze ._2-pwJCHlrc7zxN4iup2TR7 ._1FgWIOIaRCAekjhGj0zFWq {
+    color: var(--minimal_dark_orange) !important;
+}
+
+.RVIs84dAE6wHcjH9tkinc._3zOBeq5W4cNK3lRz_7aroW, .RVIs84dAE6wHcjH9tkinc.Aupswi7-c-w3XwNO5cp2i {
+    background-color: var(--minimal_dark_blacker_alt) !important;
+    border-radius: 5px !important;
+}
+
+html.client_chat_frame .popup_chat_frame {
+    background: var(--minimal_dark_blacker_alt) !important;
+}
+
+._2WfNoLBdfKwyutA6ho4aSH {
+    border-radius: 5px !important;
+}
+
+.KxAI_M9gWx3OnKSshHOs6.online .SVGIcon_MobilePhone path {
+    fill: #f7a24b !important;
+}
+
+.online ._3xUpb5DWXPFNcHHIcv-9pe {
+    border-radius: 5px !important;
+    width: 5px !important;
+    height: 5px !important;
+}
+
+._3qYm9oxf8MdyvQDJgbfCrF:hover {
+    background-color: var(--minimal_dark_black) !important;
+    border-radius: 5px !important;
+}
+
+._3qYm9oxf8MdyvQDJgbfCrF ._10OzYaCdn7cgVMec9ozEJG {
+    background: var(--minimal_dark_blacker) !important;
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+    border-radius: 5px !important;
+}
+
+.ingame.awayOrSnooze ._2Ri005Wg_uXDTa71kdRbcN {
+    color: #f7a24b !important;
+}
+
+._1JXI4j2_xSpVK1YjyEuebr:hover .SVGIcon_X_Line line {
+    stroke: var(--minimal_dark_red2) !important;
+}
+
+.ConnectionTroubleContent {
+    background: var(--minimal_dark_color) !important;
+}
+
+._1xTATKELHR-lRS_s3A4yzd ._3CZcHyWskP9Hc5t7AOo75A {
+    height: auto !important;
+}
+
+.X_mJE4BYV5StDPwZhSiAu ._3fM0F85j3aWVzr4RJM9-eu {
+	display: none !important;
+}
+
+._3h-QRJGxnVOIExtHD1R0f2 {
+    border-radius: 5px !important;
+    /* border: 1px solid var(--minimal_dark_be_grey) !important; */
+}
+
+.friend.quickAccessFriend {
+    border: 1px solid transparent !important;
+}
+
+.ChatTabContent .avatarHolder .avatarStatus, .friend.quickAccessFriend .avatarHolder .avatarStatus {
+    display: none !important;
+}
+
+.nibodjvvrm86uCfnnAn4g ._3xUpb5DWXPFNcHHIcv-9pe.right, .nibodjvvrm86uCfnnAn4g ._3xUpb5DWXPFNcHHIcv-9pe.bottom {
+    display: none !important;
+}
+
+.currentUserContainer .nOdcT-MoOaXGePXLyPe0H {
+    font-size: 14px !important;
+}
+
+.FriendInGameIcon img {
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+    border-radius: 5px !important;
+}
+
+._3QoRRxsgnDolcCPCrAPm47 ._3gSTDNB2ZlqzhvkMEOxfCw ._1l8mFRMOzc3FeTSZuQcZBR {
+    border-radius: 5px !important;
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+}
+
+._1xTATKELHR-lRS_s3A4yzd ._7-U6jtoeGvesTm7JFGH0- .A0XYrZMFUpzFpMU7qBrhJ {
+    border-radius: 5px !important;
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+}
+
+._3QoRRxsgnDolcCPCrAPm47 ._2rDsqxyJxBWUKDmY1lZ1Vw {
+    box-shadow: none !important;
+}
+
+.Dialog_EditNickName .friend .avatarMedium, .Dialog_ChangePersonaName .friend .avatarMedium {
+    border: 1px solid var(--minimal_dark_be_grey) !important;
+    border-radius: 5px !important;
+}
+
+.Dialog_EditNickName .friend.online .DialogTextInputBase, .Dialog_ChangePersonaName .friend.online .DialogTextInputBase {
+    color: var(--minimal_dark_color) !important;
+}
+
+.Dialog_ChangePersonaName .friend .labelHolder {
+    color: var(--minimal_dark_installed_games) !important;
+}
+
+.ChatTabsContextMenu.CompactFriendsList .friend {
+    margin-top: 2px !important;
+    padding: 4px 0px !important;
+}
