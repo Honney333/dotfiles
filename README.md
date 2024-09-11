@@ -23,3 +23,6 @@ add export XDG_CONFIG_HOME="$HOME/.config" to /etc/profile
 [Theme Collection](https://github.com/topics/sddm-theme)
 >used and edited: [Catppuccin](https://github.com/catppuccin/sddm) | alternative: [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme)
 
+### GTK 3/4
+[Theme Collection](https://store.kde.org/browse?cat=135&ord=latest)
+>used and edited: [adwaita-dark Amoled](https://gitlab.com/tearch-linux/artworks/themes-and-icons/adwaita-dark-amoled) | alternative: [Graphite-Dark](https://github.com/vinceliuice/Graphite-gtk-theme)
