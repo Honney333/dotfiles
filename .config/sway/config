@@ -147,6 +147,9 @@ font pango:$font $font_size
 
     bindsym $mod+Shift+e exec wtype "€"
 
+    # Grouping in Thunderbird
+    bindsym $mod+alt+g exec "wtype -M alt -k v && sleep 0.2 && wtype -k s && sleep 0.2 && wtype -k g"
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.

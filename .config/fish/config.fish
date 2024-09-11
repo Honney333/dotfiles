@@ -145,3 +145,11 @@ end
 	alias yay 'paru'
 
 set -x QT_QPA_PLATFORMTHEME qt6ct
+
+# Fish done Configuration
+set -U __done_allow_nongraphical 1
+set -U __done_min_cmd_duration 5000 # 5000  # default: 5000 ms  # 5 seconds
+set -U __done_notify_sound 1
+set -U __done_sway_ignore_visible 0
+
+fish_add_path /home/honney/.millennium/ext/bin
