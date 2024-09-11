@@ -9,4 +9,4 @@ add export XDG_CONFIG_HOME="$HOME/.config" to /etc/profile
 
 ### grub
 [Theme Collection](https://github.com/jacksaur/Gorgeous-GRUB)
-><span style="background-color: #f0f0f0; padding: 2px;">[poly-dark](https://github.com/shvchk/poly-dark)</span>
+>used: [poly-dark](https://github.com/shvchk/poly-dark)
