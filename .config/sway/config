@@ -103,6 +103,12 @@ font pango:$font $font_size
     # Start your launcher
     bindsym $mod+d exec $menu
 
+    # Start Screenshot Tool
+    bindsym $mod+shift+s exec $HOME/.config/rofi/bin/screenshot
+    
+    # Start SwayNC
+    bindsym $mod+Shift+n exec swaync-client -t -sw
+
     # Start Nemo
     bindsym $mod+e exec nemo
 
@@ -131,7 +137,7 @@ font pango:$font $font_size
 
     # Switch between Headphones and Speaker
     bindsym $mod+shift+h exec $HOME/.config/sway/scripts/goxlr/headphones.sh
-    bindsym $mod+shift+s exec $HOME/.config/sway/scripts/goxlr/speaker.sh
+    bindsym $mod+h exec $HOME/.config/sway/scripts/goxlr/speaker.sh
 
     # Umlaute
     bindsym $mod+a exec wtype "ä"
@@ -295,6 +301,7 @@ client.background                           $background
     # Rewind
     bindsym XF86AudioPrev exec playerctl position 10-
 
+exec swaync
 exec sleep 2
 exec $HOME/.config/sway/scripts/onedrive-gui.sh
 exec $HOME/.config/sway/scripts/goxlr/goxlr-start.sh

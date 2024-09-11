@@ -55,7 +55,6 @@ linux-firmware
 linux-lts
 linux-zen
 linuxconsole
-mako
 mousepad
 nano
 nemo
@@ -99,10 +98,13 @@ sway
 swaybg
 swayidle
 swaylock
+swaync
 ugrep
 vencord
 ventoy
+viewnior
 vim
+visual-studio-code-bin
 vlc
 vulkan-radeon
 waybar
@@ -178,7 +180,6 @@ linux-firmware
 linux-lts
 linux-zen
 linuxconsole
-mako
 mousepad
 nano
 nemo
@@ -222,10 +223,13 @@ sway
 swaybg
 swayidle
 swaylock
+swaync
 ugrep
 vencord
 ventoy
+viewnior
 vim
+visual-studio-code-bin
 vlc
 vulkan-radeon
 waybar

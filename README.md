@@ -14,4 +14,4 @@ add export XDG_CONFIG_HOME="$HOME/.config" to /etc/profile
 ### waybar
 [Theme Collection](https://github.com/topics/waybar-themes)
 >used: [Catppuccin](https://github.com/catppuccin/waybar)
->[sameeul-haque](https://github.com/sameemul-haque/dotfiles)
+> [sameeul-haque](https://github.com/sameemul-haque/dotfiles)
