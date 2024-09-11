@@ -13,5 +13,13 @@ add export XDG_CONFIG_HOME="$HOME/.config" to /etc/profile
 
 ### waybar
 [Theme Collection](https://github.com/topics/waybar-themes)
->used: [Catppuccin](https://github.com/catppuccin/waybar) | alternative: [sameeul-haque](https://github.com/sameemul-haque/dotfiles)
+>used and edited: [Catppuccin](https://github.com/catppuccin/waybar) | alternative: [sameeul-haque](https://github.com/sameemul-haque/dotfiles)
+
+### rofi
+[Theme Collection](https://github.com/newmanls/rofi-themes-collection)
+>used and edited: [Catppuccin](https://github.com/catppuccin/rofi)
+
+### sddm
+[Theme Collection](https://github.com/topics/sddm-theme)
+>used and edited: [Catppuccin](https://github.com/catppuccin/sddm) | alternative: [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme)
 
