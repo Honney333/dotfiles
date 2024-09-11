@@ -1,4 +1,4 @@
-# dotfiles
+# dotfiles for OLED theme
 
 ## additional changes
 
@@ -33,5 +33,8 @@ Set in sway config
 [Theme Collection - KDE](https://store.kde.org/browse?cat=123&ord=latest)
 >used and edited: [Black Glas](https://www.opencode.net/phob1an/blackglass) | alternative: [Black-Colors](https://gitlab.com/alexevier/kvantumthemes/-/tree/main/Black-Colors)
 
-### [Sway](https://github.com/tsujan/Kvantum/tree/master/Kvantum)
+### [Sway](https://swaywm.org/)
 >used and edited: [Catppuccin](https://github.com/catppuccin/i3)
+
+### [Swaylock](https://github.com/swaywm/swaylock)
+>used and edited: [Catppuccin](https://github.com/catppuccin/swaylock)
