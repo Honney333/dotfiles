@@ -25,6 +25,7 @@ add export XDG_CONFIG_HOME="$HOME/.config" to /etc/profile
 
 ### [GTK 3/4](https://www.gtk.org/)
 Set in sway config
+
 [Theme Collection - KDE](https://store.kde.org/browse?cat=135&ord=latest)
 >used and edited: [adwaita-dark Amoled](https://gitlab.com/tearch-linux/artworks/themes-and-icons/adwaita-dark-amoled) | alternative: [Graphite-Dark](https://github.com/vinceliuice/Graphite-gtk-theme)
 
