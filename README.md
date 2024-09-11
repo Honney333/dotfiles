@@ -30,9 +30,8 @@ Set in sway config
 >used and edited: [adwaita-dark Amoled](https://gitlab.com/tearch-linux/artworks/themes-and-icons/adwaita-dark-amoled) | alternative: [Graphite-Dark](https://github.com/vinceliuice/Graphite-gtk-theme)
 
 ### [Kvantum](https://github.com/tsujan/Kvantum/tree/master/Kvantum)
-[Theme Collection - KDE](https://store.kde.org/browse?cat=135&ord=latest)
->used and edited: [adwaita-dark Amoled](https://gitlab.com/tearch-linux/artworks/themes-and-icons/adwaita-dark-amoled) | alternative: [Graphite-Dark](https://github.com/vinceliuice/Graphite-gtk-theme)
+[Theme Collection - KDE](https://store.kde.org/browse?cat=123&ord=latest)
+>used and edited: [Black Glas](https://www.opencode.net/phob1an/blackglass) | alternative: [Black-Colors](https://gitlab.com/alexevier/kvantumthemes/-/tree/main/Black-Colors)
 
 ### [Sway](https://github.com/tsujan/Kvantum/tree/master/Kvantum)
-[Theme Collection - KDE](https://store.kde.org/browse?cat=135&ord=latest)
->used and edited: [adwaita-dark Amoled](https://gitlab.com/tearch-linux/artworks/themes-and-icons/adwaita-dark-amoled) | alternative: [Graphite-Dark](https://github.com/vinceliuice/Graphite-gtk-theme)
+>used and edited: [Catppuccin](https://github.com/catppuccin/i3)
