@@ -5,21 +5,21 @@
 --minimal_dark_color_rgba: 26,159,255 !important; /* example for cyan : 32,234,191 !important; - default color is blue (26,159,255) ; also change this value by converting your chosen hexadecimal color code to rgba (https://rgbacolorpicker.com/hex-to-rgba) */
 
 /* global colors */
---minimal_dark_night: #141414;
---minimal_dark_night_alt: #151515;
---minimal_dark_night_alt1: #161616;
---minimal_dark_dark: #191919;
---minimal_dark_so_black: #1b1b1b;
+--minimal_dark_night: #000000;
+--minimal_dark_night_alt: #000000;
+--minimal_dark_night_alt1: #000000;
+--minimal_dark_dark: #000000;
+--minimal_dark_so_black: #000000;
 --minimal_dark_black: #000000;
 --minimal_dark_blacker: #000000; /* defaut #101010; */
 --minimal_dark_blacker_alt: #000000;
 --minimal_dark_topgrey: #8b929a;
---minimal_dark_greygrey: #4c4d50;
---minimal_dark_lite_grey: #282828;
---minimal_dark_greyblack: #2e2e2f;
---minimal_dark_greyblack1: #404040;
---minimal_dark_greyblack2: #333333;
---minimal_dark_invisblegrey: rgba(45, 45, 45, 0.25);
+--minimal_dark_greygrey: #000000;
+--minimal_dark_lite_grey: #000000;
+--minimal_dark_greyblack: #000000;
+--minimal_dark_greyblack1: #000000;
+--minimal_dark_greyblack2: #000000;
+--minimal_dark_invisblegrey: rgba(0, 0, 0, 0.25);
 --minimal_dark_transparent: transparent;
 --minimal_dark_browser_overlay_close: #a0de63;
 --minimal_dark_red: #ff002e;
@@ -30,10 +30,10 @@
 --minimal_dark_green: #008000;
 --minimal_dark_greensettings: #5aa05a;
 --minimal_dark_darker_green: #5c7e10;
---minimal_dark_grey: #1a1a1a;
+--minimal_dark_grey: #000000;
 --minimal_dark_be_grey: #000000;
---minimal_dark_lightgrey: #3e3e3f;
---minimal_dark_smallgrey: #454545;
+--minimal_dark_lightgrey: #000000;
+--minimal_dark_smallgrey: #000000;
 --minimal_dark_fluogreen: #00ff08;
 --minimal_dark_status_blue: #5db2fe;
 --minimal_dark_status_light_blue: #c4e4f2;

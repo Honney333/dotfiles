@@ -9,21 +9,21 @@
 --minimal_dark_color_rgba: 26,159,255 !important; /* example for cyan : 32,234,191 !important; - default color is blue (26,159,255) ; also change this value by converting your chosen hexadecimal color code to rgba (https://rgbacolorpicker.com/hex-to-rgba) */
 
 /* global colors */
---minimal_dark_night: #141414;
---minimal_dark_night_alt: #151515;
---minimal_dark_night_alt1: #161616;
---minimal_dark_dark: #191919;
---minimal_dark_so_black: #1b1b1b;
+--minimal_dark_night: #000000;
+--minimal_dark_night_alt: #000000;
+--minimal_dark_night_alt1: #000000;
+--minimal_dark_dark: #000000;
+--minimal_dark_so_black: #000000;
 --minimal_dark_black: #000000;
 --minimal_dark_blacker: #000000; /* defaut #101010; */
 --minimal_dark_blacker_alt: #000000;
 --minimal_dark_topgrey: #8b929a;
---minimal_dark_greygrey: #4c4d50;
---minimal_dark_lite_grey: #282828;
---minimal_dark_greyblack: #2e2e2f;
---minimal_dark_greyblack1: #404040;
---minimal_dark_greyblack2: #333333;
---minimal_dark_invisblegrey: rgba(45, 45, 45, 0.25);
+--minimal_dark_greygrey: #000000;
+--minimal_dark_lite_grey: #000000;
+--minimal_dark_greyblack: #000000;
+--minimal_dark_greyblack1: #000000;
+--minimal_dark_greyblack2: #000000;
+--minimal_dark_invisblegrey: rgba(0, 0, 0, 0.25);
 --minimal_dark_transparent: transparent;
 --minimal_dark_browser_overlay_close: #a0de63;
 --minimal_dark_red: #ff002e;
@@ -34,10 +34,10 @@
 --minimal_dark_green: #008000;
 --minimal_dark_greensettings: #5aa05a;
 --minimal_dark_darker_green: #5c7e10;
---minimal_dark_grey: #1a1a1a;
+--minimal_dark_grey: #000000;
 --minimal_dark_be_grey: #000000;
---minimal_dark_lightgrey: #3e3e3f;
---minimal_dark_smallgrey: #454545;
+--minimal_dark_lightgrey: #000000;
+--minimal_dark_smallgrey: #000000;
 --minimal_dark_fluogreen: #00ff08;
 --minimal_dark_status_blue: #5db2fe;
 --minimal_dark_status_light_blue: #c4e4f2;
@@ -265,7 +265,7 @@ div.bb_code, .bb_wysiwyg pre, blockquote.bb_blockquote, .bb_wysiwyg blockquote {
     background-color: rgb(18 18 18 / 10%) !important;
 	backdrop-filter: blur(10px) !important;
     box-shadow: 0 0 5px #000 !important;
-    border: 1px solid #525252 !important;
+    border: 1px solid #000000 !important;
     border-radius: var(--minimal_dark_corner5)!important;
 	color: #fff !important;
 	background-image: url(https://store.akamai.steamstatic.com/public/shared/images/v6/moremenu.png) !important;
@@ -727,7 +727,7 @@ body.v6 #global_header,body.v6 #global_header .content,body.v6 .supernav_content
 }
 
 #store_nav_area .store_nav_bg, .home_page_body_ctn.has_takeover #store_nav_area .store_nav_bg {
-    background: rgb(18 18 18 / 45%) !important;
+    background: rgb(0 0 0 / 45%) !important;
     border-radius: 5px !important;
     backdrop-filter: blur(8px) !important;
     border: 1px solid var(--minimal_dark_be_grey) !important;
@@ -743,7 +743,7 @@ body.v6 #global_header,body.v6 #global_header .content,body.v6 .supernav_content
 }
 
 .searchbox:hover {
-    background: rgb(70 70 70 / 0.50)!important;
+    background: rgb(0 0 0 / 0.50)!important;
     border-radius: var(--minimal_dark_corner5)!important;
     border: 1px solid #000000 !important;
 }
@@ -809,7 +809,7 @@ a.store_header_btn_content:active {
 }
 
 .store_header_btn_green a:hover {
-    color: #111111;
+    color: #000000;
     background-color: rgba( 164, 208, 7, 0.50 );
     border-radius: 0px;
 }
@@ -885,7 +885,7 @@ body.v6 #footer_nav .popup_block_new .popup_body, body.v6 .store_nav .popup_bloc
 .store_nav .tab.focus, .store_nav .tab.focus>span, .store_nav .tab:hover, .store_nav .tab:hover>span {
     text-shadow: 0px 2px 3px rgb(0 0 0 / 30%) !important;
     border-radius: var(--minimal_dark_corner0) !important;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(32,32,32,0.25) 100%) !important;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 100%) !important;
     color: var(--minimal_dark_color) !important;
 }
 
@@ -3509,35 +3509,6 @@ body.v6 #footer .rule {
 .review_box.short {
     background: rgba( 0, 0, 0, 0.2 ) !important;
     border-radius: var(--minimal_dark_corner5) !important;
-    border: 1px solid var(--minimal_dark_be_grey) !important;
-}
-
-.rightcol.game_meta_data .block {
-    background: var(--minimal_dark_blacker_alt) !important;
-    border-radius: var(--minimal_dark_corner5)!important;
-    border: 1px solid var(--minimal_dark_be_grey) !important;
-}
-
-.rightcol.game_meta_data .block.heading {
-    border-radius: var(--minimal_dark_corner0)!important;
-    background: transparent !important;
-    border-radius: 5px !important;
-}
-
-.short_header {
-	background-color: var(--minimal_dark_blacker) !important;
-	border-top-left-radius:var(--minimal_dark_corner5) !important;
-	border-top-right-radius:var(--minimal_dark_corner5) !important;
-	margin-bottom: 0px !important;
-}
-
-.short_header:hover {
-    background-color: rgba(var(--minimal_dark_color_rgba),.25) !important;
-    border-top-left-radius: var(--minimal_dark_corner5)!important;
-    border-top-right-radius: var(--minimal_dark_corner5)!important;
-}
-
-.discount_block.no_discount .bundle_base_discount {
 	border-right:0!important;
 }
 
@@ -7092,7 +7063,7 @@ body.v6 {
 
 ._3Zc7j06ya2uuADW3FEf83Q .TOM8JA0NsOaZR2JyQpCix.EhtJ_Bmg_1_FxN0vYx03l {
     border-right: 4px solid var(--minimal_dark_color) !important;
-    background: linear-gradient(30deg, rgba(7, 191, 255, 0.2) 0%, rgba(7, 191, 255, 0.1) 100%) !important;
+    background: linear-gradient(30deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%) !important;
 }
 
 ._3vzNvCxFm9mOQZgUYeU4r8 ._24NWGOIv8NacYTnlGnPkhs ._1TY7hhhX56yDMXA4ukk-jK ._2S38QJpullKFgRrAAbwXKF.iSooR069LClRU-HVpVl- {
@@ -7132,7 +7103,7 @@ body.v6 {
 }
 
 div.ModalPosition_TopBar {
-    background: radial-gradient(circle, rgba(var(--minimal_dark_color_rgba),1) 0%, rgba(26,159,255,0) 95%, rgba(26,159,255,0) 100%) !important;
+    background: radial-gradient(circle, rgba(var(--minimal_dark_color_rgba),1) 0%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%) !important;
 }
 
 ._27-NnvpvTeoXCQvQ6B0_ly {
@@ -7703,7 +7674,7 @@ body.profile_edit_page input.DialogTextInputBase, body.profile_edit_page input.D
 
 ._2kqKZFxhF8XvzaoAekjV7m ._33Kl16vpskBOQpwINGA8ah ._3rtIpqfC_9VWz4DRSTPach {
     border-radius: 5px !important;
-	background-image: linear-gradient(to left, transparent, transparent 50%, #1e1e1e 50%, #1e1e1e) !important;
+	background-image: linear-gradient(to left, transparent, transparent 50%, #000000 50%, #000000) !important;
 }
 
 ._2kqKZFxhF8XvzaoAekjV7m ._33Kl16vpskBOQpwINGA8ah ._3rtIpqfC_9VWz4DRSTPach {
@@ -7897,7 +7868,7 @@ body.profile_edit_page input.DialogTextInputBase, body.profile_edit_page input.D
 }
 
 .Y6hHMH1PrvTkz6wc6Rc-v {
-    background: url(https://store.cloudflare.steamstatic.com/public/images/applications/store/diamonds_tile.png?v=6fbc929…) no-repeat,radial-gradient(100% 1000px at 20% 0px, #161616 5%, #121212 100%) !important;
+    background: url(https://store.cloudflare.steamstatic.com/public/images/applications/store/diamonds_tile.png?v=6fbc929…) no-repeat,radial-gradient(100% 1000px at 20% 0px, #000000 5%, #000000 100%) !important;
     border-radius: 5px !important;
 }
 
@@ -9678,7 +9649,7 @@ a.btnv6_blue_hoverfade.btn_medium:active {
 }
 
 ._1E3Anhs34BXsWWWqH4RNPL ._3xvUZtQ1j-pu-l2xy-lFAq ._2pq2vP5kJ_wI2nw-igwJXF ._3HF9tOy_soo1B_odf1XArk .d8bPiEt0DUII_mRqek_ht {
-    background: var(--minimal_dark_blacker) center/cover no-repeat
+    background: var(--minimal_dark_blacker) center/cover no-repeat;
     /* border: 1px solid var(--minimal_dark_be_grey) !important; */
     border-radius: 5px !important;
 }

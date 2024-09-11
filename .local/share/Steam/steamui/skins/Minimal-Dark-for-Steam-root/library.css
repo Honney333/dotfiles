@@ -501,7 +501,7 @@
     height: 1px;
     margin-left: 16px;
     align-self: center;
-    background: linear-gradient(to right, rgba(var(--minimal_dark_color_rgba),.5), rgba(255, 255, 255, 0)) !important;
+    background: linear-gradient(to right, rgba(var(--minimal_dark_color_rgba),.5), rgba(0, 0, 0, 0)) !important;
 }
 
 ._3bWISeqP3H2j6YJnFwVEwu::after {
@@ -513,7 +513,7 @@
     height: 1px;
     align-self: center;
     margin-left: 10px;
-    background: linear-gradient(to right, rgba(var(--minimal_dark_color_rgba),.5), rgba(255, 255, 255, 0)) !important;
+    background: linear-gradient(to right, rgba(var(--minimal_dark_color_rgba),.5), rgba(0, 0, 0, 0)) !important;
 }
 
 ._170Npw5h84elypMSQ8zNDI ._1ennWu_xj2YF8FRYgJ2M2H ._1axoiZsC1RBp22JQmxiBIc.MIMuVt_bcI4rYVo1e14kR ._32e6rHniKd5ztOQ1lYIulu {
@@ -712,13 +712,13 @@ html._2GpKTB_eizdXpH2xVGbMKi ._2y2tUbsMx8OIwkimGSyHmb {
 }
 
 ._1SFpbc4QXF4_NR-Nd9lwis ._DialogInputContainer .DialogDropDown_CurrentDisplay:hover {
-    background: linear-gradient(90deg, rgba(50,50,50,1) 0%, rgba(50,50,50,1) 25%, rgba(38,38,38,1) 85%, rgba(38,38,38,1) 90%) !important;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgb(0, 0, 0) 85%, rgb(0, 0, 0) 90%) !important;
     border-bottom: 1px solid var(--minimal_dark_blacker_alt) !important;
     border-top: 1px solid var(--minimal_dark_blacker_alt)!important;
 }
 
 ._1SFpbc4QXF4_NR-Nd9lwis ._DialogInputContainer .DialogDropDown_CurrentDisplay:active {
-    background: linear-gradient(90deg, rgba(50,50,50,1) 0%, rgba(50,50,50,1) 25%, rgba(38,38,38,1) 85%, rgba(38,38,38,1) 90%) !important;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 90%) !important;
     border-bottom: 1px solid var(--minimal_dark_blacker_alt) !important;
     border-top: 1px solid var(--minimal_dark_blacker_alt) !important;
     box-shadow: inset 1px 2px 4px 0px #121212 !important;
