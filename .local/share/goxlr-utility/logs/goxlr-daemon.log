@@ -19620,3 +19620,13 @@
 17:51:26 [DEBUG] (28) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
 17:51:27 [DEBUG] (31) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
 17:51:27 [DEBUG] (31) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+20:26:52 [DEBUG] (26) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+20:26:52 [DEBUG] (26) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+20:26:56 [DEBUG] (26) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+20:26:56 [DEBUG] (26) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+20:28:13 [DEBUG] (31) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+20:28:13 [DEBUG] (31) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+20:28:16 [DEBUG] (28) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+20:28:16 [DEBUG] (26) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+20:28:17 [DEBUG] (31) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+20:28:17 [DEBUG] (31) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
