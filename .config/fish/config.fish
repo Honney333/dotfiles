@@ -70,6 +70,7 @@ if status is-interactive
 
 		alias uninstall='sudo apt purge -y'
 		alias server_shutdown='$HOME/.config/fish/scripts/shutdown-server.sh'
+		
 		# Python Virtual Environment
 		alias mkvenv='python3 -m venv'
 

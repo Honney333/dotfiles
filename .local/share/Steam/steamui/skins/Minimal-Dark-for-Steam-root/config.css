@@ -10,9 +10,9 @@
 --minimal_dark_night_alt1: #161616;
 --minimal_dark_dark: #191919;
 --minimal_dark_so_black: #1b1b1b;
---minimal_dark_black: #1e1e1e;
---minimal_dark_blacker: #191919; /* defaut #101010; */
---minimal_dark_blacker_alt: #121212;
+--minimal_dark_black: #000000;
+--minimal_dark_blacker: #000000; /* defaut #101010; */
+--minimal_dark_blacker_alt: #000000;
 --minimal_dark_topgrey: #8b929a;
 --minimal_dark_greygrey: #4c4d50;
 --minimal_dark_lite_grey: #282828;
@@ -31,7 +31,7 @@
 --minimal_dark_greensettings: #5aa05a;
 --minimal_dark_darker_green: #5c7e10;
 --minimal_dark_grey: #1a1a1a;
---minimal_dark_be_grey: #262626;
+--minimal_dark_be_grey: #000000;
 --minimal_dark_lightgrey: #3e3e3f;
 --minimal_dark_smallgrey: #454545;
 --minimal_dark_fluogreen: #00ff08;

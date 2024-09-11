@@ -46,6 +46,9 @@ Set in Kvantum and then in qt6ct and qt5ct
 ### [Swaylock](https://github.com/swaywm/swaylock)
 >used and edited: [Catppuccin](https://github.com/catppuccin/swaylock)
 
+### [Swaylock](https://github.com/swaywm/swaylock)
+>used and edited: [Catppuccin](https://github.com/catppuccin/swaylock)
+
 ### Cursor
 Set in sway config
 
@@ -56,3 +59,9 @@ Set in sway config
 Set in sway config
 
 >used and edited: [BeautyLine](https://github.com/gvolpe/BeautyLine)
+
+### Steam
+Install [Millennium](https://github.com/SteamClientHomebrew/Millennium)
+
+[Theme Collection - steambrew.app](https://steambrew.app/themes)
+>used: [Minimal Dark](https://github.com/SaiyajinK/Minimal-Dark-for-Steam/) | Alternatives: [Zehn](https://github.com/yurisuika/Zehn/) or [SpaceTheme](https://github.com/SpaceTheme/Steam/)
