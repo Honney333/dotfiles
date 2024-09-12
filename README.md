@@ -137,3 +137,8 @@ Install [Vesktop](https://github.com/Vencord/Vesktop) go to Discord>Settings>Ven
 
 [Theme Collection - github](https://github.com/topics/vencord-theme) or [Theme Collection - betterdiscord](https://betterdiscord.app/themes)
 >used: [AMOLED-CORD](https://github.com/LuckFire/amoled-cord) | Alternative: [Dark Neon](https://github.com/B4T3S/DiscordDarkNeon) or [Space Theme](https://github.com/SpaceTheme/Discord/)
+
+
+# Font & Font Size also Icon & Themes
+For GTK: ```$HOME/.config/sway/config```
+For QT in qt6ct, qt5ct and Kvantum Manager
