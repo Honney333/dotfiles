@@ -45,7 +45,7 @@
     },
 
     "custom/weather": {
-        "format": "{}",
+        "format": "{}  ",
         "format-alt": "{alt}: {}",
         "format-alt-click": "click-right",
         "interval": 1800,
@@ -105,13 +105,13 @@
     
     "custom/cpu": {
         "exec": "~/.config/waybar/modules/cpu.sh",
-        "interval": 5,
+        "interval": 2.5,
         "format": "{}  "
     },
 
     "custom/gpu": {
         "exec": "~/.config/waybar/modules/gpu.sh",
-        "interval": 5,
+        "interval": 2.5,
         "format": "{}"
     },
 
