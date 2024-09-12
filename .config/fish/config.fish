@@ -81,12 +81,15 @@ if status is-interactive
 
 		alias updateall='sudo pacman -Syu && paru -Sua && yay -Syu && flatpak update'
 
+        alias own='sudo chown -R "$USER":"$USER" themes'
+        alias right='sudo chmod -R 755'
+
 		alias reload='clear && omf reload'
 
 	# Garuda Alias
 		# Replace ls with eza
 		alias ls 'eza -a --color=always --group-directories-first --icons' # preferred listing
-		alias la 'eza -al --color=always --group-directories-first --icons'  # all files and dirs
+		alias lr 'eza -al --color=always --group-directories-first --icons'  # all files and dirs
 		alias ll 'eza -l --color=always --group-directories-first --icons'  # long format
 		alias lt 'eza -aT --color=always --group-directories-first --icons' # tree listing
 		alias l. 'eza -ald --color=always --group-directories-first --icons .*' # show only dotfiles

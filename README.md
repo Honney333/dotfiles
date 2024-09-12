@@ -58,6 +58,14 @@ Edit the Program (Hard-Mod):
 sudo sed -i 's|DIR_PATH + "/resources/images/icons8-clouds-80-dark-edge.png"|os.path.expanduser("~/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg")|g' /usr/lib/OneDriveGUI/OneDriveGUI.py
 ```
 
+### Remmina
+
+Icon name: ```org.remmina.Remmina.png``` | ```org.remmina.Remmina```
+
+```
+Exec=/usr/bin/remmina --icon
+```
+
 # Theme Templates
 
 ### [grub](https://www.gnu.org/software/grub/)

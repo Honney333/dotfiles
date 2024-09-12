@@ -37,6 +37,7 @@ gptfdisk
 grim
 grub
 gst-plugin-pipewire
+hardcode-tray
 hip-runtime-amd
 htop
 inkscape
@@ -167,6 +168,7 @@ gptfdisk
 grim
 grub
 gst-plugin-pipewire
+hardcode-tray
 hip-runtime-amd
 htop
 inkscape
