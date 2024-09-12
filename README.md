@@ -19,13 +19,13 @@ The .root folder means thet it is in the root directory ('/'). Do not just copy 
 ### Onedrive-Gui
 ICON
 
-Default Directory: ```/usr/lib/OneDriveGUI/resources/images/```
+Default Directory: ```/usr/lib/OneDriveGUI/resources/images/OneDriveGUI.ico```
 ```
 sudo sed -i "s|^Icon=.*|Icon=$HOME/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg|" /usr/share/applications/onedrivegui.desktop
 ```
 Tray-ICON
 
-Default Directory: ```/usr/lib/OneDriveGUI/resources/images/```
+Default Directory: ```/usr/lib/OneDriveGUI/resources/images/icons8-clouds-80-dark-edge.png```
 
 # Theme Templates
 
