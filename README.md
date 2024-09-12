@@ -9,7 +9,7 @@ The .root folder means thet it is in the root directory ('/'). Do not just copy 
 
 # What is what:
 
-###Notification: [SwayNC](https://github.com/ErikReider/SwayNotificationCenter?tab=readme-ov-file#sway-usage)
+### Notification: [SwayNC](https://github.com/ErikReider/SwayNotificationCenter?tab=readme-ov-file#sway-usage)
 >old (simpler): [Mako](https://github.com/emersion/mako)
 
 ### /etc/fstab
