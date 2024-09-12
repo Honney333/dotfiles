@@ -5,10 +5,21 @@
 ### set the XDG_CONFIG for swaylock automatically
 add export XDG_CONFIG_HOME="$HOME/.config" to /etc/profile
 
-### What is what:
+The .root folder means thet it is in the root directory ('/'). Do not just copy it because it is very System Specific.
 
-Notification: [SwayNC](https://github.com/ErikReider/SwayNotificationCenter?tab=readme-ov-file#sway-usage)
+# What is what:
+
+###Notification: [SwayNC](https://github.com/ErikReider/SwayNotificationCenter?tab=readme-ov-file#sway-usage)
 >old (simpler): [Mako](https://github.com/emersion/mako)
+
+### /etc/fstab
+
+### /boot/grub
+
+### Changing Onedrive-Gui icon
+```
+sudo sed -i "s|^Icon=.*|Icon=$HOME/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg|" /usr/share/applications/onedrivegui.desktop
+```
 
 # Theme Templates
 
