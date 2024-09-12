@@ -62,8 +62,16 @@ sudo sed -i 's|DIR_PATH + "/resources/images/icons8-clouds-80-dark-edge.png"|os.
 
 Icon name: ```org.remmina.Remmina.png``` | ```org.remmina.Remmina```
 
+Replace Icon (Soft-Mod):
+
 ```
 Exec=/usr/bin/remmina --icon
+```
+
+### Discord (Vencord.Vesktop)
+
+```
+sudo sed -i "s|^Icon=.*|Icon=$HOME/.icons/BeautyLine-V3/apps/scalable/discord.svg|" /usr/share/applications/vesktop.desktop
 ```
 
 # Theme Templates
