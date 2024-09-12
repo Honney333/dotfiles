@@ -16,20 +16,23 @@ The .root folder means thet it is in the root directory ('/'). Do not just copy 
 
 ### /boot/grub
 
-### Onedrive-Gui
+## Change Icons
+
+### OneDriveGUI
 ICON
 
 Default Directory: ```/usr/lib/OneDriveGUI/resources/images/OneDriveGUI.ico```
 
-Replace Icon:
+Replace Icon (Soft-Mod):
 
 ```
-rsvg-convert -w 16 -h 16 -o $HOME/OneDriveGUI.ico $HOME/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg
+rsvg-convert -w 48 -h 48 -o $HOME/OneDriveGUI.ico $HOME/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg
 
 sudo mv $HOME/OneDriveGUI.ico /usr/lib/OneDriveGUI/resources/images/
 ```
 
-Edit the Program:
+Edit the Program (Hard-Mod):
+>Probably needs to be redone when it updates
 
 
 ```
@@ -40,18 +43,19 @@ Tray-ICON
 
 Default Directory: ```/usr/lib/OneDriveGUI/resources/images/icons8-clouds-80-dark-edge.png```
 
-Replace Icon:
+Replace Icon (Soft-Mod):
 
 ```
-rsvg-convert -w 16 -h 16 -o $HOME/OneDriveGUI.ico $HOME/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg
+rsvg-convert -w 80 -h 80 -o $HOME/OneDriveGUI.ico $HOME/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg
 
 sudo mv $HOME/OneDriveGUI.ico /usr/lib/OneDriveGUI/resources/images/
 ```
 
-Edit the Program:
+Edit the Program (Hard-Mod):
+>Probably needs to be redone when it updates
 
 ```
-sudo sed -i "s|^Icon=.*|Icon=$HOME/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg|" /usr/share/applications/onedrivegui.desktop
+sudo sed -i 's|DIR_PATH + "/resources/images/icons8-clouds-80-dark-edge.png"|os.path.expanduser("~/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg")|g' /usr/lib/OneDriveGUI/OneDriveGUI.py
 ```
 
 # Theme Templates
