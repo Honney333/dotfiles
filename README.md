@@ -18,9 +18,7 @@ The .root folder means thet it is in the root directory ('/'). Do not just copy 
 
 ### Changing Onedrive-Gui icon
 ```
-rsvg-convert -w 512 -h 512 -o $HOME/OneDriveGUI.ico $HOME/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg
-
-sudo mv $HOME/OneDriveGUI.ico /usr/lib/OneDriveGUI/resources/images/
+sudo sed -i "s|^Icon=.*|Icon=$HOME/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg|" /usr/share/applications/onedrivegui.desktop
 ```
 
 # Theme Templates
