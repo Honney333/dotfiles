@@ -85,6 +85,8 @@ exec_always {
     gsettings set $gnome-schema text-scaling-factor $system_dpi_scaling_factor
     gsettings set $gnome-schema cursor-theme $cursor_theme
     gsettings set $gnome-schema cursor-size $cursor_size
+    export QT_QPA_PLATFORMTHEME=qt5ct
+    export QT_STYLE_OVERRIDE=kvantum
 }
 
 font pango:$font $font_size

@@ -1,5 +1,6 @@
 amd-ucode
 amf-amdgpu-pro
+android-sdk
 balena-etcher
 base
 base-devel
@@ -23,6 +24,7 @@ evtest
 eza
 fastfetch
 firefox
+firefox-developer-edition
 fish
 flatpak
 foot
@@ -42,7 +44,9 @@ hip-runtime-amd
 htop
 inkscape
 iwd
+jdk21-openjdk
 jq
+kde-gtk-config
 keepassxc
 kitty
 krita
@@ -81,6 +85,8 @@ pavucontrol
 pipewire
 pipewire-alsa
 pipewire-jack
+polkit-qt6
+prismlauncher
 proton-vpn-gtk-app
 qdirstat
 qt5ct
@@ -131,6 +137,7 @@ zfs-utils
 zoxide
 amd-ucode
 amf-amdgpu-pro
+android-sdk
 balena-etcher
 base
 base-devel
@@ -154,6 +161,7 @@ evtest
 eza
 fastfetch
 firefox
+firefox-developer-edition
 fish
 flatpak
 foot
@@ -173,7 +181,9 @@ hip-runtime-amd
 htop
 inkscape
 iwd
+jdk21-openjdk
 jq
+kde-gtk-config
 keepassxc
 kitty
 krita
@@ -212,6 +222,8 @@ pavucontrol
 pipewire
 pipewire-alsa
 pipewire-jack
+polkit-qt6
+prismlauncher
 proton-vpn-gtk-app
 qdirstat
 qt5ct

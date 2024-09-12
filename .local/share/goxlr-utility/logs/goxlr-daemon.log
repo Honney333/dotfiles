@@ -1793,3 +1793,64 @@ for Headphones to 255
 13:46:13 [DEBUG] (28) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
 13:46:13 [DEBUG] (25) goxlr_daemon::device: Updating LineIn volume from 133 to 132 as a human moved the fader
 13:46:13 [DEBUG] (25) goxlr_daemon::device: Updating System volume from 176 to 177 as a human moved the fader
+16:27:55 [DEBUG] (33) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+16:27:56 [DEBUG] (28) goxlr_daemon::device: Handling Button Hold: MicrophoneMute
+16:27:56 [DEBUG] (28) goxlr_daemon::device: Setting MicInputMute to 1
+16:27:56 [DEBUG] (28) goxlr_daemon::device: Applying Routing to Microphone:
+16:27:56 [DEBUG] (28) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+16:27:56 [DEBUG] (28) goxlr_daemon::tts: Received TTS Message: Mic Muted
+16:41:15 [DEBUG] (28) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: true
+16:41:16 [DEBUG] (28) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+16:41:16 [DEBUG] (28) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+16:41:16 [DEBUG] (28) goxlr_daemon::device: Setting MicInputMute to 0
+16:41:16 [DEBUG] (28) goxlr_daemon::device: Applying Routing to Microphone:
+16:41:16 [DEBUG] (28) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+16:41:16 [DEBUG] (28) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+18:02:28 [DEBUG] (28) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+18:02:28 [DEBUG] (28) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+18:02:28 [DEBUG] (28) goxlr_daemon::device: Setting MicInputMute to 1
+18:02:28 [DEBUG] (28) goxlr_daemon::device: Applying Routing to Microphone:
+18:02:28 [DEBUG] (28) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+18:02:28 [DEBUG] (28) goxlr_daemon::tts: Received TTS Message: Mic Muted
+18:02:58 [DEBUG] (25) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+18:02:58 [DEBUG] (25) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+18:02:58 [DEBUG] (25) goxlr_daemon::device: Setting MicInputMute to 0
+18:02:58 [DEBUG] (25) goxlr_daemon::device: Applying Routing to Microphone:
+18:02:58 [DEBUG] (25) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+18:02:58 [DEBUG] (25) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+18:13:38 [DEBUG] (25) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+18:13:38 [DEBUG] (25) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+18:13:38 [DEBUG] (25) goxlr_daemon::device: Setting MicInputMute to 1
+18:13:38 [DEBUG] (25) goxlr_daemon::device: Applying Routing to Microphone:
+18:13:38 [DEBUG] (25) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+18:13:38 [DEBUG] (25) goxlr_daemon::tts: Received TTS Message: Mic Muted
+18:13:54 [DEBUG] (25) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+18:13:54 [DEBUG] (28) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+18:13:54 [DEBUG] (28) goxlr_daemon::device: Setting MicInputMute to 0
+18:13:54 [DEBUG] (28) goxlr_daemon::device: Applying Routing to Microphone:
+18:13:54 [DEBUG] (28) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+18:13:54 [DEBUG] (28) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+20:13:54 [DEBUG] (33) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+20:13:54 [DEBUG] (33) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+20:13:54 [DEBUG] (33) goxlr_daemon::device: Setting MicInputMute to 1
+20:13:54 [DEBUG] (33) goxlr_daemon::device: Applying Routing to Microphone:
+20:13:54 [DEBUG] (33) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+20:13:54 [DEBUG] (33) goxlr_daemon::tts: Received TTS Message: Mic Muted
+20:14:01 [DEBUG] (33) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+20:14:01 [DEBUG] (33) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+20:14:01 [DEBUG] (33) goxlr_daemon::device: Setting MicInputMute to 0
+20:14:01 [DEBUG] (33) goxlr_daemon::device: Applying Routing to Microphone:
+20:14:01 [DEBUG] (33) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+20:14:01 [DEBUG] (33) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+20:14:02 [DEBUG] (28) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+20:14:03 [DEBUG] (28) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+20:14:03 [DEBUG] (28) goxlr_daemon::device: Setting MicInputMute to 1
+20:14:03 [DEBUG] (28) goxlr_daemon::device: Applying Routing to Microphone:
+20:14:03 [DEBUG] (28) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+20:14:03 [DEBUG] (28) goxlr_daemon::tts: Received TTS Message: Mic Muted
+20:14:04 [DEBUG] (28) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+20:14:04 [DEBUG] (28) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+20:14:04 [DEBUG] (28) goxlr_daemon::device: Setting MicInputMute to 0
+20:14:04 [DEBUG] (28) goxlr_daemon::device: Applying Routing to Microphone:
+20:14:04 [DEBUG] (28) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+20:14:04 [DEBUG] (28) goxlr_daemon::tts: Received TTS Message: Mic Unmuted

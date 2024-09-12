@@ -122,7 +122,7 @@ Set in sway config
 >used and edited: [DJ-FOX-C](https://store.kde.org/s/KDE%20Store/p/2113007)
 
 ### Icons
-Set in sway config
+Set in sway config, qt5ct and qt6ct. Also kde-gtk-config neede to work with rofi.
 
 >used and edited: [BeautyLine](https://github.com/gvolpe/BeautyLine)
 
