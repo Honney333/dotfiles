@@ -141,4 +141,5 @@ Install [Vesktop](https://github.com/Vencord/Vesktop) go to Discord>Settings>Ven
 
 # Font & Font Size also Icon & Themes
 For GTK: ```$HOME/.config/sway/config```
+
 For QT in qt6ct, qt5ct and Kvantum Manager
