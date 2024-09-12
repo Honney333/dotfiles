@@ -16,6 +16,9 @@ The .root folder means thet it is in the root directory ('/'). Do not just copy 
 
 ### /boot/grub
 
+### Changing Onedrive-Gui icon
+`rsvg-convert -w 512 -h 512 -o /home/honney/ms-onedrive.ico /home/honney/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg`
+
 # Theme Templates
 
 ### [grub](https://www.gnu.org/software/grub/)
