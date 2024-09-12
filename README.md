@@ -67,6 +67,8 @@ Exec=/usr/bin/remmina --icon
 
 ### Discord (Vencord.Vesktop)
 
+Icon name: ```vesktop```
+
 Replace Icon (Soft-Mod):
 
 
