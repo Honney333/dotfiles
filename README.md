@@ -20,12 +20,35 @@ The .root folder means thet it is in the root directory ('/'). Do not just copy 
 ICON
 
 Default Directory: ```/usr/lib/OneDriveGUI/resources/images/OneDriveGUI.ico```
-```
-sudo sed -i "s|^Icon=.*|Icon=$HOME/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg|" /usr/share/applications/onedrivegui.desktop
-```
+Replace Icon:
+
+    ```
+    rsvg-convert -w 16 -h 16 -o $HOME/OneDriveGUI.ico $HOME/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg
+
+    sudo mv $HOME/OneDriveGUI.ico /usr/lib/OneDriveGUI/resources/images/
+    ```
+
+Edit the Program:
+
+    ```
+    sudo sed -i "s|^Icon=.*|Icon=$HOME/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg|" /usr/share/applications/onedrivegui.desktop
+    ```
+
 Tray-ICON
 
 Default Directory: ```/usr/lib/OneDriveGUI/resources/images/icons8-clouds-80-dark-edge.png```
+
+Replace Icon:
+    ```
+    rsvg-convert -w 16 -h 16 -o $HOME/OneDriveGUI.ico $HOME/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg
+
+    sudo mv $HOME/OneDriveGUI.ico /usr/lib/OneDriveGUI/resources/images/
+    ```
+    
+Edit the Program:
+    ```
+    sudo sed -i "s|^Icon=.*|Icon=$HOME/.icons/BeautyLine-V3/apps/scalable/ms-onedrive.svg|" /usr/share/applications/onedrivegui.desktop
+    ```
 
 # Theme Templates
 
