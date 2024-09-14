@@ -1,51 +1,44 @@
-# Default config for sway
-#
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
-# Read `man 5 sway` for a complete reference.
-
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
-
+#
 # Your preferred terminal emulator
 set $term kitty
+#
 # Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
 set $menu "~/.config/sway/scripts/rofi-start.sh"
-
-# Set theme
+#
+# Set theme variables
 set $gnome-schema org.gnome.desktop.interface
 set $system_theme "adwaita-dark-amoled-master" # Graphite-Dark/adwaita-dark-amoled-master
-set $system_icons "BeautyLine-V3"
+set $system_icons "BeautyLine-Garuda"
 set $system_dpi_scaling_factor 1
 set $cursor_theme "DJ-FOX-C"
 set $cursor_size 36
 set $font "DejaVuSansM Nerd Font"
 set $font_size 12
 set $color-scheme "prefer-dark"
-
+#
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg #000000 solid_color
 #
-# Example configuration:
 #
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
-
+# Set the Resolution, Refreshrate and Scale of Monitors (Tipp: fastfetch shows the rendered screen resolution)
 output HDMI-A-1 pos 0 343 res 1920x1080@60Hz scale 0.9 scale_filter smart
 output DP-3 pos 0 342 res 1920x1080@60Hz scale 0.9 scale_filter smart
 output DP-2 pos 2134 0 res 1920x1080@143.981Hz scale 0.7 scale_filter smart
 output DP-1 pos 920 1540 res 3440x1440@174.962Hz scale 1
-
+# Set Workspace Number Acording to Output
 workspace 1 output DP-1
 workspace 2 output DP-2
-
+#
+#
+#
 ### Idle configuration
 #
 # Example configuration:
@@ -61,36 +54,12 @@ workspace 2 output DP-2
 
 ### Input configuration
 #
-# Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
-#
 # You can get the names of your inputs by running: swaymsg -t get_inputs
-# Read `man 5 sway-input` for more information about this section.
-
+#
 input type:keyboard xkb_numlock enabled
-
-### Set theme settings
-
-seat seat0 xcursor_theme $cursor_theme $cursor_size
-exec_always {
-    gsettings set $gnome-schema color-scheme $color-scheme
-    gsettings set $gnome-schema gtk-theme $system_theme
-    gsettings set $gnome-schema icon-theme $system_icons
-    gsettings set $gnome-schema text-scaling-factor $system_dpi_scaling_factor
-    gsettings set $gnome-schema cursor-theme $cursor_theme
-    gsettings set $gnome-schema cursor-size $cursor_size
-    export QT_QPA_PLATFORMTHEME=qt5ct
-    export QT_STYLE_OVERRIDE=kvantum
-}
-
-font pango:$font $font_size
-
+#
+#
+#
 ### Key bindings
 #
 # Basics:
@@ -118,13 +87,14 @@ font pango:$font $font_size
     bindsym $mod+ctrl+o exec env QT_QPA_PLATFORMTHEME=qt6ct /usr/bin/octopi
 
     # Start KeePassXC
-    bindsym $mod+shift+k exec keepassxc -platform xcb
+    bindsym $mod+ctrl+k exec keepassxc -platform xcb
 
     # Start Steam
     bindsym $mod+ctrl+s exec $HOME/.config/sway/scripts/steam-start.sh
 
     # Start Discord
-    bindsym $mod+shift+d exec $HOME/.config/sway/scripts/discord-start.sh
+    bindsym $mod+ctrl+d exec $HOME/.config/sway/scripts/discord-start.sh
+    
     # Mute Discord
     bindsym $mod+shift+m exec $HOME/.config/sway/scripts/discord-mute.sh
 
@@ -135,7 +105,7 @@ font pango:$font $font_size
     bindsym $mod+shift+Escape exec wlogout
 
     # Start Calculator
-    bindsym $mod+shift+r exec $HOME/.local/bin/qalculate
+    bindsym $mod+ctrl+r exec $HOME/.local/bin/qalculate
 
     # Switch between Headphones and Speaker
     bindsym $mod+shift+h exec $HOME/.config/sway/scripts/goxlr/headphones.sh
@@ -237,36 +207,26 @@ font pango:$font $font_size
     # Move focus to the parent container
     # bindsym $mod+a focus parent
 #
-# Scratchpad:
 #
-    # Sway has a "scratchpad", which is a bag of holding for windows.
-    # You can send windows there and get them back later.
-
-    # Move the currently focused window to the scratchpad
-    bindsym $mod+Shift+minus move scratchpad
-
-    # Show the next scratchpad window or hide the focused scratchpad window.
-    # If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+minus scratchpad show
+### Decorations:
 #
-# Resizing containers:
+### Set theme settings
 #
-mode "resize" {
-    # left will shrink the containers width
-    # right will grow the containers width
-    # up will shrink the containers height
-    # down will grow the containers height
-    bindsym Left resize shrink width 10px
-    bindsym Down resize grow height 10px
-    bindsym Up resize shrink height 10px
-    bindsym Right resize grow width 10px
-
-    # Return to default mode
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
+seat seat0 xcursor_theme $cursor_theme $cursor_size
+exec_always {
+    gsettings set $gnome-schema color-scheme $color-scheme
+    gsettings set $gnome-schema gtk-theme $system_theme
+    gsettings set $gnome-schema icon-theme $system_icons
+    gsettings set $gnome-schema text-scaling-factor $system_dpi_scaling_factor
+    gsettings set $gnome-schema cursor-theme $cursor_theme
+    gsettings set $gnome-schema cursor-size $cursor_size
+    export QT_QPA_PLATFORMTHEME=qt5ct
+    export QT_STYLE_OVERRIDE=kvantum
 }
-bindsym $mod+r mode "resize"
-
+#
+font pango:$font $font_size
+#
+#
 #
 # Status Bar:
 #
