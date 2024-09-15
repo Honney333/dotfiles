@@ -1,0 +1,62 @@
+bindsym $mod+l exec $xlock
+
+# Start a terminal
+bindsym $mod+Return exec $term
+
+# Kill focused window
+bindsym $mod+w kill
+bindsym $mod+Shift+q kill
+
+# Start your launcher
+bindsym $mod+d exec $menu
+
+# Start Screenshot Tool
+bindsym $mod+shift+s exec $HOME/.config/rofi/bin/screenshot
+   
+# Start SwayNC
+bindsym $mod+Shift+n exec swaync-client -t -sw
+
+# Start Nemo
+bindsym $mod+e exec nemo
+
+# Start Octopi
+bindsym $mod+ctrl+o exec env QT_QPA_PLATFORMTHEME=qt6ct /usr/bin/octopi
+
+# Start KeePassXC
+bindsym $mod+ctrl+k exec keepassxc -platform xcb
+
+# Start Steam
+bindsym $mod+ctrl+s exec $HOME/.config/sway/scripts/steam-start.sh
+
+# Start Discord
+bindsym $mod+ctrl+d exec $HOME/.config/sway/scripts/discord-start.sh
+    
+# Mute Discord
+bindsym $mod+shift+m exec $HOME/.config/sway/scripts/discord-mute.sh
+
+# Connect to 2nd PC
+bindsym $mod+ctrl+v exec $HOME/.config/sway/scripts/remmina_server.sh
+
+# Start logout screen
+bindsym $mod+shift+Escape exec wlogout
+
+# Start Calculator
+bindsym $mod+ctrl+r exec $HOME/.local/bin/qalculate
+
+# Switch between Headphones and Speaker
+bindsym $mod+shift+h exec $HOME/.config/sway/scripts/goxlr/headphones.sh
+bindsym $mod+h exec $HOME/.config/sway/scripts/goxlr/speaker.sh
+
+# Umlaute
+bindsym $mod+a exec wtype "ä"
+bindsym $mod+shift+a exec wtype "Ä"
+
+bindsym $mod+o exec wtype "ö"
+bindsym $mod+shift+o exec wtype "Ö"
+
+bindsym $mod+u exec wtype "ü"
+bindsym $mod+shift+u exec wtype "Ü"
+
+bindsym $mod+s exec wtype "ß"
+
+bindsym $mod+Shift+e exec wtype "€"

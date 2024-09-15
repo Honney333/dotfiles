@@ -1,0 +1,4 @@
+output HDMI-A-1 pos 0 343 res 1920x1080@60Hz scale 0.9 scale_filter smart
+output DP-3 pos 0 342 res 1920x1080@60Hz scale 0.9 scale_filter smart
+output DP-2 pos 2134 0 res 1920x1080@143.981Hz scale 0.7 scale_filter smart
+output DP-1 pos 920 1540 res 3440x1440@174.962Hz scale 1

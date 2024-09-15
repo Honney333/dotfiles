@@ -1,0 +1,102 @@
+#!/usr/bin/env bash
+
+rofi_command="rofi monitor=$(swaymsg -t get_outputs | jq '.[] | select(.focused) | .name' -r)  -theme $HOME/.config/rofi/config/screenshot.rasi"
+
+time=`date +%Y-%m-%d-%I-%M-%S`
+geometry=$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .current_mode.width, .current_mode.height' | tr '\n' 'x')
+dir="`xdg-user-dir PICTURES`/Screenshots"
+file="Screenshot_${time}_${geometry}.png"
+
+# Icons
+icon1="$HOME/.config/dunst/icons/collections.svg"
+icon2="$HOME/.config/dunst/icons/timer.svg"
+
+# Buttons
+layout=$(grep BUTTON "$HOME/.config/rofi/config/screenshot.rasi" | cut -d'=' -f2 | tr -d '[:blank:],*/')
+if [[ "$layout" == "TRUE" ]]; then
+	screen="󰍹"
+	area="󰆞"
+	window="󰖲"
+	infive="󰔝"
+	inten="󰔜"
+else
+	screen="󰍹 Capture Desktop"
+	area="󰆞 Capture Area"
+	window="󰖲 Capture Window"
+	infive="󰔝 Take in 3s"
+	inten="󰔜 Take in 10s"
+fi
+
+# Notify and view screenshot
+notify_view () {
+	notify-send -u low --replace-id 699 -i $icon1 "Copied to clipboard."
+	viewnior ${dir}/"$file"
+	if [[ -e "$dir/$file" ]]; then
+		notify-send -u low --replace-id 699 -i $icon1 "Screenshot Saved."
+	else
+		notify-send -u low --replace-id 699 -i $icon1 "Screenshot Deleted."
+	fi
+}
+
+# countdown
+countdown () {
+	for sec in `seq $1 -1 1`; do
+		notify-send -t 1000 --replace-id 699 -i $icon2 "Taking shot in : $sec"
+		sleep 1
+	done
+}
+
+shotnow() {
+    cd "$dir" && sleep 0.5 && grim "$file" && wl-copy < "$file"
+    notify_view
+}
+
+shot5() {
+    countdown '3'
+    sleep 1 && cd "$dir" && grim "$file" && wl-copy < "$file"
+    notify_view
+}
+
+shot10() {
+    countdown '10'
+    sleep 1 && cd "$dir" && grim "$file" && wl-copy < "$file"
+    notify_view
+}
+
+shotwin() {
+    focused_window=$(swaymsg -t get_tree | jq -r '.. | select(.type? == "con" and .focused == true) | .rect | "\(.x),\(.y) \(.width)x\(.height)"')
+    cd "$dir" && grim -g "$focused_window" "$file" && wl-copy < "$file"
+    notify_view
+}
+
+shotarea() {
+    cd "$dir" && grim -g "$(slurp)" "$file" && wl-copy < "$file"
+    notify_view
+}
+
+if [[ ! -d "$dir" ]]; then
+	mkdir -p "$dir"
+fi
+
+# Variable passed to rofi
+options="$screen\n$area\n$window\n$infive\n$inten"
+
+chosen="$(echo -e "$options" | $rofi_command -p 'Take A Shot' -dmenu -selected-row 0)"
+case $chosen in
+    $screen)
+		shotnow
+        ;;
+    $area)
+		shotarea
+        ;;
+    $window)
+		shotwin
+		;;
+    $infive)
+		shot5
+		;;
+    $inten)
+		shot10
+        ;;
+esac
+

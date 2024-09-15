@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1"><linearGradient
+       id="linearGradient3"><stop
+         style="stop-color:#ff66e6;stop-opacity:1;"
+         offset="0"
+         id="stop3" /><stop
+         style="stop-color:#ff1ad9;stop-opacity:1;"
+         offset="1"
+         id="stop4" /></linearGradient><linearGradient
+       id="linearGradient1"><stop
+         style="stop-color:#e500c0;stop-opacity:1;"
+         offset="0"
+         id="stop1" /><stop
+         style="stop-color:#990083;stop-opacity:1;"
+         offset="1"
+         id="stop2" /></linearGradient><linearGradient
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="64.000015"
+       y1="88.500008"
+       x2="112.00005"
+       y2="88.500008"
+       gradientUnits="userSpaceOnUse" /><linearGradient
+       xlink:href="#linearGradient3"
+       id="linearGradient4"
+       x1="7.4999809"
+       y1="31.500008"
+       x2="55.500019"
+       y2="31.500008"
+       gradientUnits="userSpaceOnUse" /></defs><g
+     id="layer1"><path
+       style="fill:none;fill-opacity:1;stroke:url(#linearGradient4);stroke-width:12.1859;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 13.592931,13.59295 49.407069,49.407063"
+       id="path2" /><path
+       style="fill:none;fill-opacity:1;stroke:#ff00d5;stroke-width:12.1859;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 105.90708,13.59295 70.09295,49.407063"
+       id="path2-6" /><path
+       style="fill:none;fill-opacity:1;stroke:#ff00d5;stroke-width:12.1859;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 13.59295,106.40706 49.407088,70.59295"
+       id="path2-2" /><path
+       style="fill:none;fill-opacity:1;stroke:url(#linearGradient2);stroke-width:12.1859;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 105.9071,106.40706 70.092969,70.59295"
+       id="path2-6-7" /></g></svg>
