@@ -9,6 +9,9 @@ set $term kitty
 # Your preferred application launcher
 set $menu "~/.config/sway/scripts/rofi-start.sh"
 #
+# Your preferred lock
+set $lock "swaylock"
+#
 # Set theme variables
 set $gnome-schema org.gnome.desktop.interface
 set $system_theme "adwaita-dark-amoled-master" # Graphite-Dark/adwaita-dark-amoled-master
@@ -22,35 +25,21 @@ set $color-scheme "prefer-dark"
 #
 ### Output configuration
 #
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+# Wallpaper
 output * bg #000000 solid_color
 #
 #
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 # Set the Resolution, Refreshrate and Scale of Monitors (Tipp: fastfetch shows the rendered screen resolution)
-output HDMI-A-1 pos 0 343 res 1920x1080@60Hz scale 0.9 scale_filter smart
-output DP-3 pos 0 342 res 1920x1080@60Hz scale 0.9 scale_filter smart
-output DP-2 pos 2134 0 res 1920x1080@143.981Hz scale 0.7 scale_filter smart
-output DP-1 pos 920 1540 res 3440x1440@174.962Hz scale 1
-# Set Workspace Number Acording to Output
-workspace 1 output DP-1
-workspace 2 output DP-2
-#
-#
-#
+include $HOME/.config/sway/configs/screens
+
 ### Idle configuration
-#
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
+exec swayidle \
+    timeout 300 'exec $lock' \
+    timeout 600 'swaymsg "output * dpms off"' \
+    after-resume 'swaymsg "output * dpms on"' \
+    before-sleep 'exec $lock'
 
 ### Input configuration
 #
@@ -60,86 +49,23 @@ input type:keyboard xkb_numlock enabled
 #
 #
 #
-### Key bindings
+
+### Key bindings (use wev to get key (sym))
 #
-# Basics:
-#
-    # Start a terminal
-    bindsym $mod+Return exec $term
+include $HOME/.config/sway/configs/shortcuts
 
-    # Kill focused window
-    bindsym $mod+w kill
-    bindsym $mod+Shift+q kill
+# Reload the configuration file
+bindsym $mod+Shift+c reload
+# Exit sway (logs you out of your Wayland session)
+# bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
-    # Start your launcher
-    bindsym $mod+d exec $menu
+# Drag floating windows by holding down $mod and left mouse button.
+# Resize them with right mouse button + $mod.
+# Despite the name, also works for non-floating windows.
+# Change normal to inverse to use left mouse button for resizing and right
+# mouse button for dragging.
+floating_modifier $mod normal
 
-    # Start Screenshot Tool
-    bindsym $mod+shift+s exec $HOME/.config/rofi/bin/screenshot
-    
-    # Start SwayNC
-    bindsym $mod+Shift+n exec swaync-client -t -sw
-
-    # Start Nemo
-    bindsym $mod+e exec nemo
-
-    # Start Octopi
-    bindsym $mod+ctrl+o exec env QT_QPA_PLATFORMTHEME=qt6ct /usr/bin/octopi
-
-    # Start KeePassXC
-    bindsym $mod+ctrl+k exec keepassxc -platform xcb
-
-    # Start Steam
-    bindsym $mod+ctrl+s exec $HOME/.config/sway/scripts/steam-start.sh
-
-    # Start Discord
-    bindsym $mod+ctrl+d exec $HOME/.config/sway/scripts/discord-start.sh
-    
-    # Mute Discord
-    bindsym $mod+shift+m exec $HOME/.config/sway/scripts/discord-mute.sh
-
-    # Connect to 2nd PC
-    bindsym $mod+ctrl+v exec $HOME/.config/sway/scripts/remmina_server.sh
-
-    # Start logout screen
-    bindsym $mod+shift+Escape exec wlogout
-
-    # Start Calculator
-    bindsym $mod+ctrl+r exec $HOME/.local/bin/qalculate
-
-    # Switch between Headphones and Speaker
-    bindsym $mod+shift+h exec $HOME/.config/sway/scripts/goxlr/headphones.sh
-    bindsym $mod+h exec $HOME/.config/sway/scripts/goxlr/speaker.sh
-
-    # Umlaute
-    bindsym $mod+a exec wtype "ä"
-    bindsym $mod+shift+a exec wtype "Ä"
-
-    bindsym $mod+o exec wtype "ö"
-    bindsym $mod+shift+o exec wtype "Ö"
-
-    bindsym $mod+u exec wtype "ü"
-    bindsym $mod+shift+u exec wtype "Ü"
-
-    bindsym $mod+s exec wtype "ß"
-
-    bindsym $mod+Shift+e exec wtype "€"
-
-    # Grouping in Thunderbird
-    bindsym $mod+alt+g exec "wtype -M alt -k v && sleep 0.2 && wtype -k s && sleep 0.2 && wtype -k g"
-
-    # Drag floating windows by holding down $mod and left mouse button.
-    # Resize them with right mouse button + $mod.
-    # Despite the name, also works for non-floating windows.
-    # Change normal to inverse to use left mouse button for resizing and right
-    # mouse button for dragging.
-    floating_modifier $mod normal
-
-    # Reload the configuration file
-    bindsym $mod+Shift+c reload
-
-    # Exit sway (logs you out of your Wayland session)
-    # bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #
@@ -156,31 +82,13 @@ input type:keyboard xkb_numlock enabled
     bindsym $mod+Shift+Right move right
 #
 # Workspaces:
+include $HOME/.config/sway/configs/workspaces
+
+# Set Workspace Number Acording to Output
+workspace 1 output DP-1
+workspace 2 output DP-2
 #
-    # Switch to workspace
-    bindsym $mod+1 workspace number 1
-    bindsym $mod+2 workspace number 2
-    bindsym $mod+3 workspace number 3
-    bindsym $mod+4 workspace number 4
-    bindsym $mod+5 workspace number 5
-    bindsym $mod+6 workspace number 6
-    bindsym $mod+7 workspace number 7
-    bindsym $mod+8 workspace number 8
-    bindsym $mod+9 workspace number 9
-    bindsym $mod+0 workspace number 10
-    # Move focused container to workspace
-    bindsym $mod+Shift+1 move container to workspace number 1
-    bindsym $mod+Shift+2 move container to workspace number 2
-    bindsym $mod+Shift+3 move container to workspace number 3
-    bindsym $mod+Shift+4 move container to workspace number 4
-    bindsym $mod+Shift+5 move container to workspace number 5
-    bindsym $mod+Shift+6 move container to workspace number 6
-    bindsym $mod+Shift+7 move container to workspace number 7
-    bindsym $mod+Shift+8 move container to workspace number 8
-    bindsym $mod+Shift+9 move container to workspace number 9
-    bindsym $mod+Shift+0 move container to workspace number 10
-    # Note: workspaces can have any name you want, not just numbers.
-    # We just use 1-10 as the default.
+    
 #
 # Layout stuff:
 #

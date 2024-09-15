@@ -45,6 +45,7 @@ gvfs-mtp
 gvfs-smb
 hardcode-tray
 hip-runtime-amd
+homeassistant-desktop-bin
 htop
 inkscape
 iwd
@@ -135,6 +136,7 @@ visual-studio-code-bin
 vlc
 vulkan-radeon
 waybar
+wev
 wget
 whatsapp-for-linux
 wireless_tools
@@ -151,6 +153,7 @@ xorg-xinput
 xorg-xwayland
 yay
 yay-debug
+yubioath-desktop
 zfs-utils
 zoxide
 amd-ucode
@@ -200,6 +203,7 @@ gvfs-mtp
 gvfs-smb
 hardcode-tray
 hip-runtime-amd
+homeassistant-desktop-bin
 htop
 inkscape
 iwd
@@ -290,6 +294,7 @@ visual-studio-code-bin
 vlc
 vulkan-radeon
 waybar
+wev
 wget
 whatsapp-for-linux
 wireless_tools
@@ -306,5 +311,6 @@ xorg-xinput
 xorg-xwayland
 yay
 yay-debug
+yubioath-desktop
 zfs-utils
 zoxide
