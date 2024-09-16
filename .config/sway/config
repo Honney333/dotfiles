@@ -2,16 +2,19 @@
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
-#
+
 # Your preferred terminal emulator
 set $term kitty
-#
+
 # Your preferred application launcher
 set $menu "~/.config/sway/scripts/rofi-start.sh"
-#
+
 # Your preferred lock
 set $lock "swaylock"
-#
+
+#set $background ~/.images/wp2595139.jpg
+set $background #000000
+
 # Set theme variables
 set $gnome-schema org.gnome.desktop.interface
 set $system_theme "adwaita-dark-amoled-master" # Graphite-Dark/adwaita-dark-amoled-master
@@ -24,10 +27,10 @@ set $font_size 12
 set $color-scheme "prefer-dark"
 #
 ### Output configuration
-#
+
 # Wallpaper
-output * bg #000000 solid_color
-#
+output * bg $background solid_color
+#fill
 #
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
@@ -37,9 +40,11 @@ include $HOME/.config/sway/configs/screens
 ### Idle configuration
 exec swayidle \
     timeout 300 'exec $lock' \
-    timeout 600 'swaymsg "output * dpms off"' \
-    after-resume 'swaymsg "output * dpms on"' \
+#    timeout 600 'swaymsg "output * dpms off"' \
+#    after-resume 'swaymsg "output * dpms on"' \
     before-sleep 'exec $lock'
+
+bindsym $mod+shift+r exec swaymsg "output * dpms on"
 
 ### Input configuration
 #
@@ -85,8 +90,8 @@ floating_modifier $mod normal
 include $HOME/.config/sway/configs/workspaces
 
 # Set Workspace Number Acording to Output
-workspace 1 output DP-1
-workspace 2 output DP-2
+workspace $ws1 output DP-1
+workspace $ws2 output DP-2
 #
     
 #
@@ -128,7 +133,7 @@ exec_always {
     gsettings set $gnome-schema text-scaling-factor $system_dpi_scaling_factor
     gsettings set $gnome-schema cursor-theme $cursor_theme
     gsettings set $gnome-schema cursor-size $cursor_size
-    export QT_QPA_PLATFORMTHEME=qt5ct
+    export QT_QPA_PLATFORMTHEME=qt6ct
     export QT_STYLE_OVERRIDE=kvantum
 }
 #
@@ -171,6 +176,7 @@ client.background                           $background
     # Rewind
     bindsym XF86AudioPrev exec playerctl position 10-
 
+exec /usr/lib/polkit-kde-authentication-agent-1
 exec nm-applet
 exec swaync
 exec sleep 2

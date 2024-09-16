@@ -1,76 +1,132 @@
 @import "mocha.css";
 
 * {
-  font-family: FantasqueSansMono Nerd Font;
-  font-size: 14px;
-  min-height: 0;
+  border:               none;
+  border-radius:        0;
+  font-family:          DejaVuSansM Nerd Font;
+  font-size:            14px;
+  box-shadow:           none;
+  text-shadow:          none;
+  transition-duration:  0s;
 }
 
 #waybar {
-  background-color: shade(@base, 0.9);
-  background: shade(alpha(@mantle, 0.9), 1.0);
+  background: alpha(@bg, 1);
   color: @text;
   margin: 0px 0px;
 }
 
+
 #workspaces {
   border-radius: 1rem;
   margin: 5px;
-  background-color: @surface0;
+  background-color: @bg-modules;
   margin-left: 1rem;
 }
 
 #workspaces button {
-  color: @lavender;
+  color: @ws;
   border-radius: 1rem;
   padding: 0.4rem;
 }
 
 #workspaces button.active {
-  color: @sky;
+  color: @wsa;
   border-radius: 1rem;
 }
 
 #workspaces button:hover {
-  color: @sapphire;
+  color: @wsh;
   border-radius: 1rem;
 }
 
-#tray,
-#clock,
-#battery,
-#pulseaudio,
-#custom-gpu-usage,
-#network,
-#cpu,
-#memory,
-#temperature {
-  background-color: @surface0;
-  padding: 0.5rem 1rem;
-  margin: 5px 0;
-}
-#idle_inhibitor {
-  margin-right: 1rem;
-}
-
-#clock {
-  color: @blue;
+#custom-weather {
   border-radius: 1rem;
+  margin: 5px;
+  background-color: @bg-modules;
   margin-right: 1rem;
-}
-
-#pulseaudio {
-  color: @maroon;
-  border-radius: 1rem 0px 0px 1rem;
   margin-left: 1rem;
+  color: @weather;
 }
 
 #tray {
-  margin-right: 1rem;
   border-radius: 1rem;
+  margin: 5px;
+  background-color: @bg-modules;
+  margin-right: 1rem;
 }
 
-#custom-gpu-usage {
-  color: @yellow;
-  border-radius: 0;
+#window {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @bg-modules;
+  margin-right: 1rem;
+  color: @tile;
+}
+
+/* middle */
+
+#clock {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @bg-modules;
+  margin-left: 1rem;
+  color: @clock;
+}
+
+/* right */
+#pulseaudio {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @bg-modules;
+  margin-right: 1rem;
+  color: @pulseaudio;
+}
+
+#network {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @bg-modules;
+  margin-right: 1rem;
+  color: @network;
+}
+
+#custom-cpu {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @bg-modules;
+  margin-right: 1rem;
+  color: @cpu;
+}
+
+#custom-gpu {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @bg-modules;
+  margin-right: 1rem;
+  color: @gpu;
+}
+
+#memory {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @bg-modules;
+  margin-right: 1rem;
+  color: @memory;
+}
+
+#custom-storage {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @bg-modules;
+  margin-right: 1rem;
+  color: @storage;
+}
+
+#idle_inhibitor {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @bg-modules;
+  margin-right: 1rem;
+  color: @idle;
 }

@@ -4,21 +4,20 @@
 
     "modules-left": [
         "sway/workspaces",
+        "custom/weather",
         "tray",
-        "sway/mode",
         "sway/window"
     ],
     
     "modules-center": [
-        "clock",
-        "custom/weather"
+        "clock"
     ],
 
     "modules-right": [
         "pulseaudio", 
         "network#wifi", 
-        "network", 
-        "network#ethernet", 
+        "network#ethernet1", 
+        "network#ethernet2", 
         "custom/gpu-usage",
         "custom/cpu",
         "custom/gpu",
@@ -27,13 +26,10 @@
         "idle_inhibitor"
     ],
 
+
     "tray": {
         "icon-size": 18,
         "spacing": 10
-    },
-
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
     },
 
 
@@ -86,7 +82,7 @@
         "on-click": "nm-connection-editor"
     },
 
-    "network": {
+    "network#ethernet1": {
         "interface": "enp112s0",
         "format-ethernet": "{ipaddr} 󰈀",
         "tooltip-format": "{ifname}: {ipaddr}/{cidr} via {gwaddr}",
@@ -94,7 +90,7 @@
         "format-disconnected": "Disconnected ⚠"
     },
 
-    "network#ethernet": {
+    "network#ethernet2": {
         "interface": "enp110s0",
         "format-ethernet": "{ipaddr} 󰈀",
         "format-linked": "",
