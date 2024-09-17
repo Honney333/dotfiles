@@ -1,5 +1,9 @@
 # dotfiles for OLED theme
 
+## additional information
+
+[Here](https://www.nerdfonts.com/cheat-sheet) you can find the Icons (https://www.nerdfonts.com/cheat-sheet)
+
 ## additional changes
 
 ### set the XDG_CONFIG for swaylock automatically
