@@ -15294,3 +15294,32 @@ for Headphones to 255
 16:15:26 [DEBUG] (31) goxlr_daemon::device: Applying Routing to Microphone:
 16:15:26 [DEBUG] (31) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
 16:15:26 [DEBUG] (31) goxlr_daemon::tts: Received TTS Message: Mic Muted
+21:37:27 [DEBUG] (2) goxlr_daemon::device: Updating LineIn volume from 133 to 126 as a human moved the fader
+21:37:27 [DEBUG] (2) goxlr_daemon::device: Updating LineIn volume from 126 to 124 as a human moved the fader
+21:37:27 [DEBUG] (2) goxlr_daemon::device: Updating LineIn volume from 124 to 125 as a human moved the fader
+22:22:33 [DEBUG] (31) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+22:22:33 [DEBUG] (31) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+22:22:33 [DEBUG] (31) goxlr_daemon::device: Setting MicInputMute to 0
+22:22:33 [DEBUG] (31) goxlr_daemon::device: Applying Routing to Microphone:
+22:22:33 [DEBUG] (31) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+22:22:33 [DEBUG] (31) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+23:08:45 [DEBUG] (2) goxlr_daemon::device: Setting Mix volume for LineOut to 0
+23:08:45 [DEBUG] (2) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+23:08:45 [DEBUG] (2) goxlr_daemon::device: Setting Mix volume for Headphones to 153
+23:08:45 [DEBUG] (2) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+23:08:54 [DEBUG] (31) goxlr_daemon::device: Setting Mix volume for LineOut to 255
+23:08:54 [DEBUG] (31) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+23:08:54 [DEBUG] (31) goxlr_daemon::device: Setting Mix volume for Headphones to 0
+23:08:54 [DEBUG] (31) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+23:09:20 [DEBUG] (2) goxlr_daemon::device: Setting Mix volume for LineOut to 255
+23:09:20 [DEBUG] (2) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+23:09:20 [DEBUG] (2) goxlr_daemon::device: Setting Mix volume for Headphones to 0
+23:09:20 [DEBUG] (2) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+23:09:22 [DEBUG] (31) goxlr_daemon::device: Setting Mix volume for LineOut to 0
+23:09:22 [DEBUG] (31) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+23:09:22 [DEBUG] (31) goxlr_daemon::device: Setting Mix volume for Headphones to 153
+23:09:22 [DEBUG] (31) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+23:09:22 [DEBUG] (31) goxlr_daemon::device: Setting Mix volume for LineOut to 255
+23:09:22 [DEBUG] (31) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+23:09:22 [DEBUG] (31) goxlr_daemon::device: Setting Mix volume for Headphones to 0
+23:09:22 [DEBUG] (31) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0

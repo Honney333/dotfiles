@@ -7,5 +7,5 @@ SCRIPT="goxlr-daemon"
 SCRIPT2="$HOME/.config/sway/scripts/goxlr/goxlr-settings-start.sh"
 
 nohup "$SCRIPT" &
-send_normal_notification "GOXLR daemon Started" "Launched the GOXLR Daemon to control the Audio"
+send_notification "normal" "GOXLR daemon Started" "Launched the GOXLR Daemon to control the Audio" "$HOME/.icons/BeautyLine-Garuda/apps/scalable/goxlr-utility.svg"
 nohup "$SCRIPT2" &

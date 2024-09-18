@@ -8,4 +8,4 @@ SCRIPT2="goxlr-client volume headphones 0"
 
 $SCRIPT
 $SCRIPT2
-send_normal_notification "Switched to Speaker" "Muted the Headphones and set the Speaker to a appropiate Volume."
+send_notification "normal" "Switched to Speaker" "Muted the Headphones and set the Speaker to a appropiate Volume." "$HOME/.icons/BeautyLine-Garuda/apps/scalable/goxlr-utility.svg"

@@ -64,3 +64,17 @@ bindsym $mod+shift+u exec wtype "Ü"
 bindsym $mod+s exec wtype "ß"
 
 bindsym $mod+Shift+e exec wtype "€"
+
+# Makropad
+bindsym $mod+shift+ctrl+F1 exec $HOME/.config/sway/scripts/makropad/button01.sh
+bindsym $mod+shift+ctrl+F2 exec $HOME/.config/sway/scripts/makropad/button02.sh
+bindsym $mod+shift+ctrl+F3 exec $HOME/.config/sway/scripts/makropad/button03.sh
+bindsym $mod+shift+ctrl+F4 exec $HOME/.config/sway/scripts/makropad/button04.sh
+bindsym $mod+shift+ctrl+F5 exec $HOME/.config/sway/scripts/makropad/button05.sh
+bindsym $mod+shift+ctrl+F6 exec $HOME/.config/sway/scripts/makropad/button06.sh
+bindsym $mod+shift+ctrl+F7 exec $HOME/.config/sway/scripts/makropad/button07.sh
+bindsym $mod+shift+ctrl+F8 exec $HOME/.config/sway/scripts/makropad/button08.sh
+bindsym $mod+shift+ctrl+F9 exec $HOME/.config/sway/scripts/makropad/button09.sh
+bindsym $mod+shift+ctrl+F10 exec $HOME/.config/sway/scripts/makropad/button10.sh
+bindsym $mod+shift+ctrl+F11 exec $HOME/.config/sway/scripts/makropad/button11.sh
+bindsym $mod+shift+ctrl+F12 exec $HOME/.config/sway/scripts/makropad/button12.sh
