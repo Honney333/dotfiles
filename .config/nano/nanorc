@@ -149,6 +149,12 @@ set smarthome
 ## Allow nano to be suspended.
 # set suspend
 
+## Set to always show current line number at bottom
+#set constantshow
+
+## Set to show linenumber on the left site
+set linenumbers
+
 ## Use this tab size instead of the default; it must be greater than 0.
 set tabsize 4
 
@@ -174,7 +180,7 @@ set tabstospaces
 # set undo
 
 ## Enable soft line wrapping (AKA full line display)
-# set softwrap
+set softwrap
 
 
 ## Color setup

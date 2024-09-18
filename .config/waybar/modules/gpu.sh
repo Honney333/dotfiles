@@ -9,4 +9,4 @@ gpu_usage=$(rocm-smi --showuse | grep 'GPU\[0\]' | awk '{print $6}')
 
 
 # Output the GPU temperature
-echo "GPU: ${gpu_temp}°C | ${gpu_usage}%"
+echo "GPU: ${gpu_usage}%  ${gpu_temp}°C"

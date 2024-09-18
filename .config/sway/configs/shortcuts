@@ -47,6 +47,9 @@ bindsym $mod+ctrl+r exec $HOME/.local/bin/qalculate
 bindsym $mod+shift+h exec $HOME/.config/sway/scripts/goxlr/headphones.sh
 bindsym $mod+h exec $HOME/.config/sway/scripts/goxlr/speaker.sh
 
+# Open Email client
+bindsym $mod+ctrl+m exec betterbird
+
 # Umlaute
 bindsym $mod+a exec wtype "ä"
 bindsym $mod+shift+a exec wtype "Ä"

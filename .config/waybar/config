@@ -75,7 +75,7 @@
     "network#wifi": {
         "interface": "wlan*",
         "format-ethernet": "",
-        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-wifi": "  {essid} ({signalStrength}%)",
         "format-linked": "",
         "format-disconnected": "",
         "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
@@ -102,7 +102,7 @@
     "custom/cpu": {
         "exec": "~/.config/waybar/modules/cpu.sh",
         "interval": 2.5,
-        "format": "{}  "
+        "format": "{}"
     },
 
     "custom/gpu": {
@@ -116,8 +116,8 @@
     },
     
     "custom/storage": {
-        "format": "{}   ",
-        "format-alt": "{percentage}%   ",
+        "format": "{}  ",
+        "format-alt": "{percentage}%  ",
         "format-alt-click": "click-right",
         "return-type": "json",
         "interval": 60,

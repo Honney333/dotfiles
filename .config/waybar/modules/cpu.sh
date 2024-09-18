@@ -8,4 +8,4 @@ cpu_temp=$(echo "scale=1; $cpu_temp / 1000" | bc)
 cpu_usage=$(top -bn1 | awk '/Cpu/ { print $2}')
 
 # Output the CPU temperature
-echo "CPU: ${cpu_temp}°C | ${cpu_usage}%"
+echo "CPU: ${cpu_usage}%  ${cpu_temp}°C"
