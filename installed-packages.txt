@@ -33,6 +33,7 @@ foot
 furmark
 game-devices-udev
 git
+git-lfs
 github-cli
 gnome-disk-utility
 gnome-themes-extra
@@ -192,6 +193,7 @@ foot
 furmark
 game-devices-udev
 git
+git-lfs
 github-cli
 gnome-disk-utility
 gnome-themes-extra
