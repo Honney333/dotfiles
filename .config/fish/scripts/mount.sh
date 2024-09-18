@@ -16,32 +16,32 @@ PASSWORD=$(<"$PASSWORD_FILE")
 # Function to mount all shares
 function mount_all() {
     if ping -c 1 -W 2 $SERVER_IP > /dev/null 2>&1; then
-	send_low_notification "Ping Successful" "$SERVER_IP is Up and Running. Continuing to mount."
+	send_notification "low" "Ping Successful" "$SERVER_IP is Up and Running. Continuing to mount." "$HOME/.icons/BeautyLine-Garuda/devices/scalable/connect_established.svg"
         # Mount RAID
         if ! is_mounted "$MOUNT_POINT_RAID"; then
             if echo "$PASSWORD" | sudo -S mount -t cifs -o credentials="$CRENDENTIALS",uid=1000,gid=1000 //$SERVER_IP/RAID "$MOUNT_POINT_RAID"; then
-                send_low_notification "Mount Successful" "Mounted RAID at $MOUNT_POINT_RAID successfully."
+                send_notification "low" "Mount Successful" "Mounted RAID at $MOUNT_POINT_RAID successfully." "$HOME/.icons/BeautyLine-Garuda/devices/scalable/drive-harddisk-encrypted-symbolic.svg"
             else
-                send_high_notification "Mount Failed" "Failed to mount RAID at $MOUNT_POINT_RAID."
+                send_notification "high" "Mount Failed" "Failed to mount RAID at $MOUNT_POINT_RAID." "$HOME/.icons/BeautyLine-Garuda/devices/scalable/drive-harddisk-symbolic.svg"
                 exit 1
             fi
         else
-            send_low_notification "Already Mounted" "RAID is already mounted at $MOUNT_POINT_RAID."
+            send_notification "low" "Already Mounted" "RAID is already mounted at $MOUNT_POINT_RAID." "$HOME/.icons/BeautyLine-Garuda/devices/scalable/drive-harddisk.svg"
         fi
 
         # Mount SSD
         if ! is_mounted "$MOUNT_POINT_SSD"; then
             if echo "$PASSWORD" | sudo -S mount -t cifs -o credentials="$CRENDENTIALS",uid=1000,gid=1000 //$SERVER_IP/Server-SSD "$MOUNT_POINT_SSD"; then
-                send_low_notification "Mount Successful" "Mounted SSD at $MOUNT_POINT_SSD successfully."
+                send_notification "low" "Mount Successful" "Mounted SSD at $MOUNT_POINT_SSD successfully." "$HOME/.icons/BeautyLine-Garuda/devices/scalable/drive-harddisk-encrypted-symbolic.svg"
             else
-                send_high_notification "Mount Failed" "Failed to mount SSD at $MOUNT_POINT_SSD."
+                send_notification "high" "Mount Failed" "Failed to mount SSD at $MOUNT_POINT_SSD." "$HOME/.icons/BeautyLine-Garuda/devices/scalable/drive-harddisk-symbolic.svg"
                 exit 1
             fi
         else
-            send_low_notification "Already Mounted" "SSD is already mounted at $MOUNT_POINT_SSD."
+            send_notification "low" "Already Mounted" "SSD is already mounted at $MOUNT_POINT_SSD." "$HOME/.icons/BeautyLine-Garuda/devices/scalable/drive-harddisk.svg"
         fi
     else
-        send_normal_notification "Connection Failed" "Could not connect to IP: $SERVER_IP."
+        send_notification "normal" "Connection Failed" "Could not connect to IP: $SERVER_IP." "$HOME/.icons/BeautyLine-Garuda/actions/scalable/network-disconnect.svg"
         exit 1
     fi
 }
