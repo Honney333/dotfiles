@@ -15288,3 +15288,9 @@ for Headphones to 255
 13:49:58 [DEBUG] (33) goxlr_daemon::settings: Settings Saved.
 13:49:58 [DEBUG] (31) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
 13:49:58 [DEBUG] (33) goxlr_daemon::device: Updating LineIn volume from 134 to 133 as a human moved the fader
+16:15:26 [DEBUG] (31) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+16:15:26 [DEBUG] (31) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+16:15:26 [DEBUG] (31) goxlr_daemon::device: Setting MicInputMute to 1
+16:15:26 [DEBUG] (31) goxlr_daemon::device: Applying Routing to Microphone:
+16:15:26 [DEBUG] (31) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+16:15:26 [DEBUG] (31) goxlr_daemon::tts: Received TTS Message: Mic Muted

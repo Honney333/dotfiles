@@ -1,4 +1,5 @@
-bindsym $mod+l exec $xlock
+
+bindsym $mod+l exec $lock
 
 # Start a terminal
 bindsym $mod+Return exec $term
