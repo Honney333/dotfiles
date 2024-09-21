@@ -1,7 +1,7 @@
-set $ws1   1:
-set $ws2   2:
-set $ws3   3:3
-set $ws4   4:4
+set $ws1   1: 
+set $ws2   2:󰈹 
+set $ws3   3: 
+set $ws4   4:󰑴 
 set $ws5   5:5
 set $ws6   6:6
 set $ws7   7:7
@@ -20,6 +20,17 @@ set $wsF9  19:19
 set $wsF10 20:20
 set $wsF11 21:
 set $wsF12 22:
+
+# Set Workspace Number Acording to Output
+workspace $ws1 output DP-1
+workspace $ws2 output DP-2
+workspace $ws3 output DP-3
+
+workspace $ws4 output DP-1
+workspace $wsF2 output DP-2
+workspace $wsF1 output DP-3
+workspace $wsF11 output DP-3
+
 
 # Switch to workspace
 bindsym $mod+1   workspace $ws1
@@ -68,3 +79,13 @@ bindsym $mod+Shift+F9   move container to workspace $wsF9
 bindsym $mod+Shift+F10  move container to workspace $wsF10
 bindsym $mod+Shift+F11  move container to workspace $wsF11
 bindsym $mod+Shift+F12  move container to workspace $wsF12
+
+# Default workspaces for common programs
+assign [class="^steam$"] $ws1
+assign [class="^Code$"] $ws1
+assign [title="Firefox Developer Edition"] $ws2
+assign [class="^vesktop$"] $ws3
+assign [title="Mozilla Firefox"] $ws4
+assign [class="^Signal$"] $wsF1
+assign [class="^betterbird$"] $wsF2
+assign [app_id="^org.keepassxc.KeePassXC$"] $wsF11

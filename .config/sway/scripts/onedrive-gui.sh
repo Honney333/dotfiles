@@ -1,3 +1,3 @@
 #!/bin/bash
 SCRIPT="/usr/bin/onedrivegui"
-nohup "$SCRIPT" &
+nohup --no-startup-id "$SCRIPT" &

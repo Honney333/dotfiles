@@ -2,6 +2,7 @@
 
 # Get the currently focused monitor using swaymsg (works in sway/Wayland environments)
 monitor=$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')
+icon1="~/.icons/BeautyLine-Garuda/apps/scalable/screenshot.svg"
 
 # Rofi command
 rofi_command="rofi -monitor $monitor -theme $HOME/.config/rofi/config/screenshot.rasi"

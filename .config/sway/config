@@ -94,25 +94,7 @@ floating_modifier $mod normal
 # Workspaces:
 include $HOME/.config/sway/configs/workspaces
 
-# Set Workspace Number Acording to Output
-workspace $ws1 output DP-1
-workspace $ws2 output DP-2
-#
-    
-#
-# Layout stuff:
-#
-    # You can "split" the current object of your focus with
-    # $mod+b or $mod+v, for horizontal and vertical splits
-    # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
-
-    # Switch the current container between different layout styles
-    # bindsym $mod+s layout stacking
-    # bindsym $mod+w layout tabbed
-    # bindsym $mod+e layout toggle split
-
+# Layout
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
@@ -166,24 +148,12 @@ client.urgent            $border_urgent     $background $text_urgent        $ind
 client.placeholder       $border_inactive   $background $text               $indicator_urgent  $border_inactive
 client.background                           $background
 
-# Audio Control
-    # Output
-    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-    # Input
-    bindsym $mod+XF86AudioRaiseVolume exec pactl set-source-volume @DEFAULT_SOURCE@ +5%
-    bindsym $mod+XF86AudioLowerVolume exec pactl set-source-volume @DEFAULT_SOURCE@ -5%
-# Media Control
-    # Pause/Play
-    bindsym XF86AudioPlay exec playerctl play-pause
-    # Fast forward
-    bindsym XF86AudioNext exec playerctl position 10+
-    # Rewind
-    bindsym XF86AudioPrev exec playerctl position 10-
+# Other Autostart (visible)
+include $HOME/.config/sway/configs/autostart
 
 exec /usr/lib/polkit-kde-authentication-agent-1
-exec nm-applet
-exec swaync
+exec --no-startup-id swaync
+exec --no-startup-id nm-applet
 exec sleep 2
 exec $HOME/.config/sway/scripts/onedrive-gui.sh
 exec $HOME/.config/sway/scripts/goxlr/goxlr-start.sh

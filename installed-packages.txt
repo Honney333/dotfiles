@@ -19,6 +19,7 @@ brightnessctl
 btop
 btrfs-progs
 curlftpfs
+davinci-resolve
 dmenu
 efibootmgr
 evtest
@@ -85,6 +86,7 @@ obs-studio
 octopi
 onedrive-abraunegg
 onedrivegui
+openrazer-daemon
 openssh
 p7zip
 paru
@@ -101,13 +103,19 @@ python-bcrypt
 python-distro
 python-gnupg
 python-keyring
+python-pip
 python-proton-client
 python-pyopenssl
 python-pythondialog
+python-pytorch-opt-rocm
 python-systemd
+python-torchvision-rocm
+python-torchvision-rocm-debug
+python311
 qdirstat
 qt5ct
 qt6ct
+r2modman-bin
 remmina
 rocm-hip-libraries
 rocm-hip-runtime
@@ -127,6 +135,7 @@ swaybg
 swayidle
 swaylock
 swaync
+torchvision-rocm
 ttf-clear-sans
 ugrep
 vencord
@@ -179,6 +188,7 @@ brightnessctl
 btop
 btrfs-progs
 curlftpfs
+davinci-resolve
 dmenu
 efibootmgr
 evtest
@@ -245,6 +255,7 @@ obs-studio
 octopi
 onedrive-abraunegg
 onedrivegui
+openrazer-daemon
 openssh
 p7zip
 paru
@@ -261,13 +272,19 @@ python-bcrypt
 python-distro
 python-gnupg
 python-keyring
+python-pip
 python-proton-client
 python-pyopenssl
 python-pythondialog
+python-pytorch-opt-rocm
 python-systemd
+python-torchvision-rocm
+python-torchvision-rocm-debug
+python311
 qdirstat
 qt5ct
 qt6ct
+r2modman-bin
 remmina
 rocm-hip-libraries
 rocm-hip-runtime
@@ -287,6 +304,7 @@ swaybg
 swayidle
 swaylock
 swaync
+torchvision-rocm
 ttf-clear-sans
 ugrep
 vencord

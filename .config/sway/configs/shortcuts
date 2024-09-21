@@ -78,3 +78,20 @@ bindsym $mod+shift+ctrl+F9 exec $HOME/.config/sway/scripts/makropad/button09.sh
 bindsym $mod+shift+ctrl+F10 exec $HOME/.config/sway/scripts/makropad/button10.sh
 bindsym $mod+shift+ctrl+F11 exec $HOME/.config/sway/scripts/makropad/button11.sh
 bindsym $mod+shift+ctrl+F12 exec $HOME/.config/sway/scripts/makropad/button12.sh
+
+
+# Audio Control
+    # Output
+    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+    # Input
+    bindsym $mod+XF86AudioRaiseVolume exec pactl set-source-volume @DEFAULT_SOURCE@ +5%
+    bindsym $mod+XF86AudioLowerVolume exec pactl set-source-volume @DEFAULT_SOURCE@ -5%
+
+# Media Control
+    # Pause/Play
+    bindsym XF86AudioPlay exec playerctl play-pause
+    # Fast forward
+    bindsym XF86AudioNext exec playerctl position 10+
+    # Rewind
+    bindsym XF86AudioPrev exec playerctl position 10-
