@@ -2,15 +2,15 @@ set $ws1   1:
 set $ws2   2:󰈹 
 set $ws3   3: 
 set $ws4   4:󰑴 
-set $ws5   5:5
+set $ws5   5: 
 set $ws6   6:6
 set $ws7   7:7
 set $ws8   8:8
 set $ws9   9:9
 set $ws0   10:
-set $wsF1  11:
-set $wsF2  12:
-set $wsF3  13:13
+set $wsF1  11: 
+set $wsF2  12: 
+set $wsF3  13: 
 set $wsF4  14:14
 set $wsF5  15:15
 set $wsF6  16:16
@@ -19,16 +19,18 @@ set $wsF8  18:
 set $wsF9  19:19
 set $wsF10 20:20
 set $wsF11 21:
-set $wsF12 22:
+set $wsF12 22: 
 
 # Set Workspace Number Acording to Output
 workspace $ws1 output DP-1
 workspace $ws2 output DP-2
 workspace $ws3 output DP-3
 
-workspace $ws4 output DP-1
-workspace $wsF2 output DP-2
+workspace $ws4 output DP-2
+workspace $ws5 output DP-1
 workspace $wsF1 output DP-3
+workspace $wsF2 output DP-2
+workspace $wsF3 output DP-1
 workspace $wsF11 output DP-3
 
 
@@ -83,9 +85,15 @@ bindsym $mod+Shift+F12  move container to workspace $wsF12
 # Default workspaces for common programs
 assign [class="^steam$"] $ws1
 assign [class="^Code$"] $ws1
+assign [class="^steam_app_.*$"] $ws1
 assign [title="Firefox Developer Edition"] $ws2
 assign [class="^vesktop$"] $ws3
 assign [title="Mozilla Firefox"] $ws4
+assign [title="Xournal++"] $ws5
 assign [class="^Signal$"] $wsF1
+assign [title=".*WhatsApp.*"] $wsF1
+assign [app_id="^com.ktechpit.whatsie$"] $wsF1
+assign [class="^whatsdesk$"] $wsF1
 assign [class="^betterbird$"] $wsF2
+assign [class="^Brave-browser$"] $wsF3
 assign [app_id="^org.keepassxc.KeePassXC$"] $wsF11

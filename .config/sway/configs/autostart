@@ -4,3 +4,4 @@ exec $HOME/.config/sway/scripts/discord-start.sh
 exec signal-desktop
 exec keepassxc
 exec betterbird
+exec brave
