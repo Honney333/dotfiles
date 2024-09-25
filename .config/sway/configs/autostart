@@ -5,3 +5,4 @@ exec signal-desktop
 exec keepassxc
 exec betterbird
 exec brave
+exec whatsdesk

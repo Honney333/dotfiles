@@ -7,5 +7,7 @@ cpu_temp=$(echo "scale=1; $cpu_temp / 1000" | bc)
 
 cpu_usage=$(top -bn1 | awk '/Cpu/ { print $2}')
 
+cpu_power=$(sensors | grep "PPT" | awk '{print $2}' | head -n 1)
+
 # Output the CPU temperature
-echo "CPU: ${cpu_usage}%  ${cpu_temp}°C"
+echo "CPU: ${cpu_usage}%  ${cpu_temp}°C 󱐋 ${cpu_power} W"

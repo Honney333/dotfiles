@@ -17,7 +17,7 @@ SAVEIFS=$IFS
 IFS=$'\n'
 
 cacheage=$(($(date +%s) - $(stat -c '%Y' "$cachedir/$cachefile")))
-if [ $cacheage -gt 1740 ] || [ ! -s $cachedir/$cachefile ]; then
+if [ $cacheage -gt 1720 ] || [ ! -s $cachedir/$cachefile ]; then
     data=($(curl -s https://en.wttr.in/$1\?0qnT 2>&1))
     echo ${data[0]} | cut -f1 -d, > $cachedir/$cachefile
     echo ${data[1]} | sed -E 's/^.{15}//' >> $cachedir/$cachefile
@@ -26,54 +26,60 @@ fi
 
 weather=($(cat $cachedir/$cachefile))
 
-# Restore IFSClear
+# Debugging: Output the entire weather array
+# echo "Weather array: ${weather[@]}"
+
+# Restore IFS
 IFS=$SAVEIFS
 
-temperature=$(echo ${weather[2]} | sed -E 's/([[:digit:]]+)\.\./\1 to /g')
+# Split temperature and condition from weather[2]
+temperature=$(echo ${weather[2]} | awk '{print $1 $2}')
+condition=$(echo ${weather[1]})
 
-#echo ${weather[1]##*,}
+# Debugging: Output temperature and condition
+# echo "Temperature: $temperature"
+# echo "Condition: $condition"
 
 # https://fontawesome.com/icons?s=solid&c=weather
 case $(echo ${weather[1]##*,} | tr '[:upper:]' '[:lower:]') in
 "clear" | "sunny")
-    condition=""
+    condition_icon=" "
     ;;
 "partly cloudy")
-    condition=""
+    condition_icon=" "
     ;;
 "cloudy")
-    condition=""
+    condition_icon=" "
     ;;
 "overcast")
-    condition=""
+    condition_icon=" "
     ;;
 "mist" | "fog" | "freezing fog")
-    condition=""
+    condition_icon=" "
     ;;
 "patchy rain possible" | "patchy light drizzle" | "light drizzle" | "patchy light rain" | "light rain" | "light rain shower" | "rain")
-    condition=""
+    condition_icon=" "
     ;;
-"moderate rain at times" | "moderate rain" | "heavy rain at times" | "heavy rain" | "moderate or heavy rain shower" | "torrential rain shower" | "rain shower")
-    condition=""
+"moderate rain at times" | "moderate rain" | "heavy rain at times" | "heavy rain" | "moderate or heavy rain shower" | "torrential rain shower" | "rain shower" | "heavy rain shower")
+    condition_icon=" "
     ;;
 "patchy snow possible" | "patchy sleet possible" | "patchy freezing drizzle possible" | "freezing drizzle" | "heavy freezing drizzle" | "light freezing rain" | "moderate or heavy freezing rain" | "light sleet" | "ice pellets" | "light sleet showers" | "moderate or heavy sleet showers")
-    condition=""
+    condition_icon=" "
     ;;
 "blowing snow" | "moderate or heavy sleet" | "patchy light snow" | "light snow" | "light snow showers")
-    condition=""
+    condition_icon=" "
     ;;
 "blizzard" | "patchy moderate snow" | "moderate snow" | "patchy heavy snow" | "heavy snow" | "moderate or heavy snow with thunder" | "moderate or heavy snow showers")
-    condition=""
+    condition_icon=" "
     ;;
 "thundery outbreaks possible" | "patchy light rain with thunder" | "moderate or heavy rain with thunder" | "patchy light snow with thunder")
-    condition=""
+    condition_icon=" "
     ;;
 *)
-    condition=""
-    echo -e "{\"text\":\""$condition"\", \"alt\":\""${weather[0]}"\", \"tooltip\":\""${weather[0]}: $temperature ${weather[1]}"\"}"
+    condition_icon=" "  # Default if no condition matches
     ;;
 esac
 
 #echo $temp $condition
 
-echo -e "{\"text\":\""$temperature $condition"\", \"alt\":\""${weather[0]}"\", \"tooltip\":\""${weather[0]}: $temperature ${weather[1]}"\"}"
+echo -e "{\"text\":\""$temperature $condition_icon $condition"\", \"alt\":\""${weather[0]}"\", \"tooltip\":\""${weather[0]}: $temperature $condition"\"}"

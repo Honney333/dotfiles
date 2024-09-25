@@ -4,8 +4,9 @@
 
     "modules-left": [
         "sway/workspaces",
-        "custom/weather",
         "tray",
+        "custom/weather",
+        "custom/notification",
         "sway/window"
     ],
     
@@ -31,25 +32,41 @@
         "icon-size": 18,
         "spacing": 10
     },
-
-
-
-    "clock": {
-        "timezone": "Europe/Berlin",
-        "format": "{:%d-%m-%Y - %H:%M}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-    },
-
+             
     "custom/weather": {
         "format": "{}  ",
         "format-alt": "{alt}: {}",
         "format-alt-click": "click-right",
-        "interval": 1800,
+        "interval": 60,
         "return-type": "json",
         "exec": "~/.config/waybar/modules/weather.sh",
         "exec-if": "ping wttr.in -c1"
     },
 
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
+            "none": " ",
+            "dnd-notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
+            "dnd-none": " "
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "sleep 0.1 && swaync-client -t -sw",
+        "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+        "escape": true
+    },
+
+
+    "clock": {
+        "timezone": "Europe/Berlin",
+        "format": "{:%d-%m-%Y - %H:%M:%S}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "interval": 1
+    },
 
 
     "pulseaudio": {

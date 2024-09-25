@@ -48,6 +48,14 @@
   margin-left: 1rem;
   color: @weather;
 }
+#custom-weather {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @bg-modules;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: @weather;
+}
 
 #tray {
   border-radius: 1rem;
