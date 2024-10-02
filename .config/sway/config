@@ -55,11 +55,8 @@ input "type:tablet_tool" {
    map_to_output DP-1
    left_handed disabled
 }
-#
-#
-#
 
-### Key bindings (use wev to get key (sym))
+# Key bindings (use wev to get key (sym))
 #
 include $HOME/.config/sway/configs/shortcuts
 

@@ -46,6 +46,11 @@ notify_view () {
     fi
 }
 
+notify () {
+    notify-send -u low --replace-id 699 -i "$icon1" "Copied to clipboard."
+    notify-send -u low --replace-id 699 -i "$icon1" "Screenshot Saved."
+}
+
 # Countdown function with notify-send
 countdown() {
     for sec in $(seq $1 -1 1); do
@@ -84,7 +89,7 @@ shotwin() {
 # Select an area to capture using `slurp` (a Wayland-compatible area selector)
 shotarea() {
     cd "$dir" && sleep 0.1 && grim -g "$(slurp)" "$file" && wl-copy < "$file"
-    notify_view
+    notify
 }
 
 # Ensure the screenshot directory exists
