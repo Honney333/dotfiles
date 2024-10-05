@@ -1,5 +1,7 @@
 # dotfiles for OLED theme
 
+xrandr --output DP-7 --primary
+
 ## additional information
 
 [Here](https://www.nerdfonts.com/cheat-sheet) you can find the Icons (https://www.nerdfonts.com/cheat-sheet)

@@ -20,6 +20,7 @@ btop
 btrfs-progs
 curlftpfs
 davinci-resolve
+debtap
 dmenu
 efibootmgr
 evtest
@@ -74,6 +75,7 @@ linuxconsole
 lutris
 man-db
 mangohud
+minicom
 mousepad
 nano
 nemo
@@ -103,6 +105,7 @@ polkit-kde-agent
 polkit-qt5
 polkit-qt6
 prismlauncher
+protontricks
 python-bcrypt
 python-distro
 python-gnupg
@@ -126,6 +129,7 @@ rocm-hip-runtime
 rocm-hip-sdk
 rofi
 sassc
+screen
 sddm
 seatd
 signal-desktop
@@ -200,6 +204,7 @@ btop
 btrfs-progs
 curlftpfs
 davinci-resolve
+debtap
 dmenu
 efibootmgr
 evtest
@@ -254,6 +259,7 @@ linuxconsole
 lutris
 man-db
 mangohud
+minicom
 mousepad
 nano
 nemo
@@ -283,6 +289,7 @@ polkit-kde-agent
 polkit-qt5
 polkit-qt6
 prismlauncher
+protontricks
 python-bcrypt
 python-distro
 python-gnupg
@@ -306,6 +313,7 @@ rocm-hip-runtime
 rocm-hip-sdk
 rofi
 sassc
+screen
 sddm
 seatd
 signal-desktop

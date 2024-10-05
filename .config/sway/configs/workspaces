@@ -1,7 +1,7 @@
 set $ws1   '1: '
-set $ws2   '2:󰈹 '
-set $ws3   '3: '
-set $ws4   '4:󰑴 '
+set $ws2   '2: '
+set $ws3   '3:󰈹 '
+set $ws4   '4: '
 set $ws5   '5: '
 set $ws6   6:6
 set $ws7   7:7
@@ -10,8 +10,8 @@ set $ws9   9:9
 set $ws0   '10: '
 set $wsF1  '11: '
 set $wsF2  '12: '
-set $wsF3  '13: '
-set $wsF4  14:14
+set $wsF3  '13:13'
+set $wsF4  '14:󰑴 '
 set $wsF5  15:15
 set $wsF6  16:16
 set $wsF7  17:17
@@ -22,15 +22,16 @@ set $wsF11 '21: '
 set $wsF12 '22: '
 
 # Set Workspace Number Acording to Output
-workspace $ws1 output $bot_left
-workspace $ws2 output $top_right
-workspace $ws3 output $top_left
+workspace $ws1 output $bot_right
+workspace $ws2 output $bot_left
+workspace $ws3 output $top_right
+workspace $ws4 output $top_left
 
 workspace $ws4 output $top_right
-workspace $ws5 output $bot_left
-workspace $wsF1 output DP-3
+workspace $ws5 output $bot_right
+workspace $wsF1 output $top_left
 workspace $wsF2 output $top_right
-workspace $wsF3 output $bot_left
+workspace $wsF4 output $top_right
 workspace $wsF11 output $top_left
 
 
@@ -86,14 +87,14 @@ bindsym $mod+Shift+F12  move container to workspace $wsF12
 assign [class="^steam$"] $ws1
 assign [class="^Code$"] $ws1
 assign [class="^steam_app_.*$"] $ws1
-assign [title="Firefox Developer Edition"] $ws2
-assign [class="^vesktop$"] $ws3
-assign [title="Mozilla Firefox"] $ws4
+assign [title="Firefox Developer Edition"] $ws3
+assign [class="^vesktop$"] $ws4
+assign [title="Mozilla Firefox"] $wsF4
 assign [title="Xournal++"] $ws5
 assign [class="^Signal$"] $wsF1
 assign [title=".*WhatsApp.*"] $wsF1
 assign [app_id="^com.ktechpit.whatsie$"] $wsF1
 assign [class="^whatsdesk$"] $wsF1
 assign [class="^betterbird$"] $wsF2
-assign [class="^Brave-browser$"] $wsF3
+assign [class="^Brave-browser$"] $ws2
 assign [app_id="^org.keepassxc.KeePassXC$"] $wsF11
