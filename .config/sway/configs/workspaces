@@ -83,7 +83,7 @@ bindsym $mod+Shift+F10  move container to workspace $wsF10
 bindsym $mod+Shift+F11  move container to workspace $wsF11
 bindsym $mod+Shift+F12  move container to workspace $wsF12
 
-# Default workspaces for common programs
+# Default workspaces for common programs get name via: swaymsg -t get_tree
 assign [class="^steam$"] $ws1
 assign [class="^Code$"] $ws1
 assign [class="^steam_app_.*$"] $ws1
