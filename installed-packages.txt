@@ -24,6 +24,7 @@ debtap
 dmenu
 efibootmgr
 evtest
+exfat-utils
 eza
 fastfetch
 firefox
@@ -38,6 +39,7 @@ git
 git-lfs
 github-cli
 gnome-disk-utility
+gnome-keyring
 gnome-themes-extra
 goxlr-utility-ui
 gptfdisk
@@ -52,6 +54,7 @@ homeassistant-desktop-bin
 htop
 inkscape
 iwd
+jdk17-openjdk
 jdk21-openjdk
 jmtpfs
 jq
@@ -65,6 +68,8 @@ libpulse
 libreoffice-fresh
 libreoffice-fresh-de
 libva-mesa-driver
+libva-utils
+libva-vdpau-driver
 libvncserver
 linux
 linux-firmware
@@ -75,6 +80,7 @@ linuxconsole
 lutris
 man-db
 mangohud
+mesa-vdpau
 minicom
 mousepad
 nano
@@ -105,7 +111,9 @@ polkit-kde-agent
 polkit-qt5
 polkit-qt6
 prismlauncher
+protonmail-bridge
 protontricks
+prusa-slicer
 python-bcrypt
 python-distro
 python-gnupg
@@ -128,6 +136,7 @@ rocm-hip-libraries
 rocm-hip-runtime
 rocm-hip-sdk
 rofi
+rustdesk
 sassc
 screen
 sddm
@@ -158,6 +167,7 @@ visual-studio-code-bin
 vlc
 vulkan-radeon
 waybar
+webcamoid
 wev
 wget
 whatsdesk-bin
@@ -179,8 +189,9 @@ xorg-xwayland
 xournalpp
 yay
 yay-debug
-yubioath-desktop
+yubico-authenticator
 zfs-utils
+zoom
 zoxide
 amd-ucode
 amf-amdgpu-pro
@@ -208,6 +219,7 @@ debtap
 dmenu
 efibootmgr
 evtest
+exfat-utils
 eza
 fastfetch
 firefox
@@ -222,6 +234,7 @@ git
 git-lfs
 github-cli
 gnome-disk-utility
+gnome-keyring
 gnome-themes-extra
 goxlr-utility-ui
 gptfdisk
@@ -236,6 +249,7 @@ homeassistant-desktop-bin
 htop
 inkscape
 iwd
+jdk17-openjdk
 jdk21-openjdk
 jmtpfs
 jq
@@ -249,6 +263,8 @@ libpulse
 libreoffice-fresh
 libreoffice-fresh-de
 libva-mesa-driver
+libva-utils
+libva-vdpau-driver
 libvncserver
 linux
 linux-firmware
@@ -259,6 +275,7 @@ linuxconsole
 lutris
 man-db
 mangohud
+mesa-vdpau
 minicom
 mousepad
 nano
@@ -289,7 +306,9 @@ polkit-kde-agent
 polkit-qt5
 polkit-qt6
 prismlauncher
+protonmail-bridge
 protontricks
+prusa-slicer
 python-bcrypt
 python-distro
 python-gnupg
@@ -312,6 +331,7 @@ rocm-hip-libraries
 rocm-hip-runtime
 rocm-hip-sdk
 rofi
+rustdesk
 sassc
 screen
 sddm
@@ -342,6 +362,7 @@ visual-studio-code-bin
 vlc
 vulkan-radeon
 waybar
+webcamoid
 wev
 wget
 whatsdesk-bin
@@ -363,6 +384,7 @@ xorg-xwayland
 xournalpp
 yay
 yay-debug
-yubioath-desktop
+yubico-authenticator
 zfs-utils
+zoom
 zoxide

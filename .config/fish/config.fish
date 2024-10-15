@@ -77,7 +77,7 @@ if status is-interactive
 		zoxide init fish | source
 		alias zd='z'
 
-		alias print_cam='ssh honney@192.168.1.187'
+		alias print_cam='ssh honney@192.168.1.184'
 
 		alias updateall='sudo pacman -Syu && paru -Sua && yay -Syu && flatpak update'
 
@@ -137,6 +137,8 @@ if status is-interactive
 				sudo pacman -R (pacman -Qdtq)
 			    end
 			end
+
+        alias mc_server 'cd Server/Minecraft/Prominence_II_RPG_v3.0.6_Server_Pack/ && ./start.sh'
 
 	# Runs Fastfetch
 		fastfetch

@@ -157,3 +157,5 @@ exec $HOME/.config/sway/scripts/goxlr/goxlr-start.sh
 exec sleep 4
 exec $HOME/.config/sway/scripts/mount-start.sh
 exec sleep 2
+exec $HOME/.config/update.sh
+exec sleep 1
