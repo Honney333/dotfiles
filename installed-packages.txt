@@ -81,6 +81,8 @@ lutris
 man-db
 mangohud
 mesa-vdpau
+mingw-w64-libde265
+mingw-w64-openh264
 minicom
 mousepad
 nano
@@ -97,6 +99,7 @@ obs-studio
 octopi
 onedrive-abraunegg
 onedrivegui
+openh264
 openrazer-daemon
 openssh
 p7zip
@@ -276,6 +279,8 @@ lutris
 man-db
 mangohud
 mesa-vdpau
+mingw-w64-libde265
+mingw-w64-openh264
 minicom
 mousepad
 nano
@@ -292,6 +297,7 @@ obs-studio
 octopi
 onedrive-abraunegg
 onedrivegui
+openh264
 openrazer-daemon
 openssh
 p7zip
