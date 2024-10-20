@@ -4,6 +4,25 @@ xrandr --output DP-7 --primary
 
 ## additional information
 
+### Nerd-Fonts
+
+To install all:
+
+```
+git clone https://github.com/ryanoasis/nerd-fonts.git
+cd nerd-fonts
+./install.sh
+```
+To install one:
+
+```
+sudo pacman -S [font]
+```
+example:
+```
+sudo pacman -S ttf-dejavu-nerd
+```
+
 [Here](https://www.nerdfonts.com/cheat-sheet) you can find the Icons (https://www.nerdfonts.com/cheat-sheet)
 
 ## additional changes
