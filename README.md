@@ -18,7 +18,7 @@ To install one:
 ```
 sudo pacman -S [font]
 ```
-example:
+[example](https://archlinux.org/groups/any/nerd-fonts/):
 ```
 sudo pacman -S ttf-dejavu-nerd
 ```
