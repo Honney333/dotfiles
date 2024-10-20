@@ -18,9 +18,13 @@ To install one:
 ```
 sudo pacman -S [font]
 ```
-[example](https://archlinux.org/groups/any/nerd-fonts/):
+example (https://archlinux.org/groups/any/nerd-fonts/):
 ```
 sudo pacman -S ttf-dejavu-nerd
+```
+Alternatively for other Distros: Download your font: https://www.nerdfonts.com/font-downloads and extract in one of these folders ```/usr/.local/share/fonts``` or ```~/.fonts``` and run:
+```
+fc-cache -f -v
 ```
 
 [Here](https://www.nerdfonts.com/cheat-sheet) you can find the Icons (https://www.nerdfonts.com/cheat-sheet)
