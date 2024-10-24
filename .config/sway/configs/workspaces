@@ -1,38 +1,91 @@
+# Setting the Workspaces in form:
+# Workspace Symbol
+# Workspace Screen
+# Assigned Software filter get name via: swaymsg -t get_tree
+
 set $ws1   '1: '
-set $ws2   '2: '
-set $ws3   '3:󰈹 '
-set $ws4   '4: '
-set $ws5   '5: '
-set $ws6   6:6
-set $ws7   7:7
-set $ws8   8:8
-set $ws9   9:9
-set $ws0   '10: '
-set $wsF1  '11: '
-set $wsF2  '12: '
-set $wsF3  '13:13'
-set $wsF4  '14:󰑴 '
-set $wsF5  15:15
-set $wsF6  16:16
-set $wsF7  17:17
-set $wsF8  18:18
-set $wsF9  19:19
-set $wsF10 20:20
-set $wsF11 '21: '
-set $wsF12 '22: '
-
-# Set Workspace Number Acording to Output
 workspace $ws1 output $bot_right
-workspace $ws2 output $bot_left
-workspace $ws3 output $top_right
-workspace $ws4 output $top_left
+assign [class="^steam$"] $ws1
+assign [class="^Code$"] $ws1
+assign [class="^steam_app_.*$"] $ws1
 
-workspace $ws4 output $top_right
+set $ws2   '2: '
+workspace $ws2 output $bot_left
+assign [class="^Brave-browser$"] $ws2
+
+set $ws3   '3:󰈹 '
+workspace $ws3 output $top_right
+assign [title="Firefox Developer Edition"] $ws3
+
+set $ws4   '4: '
+workspace $ws4 output $top_left
+assign [class="^vesktop$"] $ws4
+
+set $ws5   '5: '
 workspace $ws5 output $bot_right
+assign [title="Xournal++"] $ws5
+
+set $ws6   '6: '
+workspace $ws6 output $bot_right
+assign [title="Prominence II*"] $ws6
+
+set $ws7   7:7
+# workspace $ws7 output $bot_right
+
+set $ws8   8:8
+# workspace $ws8 output $bot_right
+
+set $ws9   9:9
+# workspace $ws9 output $bot_right
+
+set $ws0   '10: '
+workspace $ws0 output $bot_right
+#
+#
+#
+set $wsF1  '11: '
 workspace $wsF1 output $top_left
+assign [class="^Signal$"] $wsF1
+assign [title=".*WhatsApp.*"] $wsF1
+assign [app_id="^com.ktechpit.whatsie$"] $wsF1
+assign [class="^whatsdesk$"] $wsF1
+
+set $wsF2  '12: '
 workspace $wsF2 output $top_right
+assign [class="^betterbird$"] $wsF2
+
+set $wsF3  '13:13'
+# workspace $wsF3 output $top_right
+
+set $wsF4  '14:󰑴 '
 workspace $wsF4 output $top_right
+assign [title="Mozilla Firefox"] $wsF4
+
+set $wsF5  '15:󰏊 '
+workspace $wsF5 output $top_right
+assign [app_id="^Crunchyroll$"] $wsF5
+
+set $wsF6  16:16
+# workspace $wsF6 output $top_right
+
+set $wsF7  17:17
+# workspace $wsF7 output $top_right
+
+set $wsF8  18:18
+#w orkspace $wsF8 output $top_right
+
+set $wsF9  19:19
+# workspace $wsF9 output $top_right
+
+set $wsF10 20:20
+# workspace $wsF0 output $top_right
+
+set $wsF11 '21: '
 workspace $wsF11 output $top_left
+assign [app_id="^org.keepassxc.KeePassXC$"] $wsF11
+
+set $wsF12 '22: '
+# workspace $wsF12 output $top_left
 
 
 # Switch to workspace
@@ -82,19 +135,3 @@ bindsym $mod+Shift+F9   move container to workspace $wsF9
 bindsym $mod+Shift+F10  move container to workspace $wsF10
 bindsym $mod+Shift+F11  move container to workspace $wsF11
 bindsym $mod+Shift+F12  move container to workspace $wsF12
-
-# Default workspaces for common programs get name via: swaymsg -t get_tree
-assign [class="^steam$"] $ws1
-assign [class="^Code$"] $ws1
-assign [class="^steam_app_.*$"] $ws1
-assign [title="Firefox Developer Edition"] $ws3
-assign [class="^vesktop$"] $ws4
-assign [title="Mozilla Firefox"] $wsF4
-assign [title="Xournal++"] $ws5
-assign [class="^Signal$"] $wsF1
-assign [title=".*WhatsApp.*"] $wsF1
-assign [app_id="^com.ktechpit.whatsie$"] $wsF1
-assign [class="^whatsdesk$"] $wsF1
-assign [class="^betterbird$"] $wsF2
-assign [class="^Brave-browser$"] $ws2
-assign [app_id="^org.keepassxc.KeePassXC$"] $wsF11
