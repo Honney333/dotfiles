@@ -1,7 +1,9 @@
+alacritty
 amd-ucode
 amf-amdgpu-pro
 android-sdk
 android-tools
+audacity
 balena-etcher
 base
 base-devel
@@ -24,6 +26,7 @@ curlftpfs
 davinci-resolve
 debtap
 dmenu
+dracut
 efibootmgr
 evtest
 exfat-utils
@@ -78,6 +81,7 @@ libvncserver
 linux
 linux-firmware
 linux-lts
+linux-lts-headers
 linux-zen
 linux-zen-headers
 linuxconsole
@@ -118,7 +122,6 @@ polkit-kde-agent
 polkit-qt5
 polkit-qt6
 prismlauncher
-protonmail-bridge
 protontricks
 prusa-slicer
 python-bcrypt
@@ -165,6 +168,7 @@ torchvision-rocm
 ttf-clear-sans
 twitch
 ugrep
+usbimager
 vencord
 ventoy
 viewnior
@@ -198,13 +202,16 @@ xournalpp
 yay
 yay-debug
 yubico-authenticator
+zfs-dkms
 zfs-utils
 zoom
 zoxide
+alacritty
 amd-ucode
 amf-amdgpu-pro
 android-sdk
 android-tools
+audacity
 balena-etcher
 base
 base-devel
@@ -227,6 +234,7 @@ curlftpfs
 davinci-resolve
 debtap
 dmenu
+dracut
 efibootmgr
 evtest
 exfat-utils
@@ -281,6 +289,7 @@ libvncserver
 linux
 linux-firmware
 linux-lts
+linux-lts-headers
 linux-zen
 linux-zen-headers
 linuxconsole
@@ -321,7 +330,6 @@ polkit-kde-agent
 polkit-qt5
 polkit-qt6
 prismlauncher
-protonmail-bridge
 protontricks
 prusa-slicer
 python-bcrypt
@@ -368,6 +376,7 @@ torchvision-rocm
 ttf-clear-sans
 twitch
 ugrep
+usbimager
 vencord
 ventoy
 viewnior
@@ -401,6 +410,7 @@ xournalpp
 yay
 yay-debug
 yubico-authenticator
+zfs-dkms
 zfs-utils
 zoom
 zoxide

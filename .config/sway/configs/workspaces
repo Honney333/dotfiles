@@ -12,6 +12,7 @@ assign [class="^steam_app_.*$"] $ws1
 set $ws2   '2: '
 workspace $ws2 output $bot_left
 assign [class="^Brave-browser$"] $ws2
+assign [app_id="^Crunchyroll$"] $ws2
 
 set $ws3   '3:󰈹 '
 workspace $ws3 output $top_right
@@ -63,7 +64,7 @@ assign [title="Mozilla Firefox"] $wsF4
 
 set $wsF5  '15:󰏊 '
 workspace $wsF5 output $top_right
-assign [app_id="^Crunchyroll$"] $wsF5
+assign [app_id="^Alacritty$"] $wsF5
 
 set $wsF6  16:16
 # workspace $wsF6 output $top_right
@@ -135,3 +136,14 @@ bindsym $mod+Shift+F9   move container to workspace $wsF9
 bindsym $mod+Shift+F10  move container to workspace $wsF10
 bindsym $mod+Shift+F11  move container to workspace $wsF11
 bindsym $mod+Shift+F12  move container to workspace $wsF12
+
+# Float only the Zoom window with title "zoom"
+for_window [title="zoom" class="zoom"] floating enable
+for_window [title="Zoom Workplace" class="zoom"] floating enable
+for_window [title="Settings" class="zoom"] floating enable
+
+# Ensure windows with title "Meeting" do not float
+for_window [title="Meeting" class="zoom"] floating disable
+
+# Make qt-sudo windows float by default
+for_window [app_id="qt-sudo"] floating enable

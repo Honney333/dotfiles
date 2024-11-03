@@ -38,6 +38,7 @@ output * bg $background solid_color
 include $HOME/.config/sway/configs/screens
 
 ### Idle configuration
+# exec $home/.config/sway/scripts/swayidle.sh "$lock"
 exec swayidle \
     timeout 300 'exec $lock' \
 #    timeout 600 'swaymsg "output * dpms off"' \
@@ -152,10 +153,10 @@ exec /usr/lib/polkit-kde-authentication-agent-1
 exec --no-startup-id swaync
 exec --no-startup-id nm-applet
 exec sleep 2
-exec $HOME/.config/sway/scripts/onedrive-gui.sh
+#exec $HOME/.config/sway/scripts/onedrive-gui.sh
 exec $HOME/.config/sway/scripts/goxlr/goxlr-start.sh
 exec sleep 4
 exec $HOME/.config/sway/scripts/mount-start.sh
 exec sleep 2
-exec $HOME/.config/update.sh
+# exec $HOME/.config/update.sh
 exec sleep 1
