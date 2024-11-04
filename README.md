@@ -2,6 +2,16 @@
 
 xrandr --output DP-7 --primary
 
+For some Java-based applications like Logism-Evolution, IntelliJ, CLion, or PyCharm you need to edit the following line in the .desktop file in ```/usr/share/application```:
+
+```
+Exec=/usr/bin/<name_of_application>
+```
+to
+```
+Exec=env _JAVA_AWT_WM_NONREPARENTING=1 /usr/bin/<name_of_application>
+```
+
 ## additional information
 
 ### Nerd-Fonts

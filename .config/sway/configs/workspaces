@@ -7,7 +7,6 @@ set $ws1   '1: '
 workspace $ws1 output $bot_right
 assign [class="^steam$"] $ws1
 assign [class="^Code$"] $ws1
-assign [class="^steam_app_.*$"] $ws1
 
 set $ws2   '2: '
 workspace $ws2 output $bot_left
@@ -29,6 +28,7 @@ assign [title="Xournal++"] $ws5
 set $ws6   '6: '
 workspace $ws6 output $bot_right
 assign [title="Prominence II*"] $ws6
+assign [class="^steam_app_.*$"] $ws6
 
 set $ws7   7:7
 # workspace $ws7 output $bot_right

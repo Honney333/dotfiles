@@ -6170,3 +6170,1353 @@ _daemon::device: Setting Encoder1Enabled to 0
 15:32:14 [DEBUG] (30) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
 15:32:14 [DEBUG] (26) goxlr_daemon::device: Updating Chat volume from 159 to 160 as a human moved the fader
 15:32:14 [DEBUG] (26) goxlr_daemon::device: Updating System volume from 175 to 174 as a human moved the fader
+20:13:53 [DEBUG] (26) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+20:13:53 [DEBUG] (26) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+20:13:53 [DEBUG] (26) goxlr_daemon::device: Setting MicInputMute to 1
+20:13:53 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Microphone:
+20:13:53 [DEBUG] (26) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+20:13:53 [DEBUG] (26) goxlr_daemon::tts: Received TTS Message: Mic Muted
+20:24:59 [DEBUG] (26) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+20:25:00 [DEBUG] (26) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+20:25:00 [DEBUG] (26) goxlr_daemon::device: Setting MicInputMute to 0
+20:25:00 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Microphone:
+20:25:00 [DEBUG] (26) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+20:25:00 [DEBUG] (26) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+20:59:49 [DEBUG] (2) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+20:59:49 [DEBUG] (2) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+20:59:49 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 1
+20:59:49 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+20:59:49 [DEBUG] (2) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+20:59:49 [DEBUG] (2) goxlr_daemon::tts: Received TTS Message: Mic Muted
+21:11:03 [DEBUG] (30) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+21:11:04 [DEBUG] (30) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+21:11:04 [DEBUG] (30) goxlr_daemon::device: Setting MicInputMute to 0
+21:11:04 [DEBUG] (30) goxlr_daemon::device: Applying Routing to Microphone:
+21:11:04 [DEBUG] (30) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+21:11:04 [DEBUG] (30) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+22:41:55 [DEBUG] (26) goxlr_daemon::profile: Loading Profile From /home/honney/.local/share/goxlr-utility/profiles/Sleep.goxlr
+22:41:55 [DEBUG] (26) goxlr_profile_loader::profile: Loading Profile Archive..
+22:41:55 [DEBUG] (26) goxlr_profile_loader::profile: Attempting to read profile.xml..
+22:41:55 [DEBUG] (26) goxlr_profile_loader::profile: Preparing Structure..
+22:41:55 [DEBUG] (26) goxlr_profile_loader::profile: MixRoutingTree { mix: {Headphones: A, Broadcast: A, LineOut: A, ChatMic: A, Sampler: A} }
+22:41:55 [DEBUG] (26) goxlr_profile_loader::profile: SubMixer { submix_enabled: false, volume_table: {Mic: 0, Chat: 0, Music: 0, Game: 0, Console: 0, LineIn: 0, System: 0, Sample: 0}, monitor_tree: MonitorTree { monitored_output: Headphones, headphone_mix: A, routing: {Mic: 8192, Chat: 8192, Music: 8192, Game: 8192, Console: 8192, LineIn: 8192, System: 8192, Sample: 8192} }, linking_tree: LinkingTree { linked_list: {Mic: true, Chat: true, Music: true, Game: true, Console: true, LineIn: true, System: true, Sample: true}, linked_ratio: {Mic: 1.0, Chat: 1.0, Music: 1.0, Game: 1.0, Console: 1.0, LineIn: 1.0, System: 1.0, Sample: 1.0} } }
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Profile Successfully Loaded, Performing Backup..
+22:41:55 [DEBUG] (26) goxlr_profile_loader::profile: Creating Temporary Save File: "/home/honney/.local/share/goxlr-utility/backups/Sleep.tmp"
+22:41:55 [DEBUG] (26) goxlr_profile_loader::profile: Save Complete and synced, renaming to "/home/honney/.local/share/goxlr-utility/backups/Sleep.goxlr"
+22:41:55 [DEBUG] (26) goxlr_profile_loader::profile: Target profile exists, removing..
+22:41:55 [DEBUG] (26) goxlr_profile_loader::profile: Renaming "/home/honney/.local/share/goxlr-utility/backups/Sleep.tmp" to "/home/honney/.local/share/goxlr-utility/backups/Sleep.goxlr"
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Backup Complete
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Applying Profile..
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting Faders..
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Fader Already Assigned, ignoring
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting Fader B to Music
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Fader Already Assigned, ignoring
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Fader Already Assigned, ignoring
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting Mute States..
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Applying Microphone Mute State
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting Mic to Unmuted
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Channel System on Fader, Loading State from Profile
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Channel D already Unmuted, doing nothing.
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Channel Chat on Fader, Loading State from Profile
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Channel C already Unmuted, doing nothing.
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Channel Music on Fader, Loading State from Profile
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Channel B already Unmuted, doing nothing.
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting Channel Volumes..
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting volume for Mic to 1
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting volume for LineIn to 158
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting volume for Console to 128
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting volume for System to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting volume for Game to 128
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting volume for Chat to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting volume for Sample to 207
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting volume for Music to 1
+22:41:55 [DEBUG] (26) goxlr_usb::device::libusb::device: Response not arrived yet for SetChannelVolume(Music), sleeping and retrying (Attempt 1 of 20)
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting volume for MicMonitor to 255
+22:41:55 [DEBUG] (26) goxlr_usb::device::libusb::device: Response not arrived yet for SetChannelVolume(MicMonitor), sleeping and retrying (Attempt 1 of 20)
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting volume for Headphones to 255
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting volume for LineOut to 255
+22:41:55 [DEBUG] (26) goxlr_usb::device::libusb::device: Response not arrived yet for SetChannelVolume(LineOut), sleeping and retrying (Attempt 1 of 20)
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Applying Submixing Settings..
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Loading Colour Map..
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting Fader display modes..
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting display for A
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting display for B
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting display for C
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting display for D
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Updating button states..
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Applying Routing..
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Microphone:
+22:41:55 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: true, Sampler: true, LineOut: true}
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Chat:
+22:41:55 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Music:
+22:41:55 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Light HardTune Enabled for Channel: Music
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Game:
+22:41:55 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Light HardTune Enabled for Channel: Game
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Console:
+22:41:55 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Applying Routing to LineIn:
+22:41:55 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Light HardTune Enabled for Channel: LineIn
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Applying Routing to System:
+22:41:55 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Light HardTune Enabled for Channel: System
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Samples:
+22:41:55 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: true, Sampler: false, LineOut: false}
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Applying Voice FX
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting ReverbAmount to -36
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting ReverbType to 5
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting ReverbDecay to 96
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting ReverbPredelay to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting ReverbDiffuse to -50
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting ReverbLowColor to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting ReverbHighColor to -50
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting ReverbHighFactor to -25
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting ReverbModSpeed to -25
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting ReverbModDepth to -25
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting ReverbEarlyLevel to -25
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting ReverbTailLevel to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneStyle to 1
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneAmount to 30
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneHP to 110
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneLP to 190
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphonePreGain to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphonePostGain to 2
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneDistType to 4
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphonePresenceGain to 7
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphonePresenceFC to 160
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphonePresenceBW to 5
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneBeatboxEnable to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneFilterControl to 1
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneFilter to 59
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneDrivePotGainCompMid to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneDrivePotGainCompMax to 5
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting RobotPulseWidth to 50
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting RobotWaveform to 1
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting RobotThreshold to -36
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting RobotDryMix to -6
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting RobotLowFreq to 88
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting RobotLowGain to -10
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting RobotLowWidth to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting RobotMidFreq to 173
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting RobotMidGain to 5
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting RobotMidWidth to 25
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting RobotHiFreq to 182
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting RobotHiGain to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting RobotHiWidth to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting RobotStyle to 1
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneKeySource to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneAmount to 100
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneWindow to 60
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneRate to 100
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneScale to 5
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting HardTunePitchAmount to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting EchoAmount to -36
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting EchoSource to 1
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting EchoDivL to 10
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting EchoDivR to 13
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting EchoFeedbackL to 50
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting EchoFeedbackR to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting EchoXFBLtoR to 100
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting EchoXFBRtoL to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting EchoFeedback to 55
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting EchoFilterStyle to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting EchoTempo to 120
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting PitchAmount to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting PitchCharacter to 100
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting PitchThreshold to -26
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting GenderAmount to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting Encoder1Enabled to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting Encoder2Enabled to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting Encoder3Enabled to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting Encoder4Enabled to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneEnabled to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneEnabled to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting RobotEnabled to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Setting MicInputMute to 0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Validating Sampler Configuration..
+22:41:55 [DEBUG] (26) goxlr_daemon::settings: Saving Settings
+22:41:55 [DEBUG] (26) goxlr_daemon::settings: Creating Temporary Save File: "/home/honney/.config/goxlr-utility/settings.tmp"
+22:41:55 [DEBUG] (26) goxlr_daemon::settings: Save Complete and synced, renaming to "/home/honney/.config/goxlr-utility/settings.json"
+22:41:55 [DEBUG] (26) goxlr_daemon::settings: Target exists, removing..
+22:41:55 [DEBUG] (26) goxlr_daemon::settings: Renaming "/home/honney/.config/goxlr-utility/settings.tmp" to "/home/honney/.config/goxlr-utility/settings.json"
+22:41:55 [DEBUG] (26) goxlr_daemon::settings: Settings Saved.
+22:41:55 [DEBUG] (2) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Updating Mic volume from 1 to 0 as a human moved the fader
+22:41:55 [DEBUG] (26) goxlr_daemon::device: Updating Music volume from 1 to 0 as a human moved the fader
+22:41:55 [DEBUG] (2) goxlr_daemon::platform::unix: TERM Signal Received, Triggering STOP
+22:41:55 [DEBUG] (2) goxlr_daemon::platform::unix: Platform Runtime Ended
+22:41:55 [DEBUG] (2) goxlr_daemon::events: Shutdown Phase 1 Triggered..
+22:41:55 [DEBUG] (2) goxlr_daemon::device: Shutting Down Device: S220303727CQK
+22:41:55 [DEBUG] (2) goxlr_daemon::events: Shutdown Phase 2 Triggered..
+22:41:55 [DEBUG] (2) goxlr_daemon::files: Shutdown Signal Received.
+22:41:55 [DEBUG] (30) goxlr_daemon::platform::linux::sleep: End of Run
+22:41:55 [INFO] Shutting down TTS Service
+22:41:55 [INFO] Shutting down device worker
+22:41:55 [DEBUG] (73) goxlr_audio::recorder: Audio Listener Terminated
+22:41:55 [DEBUG] (73) goxlr_audio::recorder: Recorder Dropped, stopping thread..
+22:41:55 [WARN] Sender Closed for S220303727CQK
+22:41:55 [DEBUG] (1) goxlr_daemon::tray::linux: Shutting Down Tray Handler..
+22:41:55 [INFO] Shutting down daemon
+22:41:56 [INFO] HTTP Server Stopped.
+08:41:23 [WARN] Unable to calculate timezone, using UTC for log timestamps
+08:41:23 [INFO] Starting GoXLR Daemon v1.1.4
+08:41:23 [INFO] System Locale: en_US
+08:41:23 [INFO] Performing Platform Preflight...
+08:41:23 [DEBUG] (1) goxlr_daemon: HTTP Bind Address: localhost
+08:41:23 [INFO] Bound IPC Socket @ Name(UdSocketPath("/tmp/goxlr.socket"))
+08:41:23 [DEBUG] (33) goxlr_daemon::servers::ipc_server: Running IPC Server..
+08:41:23 [DEBUG] (28) goxlr_daemon::platform::linux::autostart: Found XDG AutoStart Path: "/home/honney/.config/autostart"
+08:41:23 [DEBUG] (28) goxlr_daemon::primary_worker: Performing Firmware Version Check..
+08:41:23 [INFO] Started GoXLR configuration interface at http://localhost:14564/
+08:41:23 [INFO] Starting TTS Service..
+08:41:23 [DEBUG] (31) goxlr_daemon::platform::linux::sleep: Spawning Sleep Handler..
+08:41:23 [DEBUG] (30) goxlr_daemon::events: Starting Event Loop..
+08:41:23 [INFO] Connected to possible GoXLR device at Bus 005 Device 003: ID 1220:8fe0
+08:41:23 [DEBUG] (3) goxlr_usb::device::libusb::device: Handling initial request
+08:41:23 [DEBUG] (3) goxlr_daemon::device: New Device Loading..
+08:41:23 [INFO] Configuring GoXLR, Profile: Sleep, Mic Profile: DEFAULT
+08:41:23 [DEBUG] (3) goxlr_daemon::profile: Loading Profile From /home/honney/.local/share/goxlr-utility/profiles/Sleep.goxlr
+08:41:23 [DEBUG] (3) goxlr_profile_loader::profile: Loading Profile Archive..
+08:41:23 [DEBUG] (26) goxlr_daemon::platform::linux::sleep: Attempting to Inhibit Sleep..
+08:41:23 [DEBUG] (26) goxlr_daemon::platform::linux::sleep: Inhibitor Successfully Established.
+08:41:23 [DEBUG] (26) goxlr_daemon::platform::linux::sleep: Awaiting Result from 'PrepareForSleep'
+08:41:23 [DEBUG] (26) goxlr_daemon::platform::linux::sleep: Preparing Lock Proxy..
+08:41:23 [DEBUG] (26) goxlr_daemon::platform::linux::sleep: Entering Signal Loop..
+08:41:23 [DEBUG] (28) reqwest::connect: starting new connection: https://mediadl.musictribe.com/
+08:41:23 [DEBUG] (72) hyper_util::client::legacy::connect::dns: resolving host="mediadl.musictribe.com"
+08:41:23 [DEBUG] (28) hyper_util::client::legacy::connect::http: connecting to 104.18.15.72:443
+08:41:23 [DEBUG] (29) hyper_util::client::legacy::connect::http: connected to 104.18.15.72:443
+08:41:23 [DEBUG] (3) goxlr_profile_loader::profile: Attempting to read profile.xml..
+08:41:23 [DEBUG] (3) goxlr_profile_loader::profile: Preparing Structure..
+08:41:23 [DEBUG] (3) goxlr_profile_loader::profile: MixRoutingTree { mix: {Headphones: A, Broadcast: A, LineOut: A, ChatMic: A, Sampler: A} }
+08:41:23 [DEBUG] (3) goxlr_profile_loader::profile: SubMixer { submix_enabled: false, volume_table: {Mic: 0, Chat: 0, Music: 0, Game: 0, Console: 0, LineIn: 0, System: 0, Sample: 0}, monitor_tree: MonitorTree { monitored_output: Headphones, headphone_mix: A, routing: {Mic: 8192, Chat: 8192, Music: 8192, Game: 8192, Console: 8192, LineIn: 8192, System: 8192, Sample: 8192} }, linking_tree: LinkingTree { linked_list: {Mic: true, Chat: true, Music: true, Game: true, Console: true, LineIn: true, System: true, Sample: true}, linked_ratio: {Mic: 1.0, Chat: 1.0, Music: 1.0, Game: 1.0, Console: 1.0, LineIn: 1.0, System: 1.0, Sample: 1.0} } }
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Profile Successfully Loaded, Performing Backup..
+08:41:23 [DEBUG] (3) goxlr_profile_loader::profile: Creating Temporary Save File: "/home/honney/.local/share/goxlr-utility/backups/Sleep.tmp"
+08:41:23 [DEBUG] (29) hyper_util::client::legacy::pool: pooling idle connection for ("https", mediadl.musictribe.com)
+08:41:23 [WARN] Unable to Parse the XML Response from the TC-Helicon Update Server
+08:41:23 [DEBUG] (3) goxlr_profile_loader::profile: Save Complete and synced, renaming to "/home/honney/.local/share/goxlr-utility/backups/Sleep.goxlr"
+08:41:23 [DEBUG] (3) goxlr_profile_loader::profile: Target profile exists, removing..
+08:41:23 [DEBUG] (3) goxlr_profile_loader::profile: Renaming "/home/honney/.local/share/goxlr-utility/backups/Sleep.tmp" to "/home/honney/.local/share/goxlr-utility/backups/Sleep.goxlr"
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Main Profile Backup Complete
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Mic Profile Successfully Loaded, Performing Backup..
+08:41:23 [DEBUG] (3) goxlr_profile_loader::mic_profile: Creating Temporary Save File: "/home/honney/.local/share/goxlr-utility/backups/DEFAULT.tmp"
+08:41:23 [DEBUG] (3) goxlr_profile_loader::mic_profile: Save Complete and synced, renaming to "/home/honney/.local/share/goxlr-utility/backups/DEFAULT.goxlrMicProfile"
+08:41:23 [DEBUG] (3) goxlr_profile_loader::mic_profile: Target mic profile exists, removing..
+08:41:23 [DEBUG] (3) goxlr_profile_loader::mic_profile: Renaming "/home/honney/.local/share/goxlr-utility/backups/DEFAULT.tmp" to "/home/honney/.local/share/goxlr-utility/backups/DEFAULT.goxlrMicProfile"
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Mic Profile Backup Complete
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Created Audio Handler..
+08:41:23 [DEBUG] (73) goxlr_audio::recorder: Starting Audio Listener..
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Ok(AudioHandler { output_device: None, buffered_input: Some(BufferedRecorder { device: [goxlr_sample.*source, GoXLR_0_4_5.*source, GoXLR.*HiFi__Line5__source, CoreAudio\*Sampler(?:(?!Mini).)*$, ^WASAPI\*Sample(?:(?!Mini).)*$], producers: 0 }), last_device_check: None, active_streams: {A: {TopLeft: None, TopRight: None, BottomLeft: None, BottomRight: None}, B: {TopLeft: None, TopRight: None, BottomLeft: None, BottomRight: None}, C: {TopLeft: None, TopRight: None, BottomLeft: None, BottomRight: None}}, process_task: None })
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Audio Handler Loaded OK..
+08:41:23 [DEBUG] (3) goxlr_daemon::device: --- DEVICE INFO ---
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Serial: "S220303727CQK"
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Firmware: 1.4.3.110
+08:41:23 [DEBUG] (3) goxlr_daemon::device: DICE: 1.4.3.110
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Type: Full
+08:41:23 [DEBUG] (3) goxlr_daemon::device: -------------------
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Applying Profile..
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Faders..
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Fader A to Mic
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Fader B to Music
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Fader C to Chat
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Fader D to System
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Mute States..
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Applying Microphone Mute State
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Mic to Unmuted
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Unknown Channel state for LineIn, Unmuting.
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Unknown Channel state for Console, Unmuting.
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Channel System on Fader, Loading State from Profile
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Channel System set to Unmuted (no previous)
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Unknown Channel state for Game, Unmuting.
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Channel Chat on Fader, Loading State from Profile
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Channel Chat set to Unmuted (no previous)
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Unknown Channel state for Sample, Unmuting.
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Channel Music on Fader, Loading State from Profile
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Channel Music set to Unmuted (no previous)
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Unknown Channel state for Headphones, Unmuting.
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Unknown Channel state for MicMonitor, Unmuting.
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Unknown Channel state for LineOut, Unmuting.
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Channel Volumes..
+08:41:23 [DEBUG] (3) goxlr_daemon::device: No reference volumes, sending channels in order
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting volume for Mic to 1
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting volume for LineIn to 158
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting volume for Console to 128
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting volume for System to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting volume for Game to 128
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting volume for Chat to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting volume for Sample to 207
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting volume for Music to 1
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting volume for Headphones to 255
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting volume for MicMonitor to 255
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting volume for LineOut to 255
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Applying Submixing Settings..
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Loading Colour Map..
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Fader display modes..
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting display for A
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting display for B
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting display for C
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting display for D
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Updating button states..
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Applying Routing..
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Applying Routing to Microphone:
+08:41:23 [DEBUG] (3) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: true, Sampler: true, LineOut: true}
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Applying Routing to Chat:
+08:41:23 [DEBUG] (3) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Applying Routing to Music:
+08:41:23 [DEBUG] (3) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Light HardTune Enabled for Channel: Music
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Applying Routing to Game:
+08:41:23 [DEBUG] (3) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Light HardTune Enabled for Channel: Game
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Applying Routing to Console:
+08:41:23 [DEBUG] (3) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Applying Routing to LineIn:
+08:41:23 [DEBUG] (3) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Light HardTune Enabled for Channel: LineIn
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Applying Routing to System:
+08:41:23 [DEBUG] (3) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Light HardTune Enabled for Channel: System
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Applying Routing to Samples:
+08:41:23 [DEBUG] (3) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: true, Sampler: false, LineOut: false}
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Applying Voice FX
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting ReverbAmount to -36
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting ReverbType to 5
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting ReverbDecay to 96
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting ReverbPredelay to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting ReverbDiffuse to -50
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting ReverbLowColor to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting ReverbHighColor to -50
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting ReverbHighFactor to -25
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting ReverbModSpeed to -25
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting ReverbModDepth to -25
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting ReverbEarlyLevel to -25
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting ReverbTailLevel to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphoneStyle to 1
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphoneAmount to 30
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphoneHP to 110
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphoneLP to 190
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphonePreGain to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphonePostGain to 2
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphoneDistType to 4
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphonePresenceGain to 7
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphonePresenceFC to 160
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphonePresenceBW to 5
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphoneBeatboxEnable to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphoneFilterControl to 1
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphoneFilter to 59
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphoneDrivePotGainCompMid to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphoneDrivePotGainCompMax to 5
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting RobotPulseWidth to 50
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting RobotWaveform to 1
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting RobotThreshold to -36
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting RobotDryMix to -6
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting RobotLowFreq to 88
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting RobotLowGain to -10
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting RobotLowWidth to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting RobotMidFreq to 173
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting RobotMidGain to 5
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting RobotMidWidth to 25
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting RobotHiFreq to 182
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting RobotHiGain to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting RobotHiWidth to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting RobotStyle to 1
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting HardTuneKeySource to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting HardTuneAmount to 100
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting HardTuneWindow to 60
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting HardTuneRate to 100
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting HardTuneScale to 5
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting HardTunePitchAmount to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting EchoAmount to -36
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting EchoSource to 1
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting EchoDivL to 10
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting EchoDivR to 13
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting EchoFeedbackL to 50
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting EchoFeedbackR to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting EchoXFBLtoR to 100
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting EchoXFBRtoL to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting EchoFeedback to 55
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting EchoFilterStyle to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting EchoTempo to 120
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting PitchAmount to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting PitchCharacter to 100
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting PitchThreshold to -26
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting GenderAmount to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Encoder1Enabled to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Encoder2Enabled to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Encoder3Enabled to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Encoder4Enabled to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MegaphoneEnabled to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting HardTuneEnabled to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting RobotEnabled to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MicInputMute to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Validating Sampler Configuration..
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer8KHzGain to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer63HzFrequency to 40
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer1KHzFrequency to 135
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer250HzGain to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting GateThreshold to -41
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer1KHzGain to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting DeEsser to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting GateRelease to 19
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer16KHzGain to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer125HzFrequency to 63
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer16KHzFrequency to 231
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer63HzGain to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting BleepLevel to -20
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting CompressorRelease to 9
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting CompressorMakeUpGain to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer8KHzFrequency to 207
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting GateMode to 2
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting CompressorThreshold to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer500HzGain to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer4KHzFrequency to 183
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting CompressorRatio to 9
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting MicInputMute to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting GateAttenuation to -61
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting CompressorAttack to 1
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer2KHzFrequency to 159
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer2KHzGain to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer250HzFrequency to 87
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer500HzFrequency to 111
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer31HzFrequency to 16
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer31HzGain to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting GateEnabled to 1
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting GateAttack to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer4KHzGain to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Setting Equalizer125HzGain to 0
+08:41:23 [DEBUG] (3) goxlr_daemon::settings: Saving Settings
+08:41:23 [DEBUG] (3) goxlr_daemon::settings: Creating Temporary Save File: "/home/honney/.config/goxlr-utility/settings.tmp"
+08:41:23 [DEBUG] (3) goxlr_daemon::settings: Save Complete and synced, renaming to "/home/honney/.config/goxlr-utility/settings.json"
+08:41:23 [DEBUG] (3) goxlr_daemon::settings: Target exists, removing..
+08:41:23 [DEBUG] (3) goxlr_daemon::settings: Renaming "/home/honney/.config/goxlr-utility/settings.tmp" to "/home/honney/.config/goxlr-utility/settings.json"
+08:41:23 [DEBUG] (3) goxlr_daemon::settings: Settings Saved.
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Updating Mic volume from 1 to 0 as a human moved the fader
+08:41:23 [DEBUG] (3) goxlr_daemon::device: Updating Music volume from 1 to 0 as a human moved the fader
+08:41:34 [DEBUG] (26) goxlr_daemon::profile: Loading Profile From /home/honney/.local/share/goxlr-utility/profiles/Default.goxlr
+08:41:34 [DEBUG] (26) goxlr_profile_loader::profile: Loading Profile Archive..
+08:41:34 [DEBUG] (26) goxlr_profile_loader::profile: Attempting to read profile.xml..
+08:41:34 [DEBUG] (26) goxlr_profile_loader::profile: Preparing Structure..
+08:41:34 [DEBUG] (26) goxlr_profile_loader::profile: MixRoutingTree { mix: {Headphones: A, Broadcast: A, LineOut: A, ChatMic: A, Sampler: A} }
+08:41:34 [DEBUG] (26) goxlr_profile_loader::profile: SubMixer { submix_enabled: false, volume_table: {Mic: 0, Chat: 0, Music: 0, Game: 0, Console: 0, LineIn: 0, System: 0, Sample: 0}, monitor_tree: MonitorTree { monitored_output: Headphones, headphone_mix: A, routing: {Mic: 0, Chat: 8192, Music: 8192, Game: 8192, Console: 8192, LineIn: 8192, System: 8192, Sample: 8192} }, linking_tree: LinkingTree { linked_list: {Mic: true, Chat: true, Music: true, Game: true, Console: true, LineIn: true, System: true, Sample: true}, linked_ratio: {Mic: 1.0, Chat: 1.0, Music: 1.0, Game: 1.0, Console: 1.0, LineIn: 1.0, System: 1.0, Sample: 1.0} } }
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Profile Successfully Loaded, Performing Backup..
+08:41:34 [DEBUG] (26) goxlr_profile_loader::profile: Creating Temporary Save File: "/home/honney/.local/share/goxlr-utility/backups/Default.tmp"
+08:41:34 [DEBUG] (26) goxlr_profile_loader::profile: Save Complete and synced, renaming to "/home/honney/.local/share/goxlr-utility/backups/Default.goxlr"
+08:41:34 [DEBUG] (26) goxlr_profile_loader::profile: Target profile exists, removing..
+08:41:34 [DEBUG] (26) goxlr_profile_loader::profile: Renaming "/home/honney/.local/share/goxlr-utility/backups/Default.tmp" to "/home/honney/.local/share/goxlr-utility/backups/Default.goxlr"
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Backup Complete
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Applying Profile..
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting Faders..
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Fader Already Assigned, ignoring
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting Fader B to LineIn
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Fader Already Assigned, ignoring
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Fader Already Assigned, ignoring
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting Mute States..
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Applying Microphone Mute State
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting Mic to Unmuted
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Channel LineIn on Fader, Loading State from Profile
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Channel B already Unmuted, doing nothing.
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Channel System on Fader, Loading State from Profile
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Channel D already Unmuted, doing nothing.
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Channel Chat on Fader, Loading State from Profile
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Channel C already Unmuted, doing nothing.
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting Channel Volumes..
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting volume for Headphones to 153
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting volume for Mic to 255
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting volume for LineIn to 133
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting volume for Console to 128
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting volume for System to 175
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting volume for Game to 128
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting volume for Chat to 159
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting volume for Sample to 255
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting volume for Music to 128
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting volume for MicMonitor to 255
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting volume for LineOut to 255
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Applying Submixing Settings..
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Loading Colour Map..
+08:41:34 [DEBUG] (26) goxlr_usb::device::libusb::device: Response not arrived yet for SetColourMap, sleeping and retrying (Attempt 1 of 20)
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting Fader display modes..
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting display for A
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting display for B
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting display for C
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting display for D
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Updating button states..
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Applying Routing..
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Microphone:
+08:41:34 [DEBUG] (26) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Chat:
+08:41:34 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: true}
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Music:
+08:41:34 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: true}
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Light HardTune Enabled for Channel: Music
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Game:
+08:41:34 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: true}
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Light HardTune Enabled for Channel: Game
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Console:
+08:41:34 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: true}
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Applying Routing to LineIn:
+08:41:34 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: false, ChatMic: false, Sampler: true, LineOut: false}
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Light HardTune Enabled for Channel: LineIn
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Applying Routing to System:
+08:41:34 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: true}
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Light HardTune Enabled for Channel: System
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Samples:
+08:41:34 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: true, Sampler: false, LineOut: true}
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Applying Voice FX
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting ReverbAmount to -14
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting ReverbType to 1
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting ReverbDecay to 150
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting ReverbPredelay to 100
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting ReverbDiffuse to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting ReverbLowColor to 10
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting ReverbHighColor to -39
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting ReverbHighFactor to 21
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting ReverbModSpeed to -3
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting ReverbModDepth to 21
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting ReverbEarlyLevel to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting ReverbTailLevel to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneStyle to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneAmount to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneHP to 120
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneLP to 200
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphonePreGain to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphonePostGain to 2
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneDistType to 6
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphonePresenceGain to 8
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphonePresenceFC to 135
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphonePresenceBW to 7
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneBeatboxEnable to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneFilterControl to 2
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneFilter to 59
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneDrivePotGainCompMid to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneDrivePotGainCompMax to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting RobotPulseWidth to 50
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting RobotWaveform to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting RobotThreshold to -36
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting RobotDryMix to -6
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting RobotLowFreq to 88
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting RobotLowGain to -10
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting RobotLowWidth to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting RobotMidFreq to 173
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting RobotMidGain to 5
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting RobotMidWidth to 25
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting RobotHiFreq to 182
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting RobotHiGain to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting RobotHiWidth to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting RobotStyle to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneKeySource to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneAmount to 70
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneWindow to 20
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneRate to 20
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneScale to 5
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting HardTunePitchAmount to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting EchoAmount to -36
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting EchoSource to 1
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting EchoDivL to 9
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting EchoDivR to 9
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting EchoFeedbackL to 50
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting EchoFeedbackR to 50
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting EchoXFBLtoR to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting EchoXFBRtoL to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting EchoFeedback to 30
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting EchoFilterStyle to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting EchoTempo to 149
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting PitchAmount to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting PitchCharacter to 100
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting PitchThreshold to -36
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting GenderAmount to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting Encoder1Enabled to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting Encoder2Enabled to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting Encoder3Enabled to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting Encoder4Enabled to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneEnabled to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneEnabled to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting RobotEnabled to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Setting MicInputMute to 0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Validating Sampler Configuration..
+08:41:34 [DEBUG] (26) goxlr_daemon::settings: Saving Settings
+08:41:34 [DEBUG] (26) goxlr_daemon::settings: Creating Temporary Save File: "/home/honney/.config/goxlr-utility/settings.tmp"
+08:41:34 [DEBUG] (26) goxlr_daemon::settings: Save Complete and synced, renaming to "/home/honney/.config/goxlr-utility/settings.json"
+08:41:34 [DEBUG] (26) goxlr_daemon::settings: Target exists, removing..
+08:41:34 [DEBUG] (26) goxlr_daemon::settings: Renaming "/home/honney/.config/goxlr-utility/settings.tmp" to "/home/honney/.config/goxlr-utility/settings.json"
+08:41:34 [DEBUG] (26) goxlr_daemon::settings: Settings Saved.
+08:41:34 [DEBUG] (29) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+08:41:34 [DEBUG] (26) goxlr_daemon::device: Updating LineIn volume from 133 to 134 as a human moved the fader
+09:58:10 [DEBUG] (26) goxlr_daemon::profile: Loading Profile From /home/honney/.local/share/goxlr-utility/profiles/Sleep.goxlr
+09:58:10 [DEBUG] (26) goxlr_profile_loader::profile: Loading Profile Archive..
+09:58:10 [DEBUG] (26) goxlr_profile_loader::profile: Attempting to read profile.xml..
+09:58:10 [DEBUG] (26) goxlr_profile_loader::profile: Preparing Structure..
+09:58:10 [DEBUG] (26) goxlr_profile_loader::profile: MixRoutingTree { mix: {Headphones: A, Broadcast: A, LineOut: A, ChatMic: A, Sampler: A} }
+09:58:10 [DEBUG] (26) goxlr_profile_loader::profile: SubMixer { submix_enabled: false, volume_table: {Mic: 0, Chat: 0, Music: 0, Game: 0, Console: 0, LineIn: 0, System: 0, Sample: 0}, monitor_tree: MonitorTree { monitored_output: Headphones, headphone_mix: A, routing: {Mic: 8192, Chat: 8192, Music: 8192, Game: 8192, Console: 8192, LineIn: 8192, System: 8192, Sample: 8192} }, linking_tree: LinkingTree { linked_list: {Mic: true, Chat: true, Music: true, Game: true, Console: true, LineIn: true, System: true, Sample: true}, linked_ratio: {Mic: 1.0, Chat: 1.0, Music: 1.0, Game: 1.0, Console: 1.0, LineIn: 1.0, System: 1.0, Sample: 1.0} } }
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Profile Successfully Loaded, Performing Backup..
+09:58:10 [DEBUG] (26) goxlr_profile_loader::profile: Creating Temporary Save File: "/home/honney/.local/share/goxlr-utility/backups/Sleep.tmp"
+09:58:10 [DEBUG] (26) goxlr_profile_loader::profile: Save Complete and synced, renaming to "/home/honney/.local/share/goxlr-utility/backups/Sleep.goxlr"
+09:58:10 [DEBUG] (26) goxlr_profile_loader::profile: Target profile exists, removing..
+09:58:10 [DEBUG] (26) goxlr_profile_loader::profile: Renaming "/home/honney/.local/share/goxlr-utility/backups/Sleep.tmp" to "/home/honney/.local/share/goxlr-utility/backups/Sleep.goxlr"
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Backup Complete
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Applying Profile..
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting Faders..
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Fader Already Assigned, ignoring
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting Fader B to Music
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Fader Already Assigned, ignoring
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Fader Already Assigned, ignoring
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting Mute States..
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Applying Microphone Mute State
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting Mic to Unmuted
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Channel System on Fader, Loading State from Profile
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Channel D already Unmuted, doing nothing.
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Channel Chat on Fader, Loading State from Profile
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Channel C already Unmuted, doing nothing.
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Channel Music on Fader, Loading State from Profile
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Channel B already Unmuted, doing nothing.
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting Channel Volumes..
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting volume for Mic to 1
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting volume for LineIn to 158
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting volume for Console to 128
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting volume for System to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting volume for Game to 128
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting volume for Chat to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting volume for Sample to 207
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting volume for Music to 1
+09:58:10 [DEBUG] (26) goxlr_usb::device::libusb::device: Response not arrived yet for SetChannelVolume(Music), sleeping and retrying (Attempt 1 of 20)
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting volume for MicMonitor to 255
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting volume for Headphones to 255
+09:58:10 [DEBUG] (26) goxlr_usb::device::libusb::device: Response not arrived yet for SetChannelVolume(Headphones), sleeping and retrying (Attempt 1 of 20)
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting volume for LineOut to 255
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Applying Submixing Settings..
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Loading Colour Map..
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting Fader display modes..
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting display for A
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting display for B
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting display for C
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting display for D
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Updating button states..
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Applying Routing..
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Microphone:
+09:58:10 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: true, Sampler: true, LineOut: true}
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Chat:
+09:58:10 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Music:
+09:58:10 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Light HardTune Enabled for Channel: Music
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Game:
+09:58:10 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Light HardTune Enabled for Channel: Game
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Console:
+09:58:10 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Applying Routing to LineIn:
+09:58:10 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Light HardTune Enabled for Channel: LineIn
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Applying Routing to System:
+09:58:10 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Light HardTune Enabled for Channel: System
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Samples:
+09:58:10 [DEBUG] (26) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: true, Sampler: false, LineOut: false}
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Applying Voice FX
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting ReverbAmount to -36
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting ReverbType to 5
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting ReverbDecay to 96
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting ReverbPredelay to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting ReverbDiffuse to -50
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting ReverbLowColor to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting ReverbHighColor to -50
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting ReverbHighFactor to -25
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting ReverbModSpeed to -25
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting ReverbModDepth to -25
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting ReverbEarlyLevel to -25
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting ReverbTailLevel to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneStyle to 1
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneAmount to 30
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneHP to 110
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneLP to 190
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphonePreGain to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphonePostGain to 2
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneDistType to 4
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphonePresenceGain to 7
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphonePresenceFC to 160
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphonePresenceBW to 5
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneBeatboxEnable to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneFilterControl to 1
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneFilter to 59
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneDrivePotGainCompMid to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneDrivePotGainCompMax to 5
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting RobotPulseWidth to 50
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting RobotWaveform to 1
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting RobotThreshold to -36
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting RobotDryMix to -6
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting RobotLowFreq to 88
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting RobotLowGain to -10
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting RobotLowWidth to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting RobotMidFreq to 173
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting RobotMidGain to 5
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting RobotMidWidth to 25
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting RobotHiFreq to 182
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting RobotHiGain to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting RobotHiWidth to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting RobotStyle to 1
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneKeySource to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneAmount to 100
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneWindow to 60
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneRate to 100
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneScale to 5
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting HardTunePitchAmount to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting EchoAmount to -36
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting EchoSource to 1
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting EchoDivL to 10
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting EchoDivR to 13
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting EchoFeedbackL to 50
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting EchoFeedbackR to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting EchoXFBLtoR to 100
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting EchoXFBRtoL to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting EchoFeedback to 55
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting EchoFilterStyle to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting EchoTempo to 120
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting PitchAmount to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting PitchCharacter to 100
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting PitchThreshold to -26
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting GenderAmount to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting Encoder1Enabled to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting Encoder2Enabled to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting Encoder3Enabled to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting Encoder4Enabled to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MegaphoneEnabled to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting HardTuneEnabled to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting RobotEnabled to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Setting MicInputMute to 0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Validating Sampler Configuration..
+09:58:10 [DEBUG] (26) goxlr_daemon::settings: Saving Settings
+09:58:10 [DEBUG] (26) goxlr_daemon::settings: Creating Temporary Save File: "/home/honney/.config/goxlr-utility/settings.tmp"
+09:58:10 [DEBUG] (26) goxlr_daemon::settings: Save Complete and synced, renaming to "/home/honney/.config/goxlr-utility/settings.json"
+09:58:10 [DEBUG] (26) goxlr_daemon::settings: Target exists, removing..
+09:58:10 [DEBUG] (26) goxlr_daemon::settings: Renaming "/home/honney/.config/goxlr-utility/settings.tmp" to "/home/honney/.config/goxlr-utility/settings.json"
+09:58:10 [DEBUG] (26) goxlr_daemon::settings: Settings Saved.
+09:58:10 [DEBUG] (3) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Updating Mic volume from 1 to 0 as a human moved the fader
+09:58:10 [DEBUG] (26) goxlr_daemon::device: Updating Music volume from 1 to 0 as a human moved the fader
+09:58:10 [DEBUG] (3) goxlr_daemon::platform::unix: TERM Signal Received, Triggering STOP
+09:58:10 [DEBUG] (3) goxlr_daemon::platform::unix: Platform Runtime Ended
+09:58:10 [DEBUG] (3) goxlr_daemon::events: Shutdown Phase 1 Triggered..
+09:58:10 [DEBUG] (3) goxlr_daemon::device: Shutting Down Device: S220303727CQK
+09:58:10 [DEBUG] (3) goxlr_daemon::events: Shutdown Phase 2 Triggered..
+09:58:10 [DEBUG] (3) goxlr_daemon::files: Shutdown Signal Received.
+09:58:10 [DEBUG] (3) goxlr_daemon::platform::linux::sleep: End of Run
+09:58:10 [INFO] Shutting down TTS Service
+09:58:10 [INFO] Shutting down device worker
+09:58:10 [DEBUG] (73) goxlr_audio::recorder: Audio Listener Terminated
+09:58:10 [DEBUG] (73) goxlr_audio::recorder: Recorder Dropped, stopping thread..
+09:58:10 [WARN] Sender Closed for S220303727CQK
+09:58:10 [DEBUG] (1) goxlr_daemon::tray::linux: Shutting Down Tray Handler..
+09:58:10 [INFO] Shutting down daemon
+09:58:10 [INFO] HTTP Server Stopped.
+11:18:49 [WARN] Unable to calculate timezone, using UTC for log timestamps
+11:18:49 [INFO] Starting GoXLR Daemon v1.1.4
+11:18:49 [INFO] System Locale: en_US
+11:18:49 [INFO] Performing Platform Preflight...
+11:18:49 [DEBUG] (1) goxlr_daemon: HTTP Bind Address: localhost
+11:18:49 [INFO] Bound IPC Socket @ Name(UdSocketPath("/tmp/goxlr.socket"))
+11:18:49 [DEBUG] (28) goxlr_daemon::servers::ipc_server: Running IPC Server..
+11:18:49 [DEBUG] (33) goxlr_daemon::platform::linux::autostart: Found XDG AutoStart Path: "/home/honney/.config/autostart"
+11:18:49 [DEBUG] (33) goxlr_daemon::primary_worker: Performing Firmware Version Check..
+11:18:49 [INFO] Started GoXLR configuration interface at http://localhost:14564/
+11:18:49 [INFO] Starting TTS Service..
+11:18:49 [DEBUG] (30) goxlr_daemon::events: Starting Event Loop..
+11:18:49 [DEBUG] (26) goxlr_daemon::platform::linux::sleep: Spawning Sleep Handler..
+11:18:49 [INFO] Connected to possible GoXLR device at Bus 005 Device 003: ID 1220:8fe0
+11:18:49 [DEBUG] (2) goxlr_usb::device::libusb::device: Handling initial request
+11:18:49 [DEBUG] (2) goxlr_daemon::device: New Device Loading..
+11:18:49 [INFO] Configuring GoXLR, Profile: Sleep, Mic Profile: DEFAULT
+11:18:49 [DEBUG] (2) goxlr_daemon::profile: Loading Profile From /home/honney/.local/share/goxlr-utility/profiles/Sleep.goxlr
+11:18:49 [DEBUG] (2) goxlr_profile_loader::profile: Loading Profile Archive..
+11:18:49 [DEBUG] (26) goxlr_daemon::platform::linux::sleep: Attempting to Inhibit Sleep..
+11:18:49 [DEBUG] (33) reqwest::connect: starting new connection: https://mediadl.musictribe.com/
+11:18:49 [DEBUG] (72) hyper_util::client::legacy::connect::dns: resolving host="mediadl.musictribe.com"
+11:18:49 [DEBUG] (33) goxlr_daemon::platform::linux::sleep: Inhibitor Successfully Established.
+11:18:49 [DEBUG] (33) goxlr_daemon::platform::linux::sleep: Awaiting Result from 'PrepareForSleep'
+11:18:49 [DEBUG] (33) goxlr_daemon::platform::linux::sleep: Preparing Lock Proxy..
+11:18:49 [DEBUG] (33) goxlr_daemon::platform::linux::sleep: Entering Signal Loop..
+11:18:50 [DEBUG] (33) hyper_util::client::legacy::connect::http: connecting to 104.18.14.72:443
+11:18:50 [DEBUG] (29) hyper_util::client::legacy::connect::http: connected to 104.18.14.72:443
+11:18:50 [DEBUG] (2) goxlr_profile_loader::profile: Attempting to read profile.xml..
+11:18:50 [DEBUG] (2) goxlr_profile_loader::profile: Preparing Structure..
+11:18:50 [DEBUG] (2) goxlr_profile_loader::profile: MixRoutingTree { mix: {Headphones: A, Broadcast: A, LineOut: A, ChatMic: A, Sampler: A} }
+11:18:50 [DEBUG] (2) goxlr_profile_loader::profile: SubMixer { submix_enabled: false, volume_table: {Mic: 0, Chat: 0, Music: 0, Game: 0, Console: 0, LineIn: 0, System: 0, Sample: 0}, monitor_tree: MonitorTree { monitored_output: Headphones, headphone_mix: A, routing: {Mic: 8192, Chat: 8192, Music: 8192, Game: 8192, Console: 8192, LineIn: 8192, System: 8192, Sample: 8192} }, linking_tree: LinkingTree { linked_list: {Mic: true, Chat: true, Music: true, Game: true, Console: true, LineIn: true, System: true, Sample: true}, linked_ratio: {Mic: 1.0, Chat: 1.0, Music: 1.0, Game: 1.0, Console: 1.0, LineIn: 1.0, System: 1.0, Sample: 1.0} } }
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Profile Successfully Loaded, Performing Backup..
+11:18:50 [DEBUG] (2) goxlr_profile_loader::profile: Creating Temporary Save File: "/home/honney/.local/share/goxlr-utility/backups/Sleep.tmp"
+11:18:50 [DEBUG] (2) goxlr_profile_loader::profile: Save Complete and synced, renaming to "/home/honney/.local/share/goxlr-utility/backups/Sleep.goxlr"
+11:18:50 [DEBUG] (2) goxlr_profile_loader::profile: Target profile exists, removing..
+11:18:50 [DEBUG] (2) goxlr_profile_loader::profile: Renaming "/home/honney/.local/share/goxlr-utility/backups/Sleep.tmp" to "/home/honney/.local/share/goxlr-utility/backups/Sleep.goxlr"
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Main Profile Backup Complete
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Mic Profile Successfully Loaded, Performing Backup..
+11:18:50 [DEBUG] (2) goxlr_profile_loader::mic_profile: Creating Temporary Save File: "/home/honney/.local/share/goxlr-utility/backups/DEFAULT.tmp"
+11:18:50 [DEBUG] (2) goxlr_profile_loader::mic_profile: Save Complete and synced, renaming to "/home/honney/.local/share/goxlr-utility/backups/DEFAULT.goxlrMicProfile"
+11:18:50 [DEBUG] (2) goxlr_profile_loader::mic_profile: Target mic profile exists, removing..
+11:18:50 [DEBUG] (2) goxlr_profile_loader::mic_profile: Renaming "/home/honney/.local/share/goxlr-utility/backups/DEFAULT.tmp" to "/home/honney/.local/share/goxlr-utility/backups/DEFAULT.goxlrMicProfile"
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Mic Profile Backup Complete
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Created Audio Handler..
+11:18:50 [DEBUG] (73) goxlr_audio::recorder: Starting Audio Listener..
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Ok(AudioHandler { output_device: None, buffered_input: Some(BufferedRecorder { device: [goxlr_sample.*source, GoXLR_0_4_5.*source, GoXLR.*HiFi__Line5__source, CoreAudio\*Sampler(?:(?!Mini).)*$, ^WASAPI\*Sample(?:(?!Mini).)*$], producers: 0 }), last_device_check: None, active_streams: {A: {TopLeft: None, TopRight: None, BottomLeft: None, BottomRight: None}, B: {TopLeft: None, TopRight: None, BottomLeft: None, BottomRight: None}, C: {TopLeft: None, TopRight: None, BottomLeft: None, BottomRight: None}}, process_task: None })
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Audio Handler Loaded OK..
+11:18:50 [DEBUG] (2) goxlr_daemon::device: --- DEVICE INFO ---
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Serial: "S220303727CQK"
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Firmware: 1.4.3.110
+11:18:50 [DEBUG] (2) goxlr_daemon::device: DICE: 1.4.3.110
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Type: Full
+11:18:50 [DEBUG] (2) goxlr_daemon::device: -------------------
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Applying Profile..
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Faders..
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Fader A to Mic
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Fader B to Music
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Fader C to Chat
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Fader D to System
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Mute States..
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Applying Microphone Mute State
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Mic to Unmuted
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Unknown Channel state for LineIn, Unmuting.
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Unknown Channel state for Console, Unmuting.
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Channel System on Fader, Loading State from Profile
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Channel System set to Unmuted (no previous)
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Unknown Channel state for Game, Unmuting.
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Channel Chat on Fader, Loading State from Profile
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Channel Chat set to Unmuted (no previous)
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Unknown Channel state for Sample, Unmuting.
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Channel Music on Fader, Loading State from Profile
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Channel Music set to Unmuted (no previous)
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Unknown Channel state for Headphones, Unmuting.
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Unknown Channel state for MicMonitor, Unmuting.
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Unknown Channel state for LineOut, Unmuting.
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Channel Volumes..
+11:18:50 [DEBUG] (2) goxlr_daemon::device: No reference volumes, sending channels in order
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting volume for Mic to 1
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting volume for LineIn to 158
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting volume for Console to 128
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting volume for System to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting volume for Game to 128
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting volume for Chat to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting volume for Sample to 207
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting volume for Music to 1
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting volume for Headphones to 255
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting volume for MicMonitor to 255
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting volume for LineOut to 255
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Applying Submixing Settings..
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Loading Colour Map..
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Fader display modes..
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting display for A
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting display for B
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting display for C
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting display for D
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Updating button states..
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Applying Routing..
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+11:18:50 [DEBUG] (2) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: true, Sampler: true, LineOut: true}
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Chat:
+11:18:50 [DEBUG] (2) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Music:
+11:18:50 [DEBUG] (2) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Light HardTune Enabled for Channel: Music
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Game:
+11:18:50 [DEBUG] (2) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Light HardTune Enabled for Channel: Game
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Console:
+11:18:50 [DEBUG] (2) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Applying Routing to LineIn:
+11:18:50 [DEBUG] (2) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Light HardTune Enabled for Channel: LineIn
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Applying Routing to System:
+11:18:50 [DEBUG] (2) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: false}
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Light HardTune Enabled for Channel: System
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Samples:
+11:18:50 [DEBUG] (2) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: true, Sampler: false, LineOut: false}
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Applying Voice FX
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting ReverbAmount to -36
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting ReverbType to 5
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting ReverbDecay to 96
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting ReverbPredelay to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting ReverbDiffuse to -50
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting ReverbLowColor to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting ReverbHighColor to -50
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting ReverbHighFactor to -25
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting ReverbModSpeed to -25
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting ReverbModDepth to -25
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting ReverbEarlyLevel to -25
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting ReverbTailLevel to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphoneStyle to 1
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphoneAmount to 30
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphoneHP to 110
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphoneLP to 190
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphonePreGain to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphonePostGain to 2
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphoneDistType to 4
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphonePresenceGain to 7
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphonePresenceFC to 160
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphonePresenceBW to 5
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphoneBeatboxEnable to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphoneFilterControl to 1
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphoneFilter to 59
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphoneDrivePotGainCompMid to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphoneDrivePotGainCompMax to 5
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting RobotPulseWidth to 50
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting RobotWaveform to 1
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting RobotThreshold to -36
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting RobotDryMix to -6
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting RobotLowFreq to 88
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting RobotLowGain to -10
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting RobotLowWidth to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting RobotMidFreq to 173
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting RobotMidGain to 5
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting RobotMidWidth to 25
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting RobotHiFreq to 182
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting RobotHiGain to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting RobotHiWidth to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting RobotStyle to 1
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting HardTuneKeySource to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting HardTuneAmount to 100
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting HardTuneWindow to 60
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting HardTuneRate to 100
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting HardTuneScale to 5
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting HardTunePitchAmount to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting EchoAmount to -36
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting EchoSource to 1
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting EchoDivL to 10
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting EchoDivR to 13
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting EchoFeedbackL to 50
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting EchoFeedbackR to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting EchoXFBLtoR to 100
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting EchoXFBRtoL to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting EchoFeedback to 55
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting EchoFilterStyle to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting EchoTempo to 120
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting PitchAmount to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting PitchCharacter to 100
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting PitchThreshold to -26
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting GenderAmount to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Encoder1Enabled to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Encoder2Enabled to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Encoder3Enabled to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Encoder4Enabled to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MegaphoneEnabled to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting HardTuneEnabled to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting RobotEnabled to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Validating Sampler Configuration..
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer31HzGain to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer63HzGain to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer4KHzFrequency to 183
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer8KHzGain to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting DeEsser to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting CompressorRatio to 9
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer8KHzFrequency to 207
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer1KHzFrequency to 135
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer1KHzGain to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting CompressorThreshold to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer2KHzGain to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting CompressorMakeUpGain to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer125HzFrequency to 63
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting CompressorAttack to 1
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer125HzGain to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer16KHzGain to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting BleepLevel to -20
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting GateAttack to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer500HzFrequency to 111
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting GateThreshold to -41
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer250HzFrequency to 87
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer2KHzFrequency to 159
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer500HzGain to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer4KHzGain to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer63HzFrequency to 40
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer16KHzFrequency to 231
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting GateRelease to 19
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting GateMode to 2
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting GateAttenuation to -61
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer31HzFrequency to 16
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting CompressorRelease to 9
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting GateEnabled to 1
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Setting Equalizer250HzGain to 0
+11:18:50 [DEBUG] (2) goxlr_daemon::settings: Saving Settings
+11:18:50 [DEBUG] (2) goxlr_daemon::settings: Creating Temporary Save File: "/home/honney/.config/goxlr-utility/settings.tmp"
+11:18:50 [DEBUG] (2) goxlr_daemon::settings: Save Complete and synced, renaming to "/home/honney/.config/goxlr-utility/settings.json"
+11:18:50 [DEBUG] (2) goxlr_daemon::settings: Target exists, removing..
+11:18:50 [DEBUG] (2) goxlr_daemon::settings: Renaming "/home/honney/.config/goxlr-utility/settings.tmp" to "/home/honney/.config/goxlr-utility/settings.json"
+11:18:50 [DEBUG] (2) goxlr_daemon::settings: Settings Saved.
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Updating Mic volume from 1 to 0 as a human moved the fader
+11:18:50 [DEBUG] (2) goxlr_daemon::device: Updating Music volume from 1 to 0 as a human moved the fader
+11:19:01 [DEBUG] (32) goxlr_daemon::profile: Loading Profile From /home/honney/.local/share/goxlr-utility/profiles/Default.goxlr
+11:19:01 [DEBUG] (32) goxlr_profile_loader::profile: Loading Profile Archive..
+11:19:01 [DEBUG] (32) goxlr_profile_loader::profile: Attempting to read profile.xml..
+11:19:01 [DEBUG] (32) goxlr_profile_loader::profile: Preparing Structure..
+11:19:01 [DEBUG] (32) goxlr_profile_loader::profile: MixRoutingTree { mix: {Headphones: A, Broadcast: A, LineOut: A, ChatMic: A, Sampler: A} }
+11:19:01 [DEBUG] (32) goxlr_profile_loader::profile: SubMixer { submix_enabled: false, volume_table: {Mic: 0, Chat: 0, Music: 0, Game: 0, Console: 0, LineIn: 0, System: 0, Sample: 0}, monitor_tree: MonitorTree { monitored_output: Headphones, headphone_mix: A, routing: {Mic: 0, Chat: 8192, Music: 8192, Game: 8192, Console: 8192, LineIn: 8192, System: 8192, Sample: 8192} }, linking_tree: LinkingTree { linked_list: {Mic: true, Chat: true, Music: true, Game: true, Console: true, LineIn: true, System: true, Sample: true}, linked_ratio: {Mic: 1.0, Chat: 1.0, Music: 1.0, Game: 1.0, Console: 1.0, LineIn: 1.0, System: 1.0, Sample: 1.0} } }
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Profile Successfully Loaded, Performing Backup..
+11:19:01 [DEBUG] (32) goxlr_profile_loader::profile: Creating Temporary Save File: "/home/honney/.local/share/goxlr-utility/backups/Default.tmp"
+11:19:01 [DEBUG] (32) goxlr_profile_loader::profile: Save Complete and synced, renaming to "/home/honney/.local/share/goxlr-utility/backups/Default.goxlr"
+11:19:01 [DEBUG] (32) goxlr_profile_loader::profile: Target profile exists, removing..
+11:19:01 [DEBUG] (32) goxlr_profile_loader::profile: Renaming "/home/honney/.local/share/goxlr-utility/backups/Default.tmp" to "/home/honney/.local/share/goxlr-utility/backups/Default.goxlr"
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Backup Complete
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Applying Profile..
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting Faders..
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Fader Already Assigned, ignoring
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting Fader B to LineIn
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Fader Already Assigned, ignoring
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Fader Already Assigned, ignoring
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting Mute States..
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Applying Microphone Mute State
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting Mic to Unmuted
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Channel LineIn on Fader, Loading State from Profile
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Channel B already Unmuted, doing nothing.
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Channel System on Fader, Loading State from Profile
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Channel D already Unmuted, doing nothing.
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Channel Chat on Fader, Loading State from Profile
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Channel C already Unmuted, doing nothing.
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting Channel Volumes..
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting volume for Headphones to 153
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting volume for Mic to 255
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting volume for LineIn to 133
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting volume for Console to 128
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting volume for System to 175
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting volume for Game to 128
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting volume for Chat to 159
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting volume for Sample to 255
+11:19:01 [DEBUG] (32) goxlr_usb::device::libusb::device: Response not arrived yet for SetChannelVolume(Sample), sleeping and retrying (Attempt 1 of 20)
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting volume for Music to 128
+11:19:01 [DEBUG] (32) goxlr_usb::device::libusb::device: Response not arrived yet for SetChannelVolume(Music), sleeping and retrying (Attempt 1 of 20)
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting volume for MicMonitor to 255
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting volume for LineOut to 255
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Applying Submixing Settings..
+11:19:01 [DEBUG] (32) goxlr_usb::device::libusb::device: Response not arrived yet for SetChannelVolume(MicMonitor), sleeping and retrying (Attempt 1 of 20)
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Loading Colour Map..
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting Fader display modes..
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting display for A
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting display for B
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting display for C
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting display for D
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Updating button states..
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Applying Routing..
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Applying Routing to Microphone:
+11:19:01 [DEBUG] (32) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Applying Routing to Chat:
+11:19:01 [DEBUG] (32) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: true}
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Applying Routing to Music:
+11:19:01 [DEBUG] (32) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: true}
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Light HardTune Enabled for Channel: Music
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Applying Routing to Game:
+11:19:01 [DEBUG] (32) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: true}
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Light HardTune Enabled for Channel: Game
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Applying Routing to Console:
+11:19:01 [DEBUG] (32) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: true}
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Applying Routing to LineIn:
+11:19:01 [DEBUG] (32) goxlr_daemon::device: {Headphones: true, BroadcastMix: false, ChatMic: false, Sampler: true, LineOut: false}
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Light HardTune Enabled for Channel: LineIn
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Applying Routing to System:
+11:19:01 [DEBUG] (32) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: false, Sampler: false, LineOut: true}
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Light HardTune Enabled for Channel: System
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Applying Routing to Samples:
+11:19:01 [DEBUG] (32) goxlr_daemon::device: {Headphones: true, BroadcastMix: true, ChatMic: true, Sampler: false, LineOut: true}
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Applying Voice FX
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting ReverbAmount to -14
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting ReverbType to 1
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting ReverbDecay to 150
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting ReverbPredelay to 100
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting ReverbDiffuse to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting ReverbLowColor to 10
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting ReverbHighColor to -39
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting ReverbHighFactor to 21
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting ReverbModSpeed to -3
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting ReverbModDepth to 21
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting ReverbEarlyLevel to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting ReverbTailLevel to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphoneStyle to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphoneAmount to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphoneHP to 120
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphoneLP to 200
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphonePreGain to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphonePostGain to 2
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphoneDistType to 6
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphonePresenceGain to 8
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphonePresenceFC to 135
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphonePresenceBW to 7
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphoneBeatboxEnable to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphoneFilterControl to 2
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphoneFilter to 59
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphoneDrivePotGainCompMid to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphoneDrivePotGainCompMax to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting RobotPulseWidth to 50
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting RobotWaveform to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting RobotThreshold to -36
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting RobotDryMix to -6
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting RobotLowFreq to 88
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting RobotLowGain to -10
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting RobotLowWidth to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting RobotMidFreq to 173
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting RobotMidGain to 5
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting RobotMidWidth to 25
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting RobotHiFreq to 182
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting RobotHiGain to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting RobotHiWidth to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting RobotStyle to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting HardTuneKeySource to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting HardTuneAmount to 70
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting HardTuneWindow to 20
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting HardTuneRate to 20
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting HardTuneScale to 5
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting HardTunePitchAmount to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting EchoAmount to -36
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting EchoSource to 1
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting EchoDivL to 9
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting EchoDivR to 9
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting EchoFeedbackL to 50
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting EchoFeedbackR to 50
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting EchoXFBLtoR to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting EchoXFBRtoL to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting EchoFeedback to 30
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting EchoFilterStyle to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting EchoTempo to 149
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting PitchAmount to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting PitchCharacter to 100
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting PitchThreshold to -36
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting GenderAmount to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting Encoder1Enabled to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting Encoder2Enabled to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting Encoder3Enabled to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting Encoder4Enabled to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MegaphoneEnabled to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting HardTuneEnabled to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting RobotEnabled to 0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Setting MicInputMute to 0
+11:19:01 [DEBUG] (32) goxlr_usb::device::libusb::device: Response not arrived yet for SetEncoderMode(Pitch), sleeping and retrying (Attempt 1 of 20)
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Validating Sampler Configuration..
+11:19:01 [DEBUG] (32) goxlr_daemon::settings: Saving Settings
+11:19:01 [DEBUG] (32) goxlr_daemon::settings: Creating Temporary Save File: "/home/honney/.config/goxlr-utility/settings.tmp"
+11:19:01 [DEBUG] (32) goxlr_daemon::settings: Save Complete and synced, renaming to "/home/honney/.config/goxlr-utility/settings.json"
+11:19:01 [DEBUG] (32) goxlr_daemon::settings: Target exists, removing..
+11:19:01 [DEBUG] (32) goxlr_daemon::settings: Renaming "/home/honney/.config/goxlr-utility/settings.tmp" to "/home/honney/.config/goxlr-utility/settings.json"
+11:19:01 [DEBUG] (32) goxlr_daemon::settings: Settings Saved.
+11:19:01 [DEBUG] (26) goxlr_daemon::servers::ipc_server: Disconnected 127.0.0.1:0
+11:19:01 [DEBUG] (32) goxlr_daemon::device: Updating LineIn volume from 133 to 134 as a human moved the fader
+16:12:15 [DEBUG] (32) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+16:12:15 [DEBUG] (32) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+16:12:15 [DEBUG] (32) goxlr_daemon::device: Setting MicInputMute to 1
+16:12:15 [DEBUG] (32) goxlr_daemon::device: Applying Routing to Microphone:
+16:12:15 [DEBUG] (32) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+16:12:15 [DEBUG] (32) goxlr_daemon::tts: Received TTS Message: Mic Muted
+16:31:40 [DEBUG] (26) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+16:31:40 [DEBUG] (26) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+16:31:40 [DEBUG] (26) goxlr_daemon::device: Setting MicInputMute to 0
+16:31:40 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Microphone:
+16:31:40 [DEBUG] (26) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+16:31:40 [DEBUG] (26) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+16:39:03 [DEBUG] (32) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+16:39:04 [DEBUG] (32) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+16:39:04 [DEBUG] (32) goxlr_daemon::device: Setting MicInputMute to 1
+16:39:04 [DEBUG] (32) goxlr_daemon::device: Applying Routing to Microphone:
+16:39:04 [DEBUG] (32) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+16:39:04 [DEBUG] (32) goxlr_daemon::tts: Received TTS Message: Mic Muted
+17:01:01 [DEBUG] (29) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+17:01:01 [DEBUG] (26) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+17:01:01 [DEBUG] (26) goxlr_daemon::device: Setting MicInputMute to 0
+17:01:01 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Microphone:
+17:01:01 [DEBUG] (26) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+17:01:01 [DEBUG] (26) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+17:05:27 [DEBUG] (29) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+17:05:27 [DEBUG] (29) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+17:05:27 [DEBUG] (29) goxlr_daemon::device: Setting MicInputMute to 1
+17:05:27 [DEBUG] (29) goxlr_daemon::device: Applying Routing to Microphone:
+17:05:27 [DEBUG] (29) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+17:05:27 [DEBUG] (29) goxlr_daemon::tts: Received TTS Message: Mic Muted
+17:05:46 [DEBUG] (29) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+17:05:47 [DEBUG] (29) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+17:05:47 [DEBUG] (29) goxlr_daemon::device: Setting MicInputMute to 0
+17:05:47 [DEBUG] (29) goxlr_daemon::device: Applying Routing to Microphone:
+17:05:47 [DEBUG] (29) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+17:05:47 [DEBUG] (29) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+17:12:37 [DEBUG] (26) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+17:12:37 [DEBUG] (26) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+17:12:37 [DEBUG] (26) goxlr_daemon::device: Setting MicInputMute to 1
+17:12:37 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Microphone:
+17:12:37 [DEBUG] (26) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+17:12:37 [DEBUG] (26) goxlr_daemon::tts: Received TTS Message: Mic Muted
+17:12:41 [DEBUG] (29) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+17:12:41 [DEBUG] (29) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+17:12:41 [DEBUG] (29) goxlr_daemon::device: Setting MicInputMute to 0
+17:12:41 [DEBUG] (29) goxlr_daemon::device: Applying Routing to Microphone:
+17:12:41 [DEBUG] (29) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+17:12:41 [DEBUG] (29) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+17:13:41 [DEBUG] (26) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+17:13:41 [DEBUG] (26) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+17:13:41 [DEBUG] (26) goxlr_daemon::device: Setting MicInputMute to 1
+17:13:41 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Microphone:
+17:13:41 [DEBUG] (26) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+17:13:41 [DEBUG] (26) goxlr_daemon::tts: Received TTS Message: Mic Muted
+17:15:31 [DEBUG] (2) goxlr_daemon::device: Updating Chat volume from 159 to 165 as a human moved the fader
+17:15:31 [DEBUG] (2) goxlr_daemon::device: Updating Chat volume from 165 to 172 as a human moved the fader
+17:15:31 [DEBUG] (2) goxlr_daemon::device: Updating Chat volume from 172 to 179 as a human moved the fader
+17:15:31 [DEBUG] (2) goxlr_daemon::device: Updating Chat volume from 179 to 183 as a human moved the fader
+17:15:31 [DEBUG] (2) goxlr_daemon::device: Updating Chat volume from 183 to 185 as a human moved the fader
+17:15:31 [DEBUG] (2) goxlr_daemon::device: Updating Chat volume from 185 to 186 as a human moved the fader
+17:15:32 [DEBUG] (26) goxlr_daemon::device: Updating Chat volume from 186 to 190 as a human moved the fader
+17:15:32 [DEBUG] (26) goxlr_daemon::device: Updating Chat volume from 190 to 194 as a human moved the fader
+17:15:32 [DEBUG] (26) goxlr_daemon::device: Updating Chat volume from 194 to 196 as a human moved the fader
+17:15:33 [DEBUG] (29) goxlr_daemon::device: Updating Chat volume from 196 to 200 as a human moved the fader
+17:15:35 [DEBUG] (26) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+17:15:35 [DEBUG] (26) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+17:15:35 [DEBUG] (26) goxlr_daemon::device: Setting MicInputMute to 0
+17:15:35 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Microphone:
+17:15:35 [DEBUG] (26) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+17:15:35 [DEBUG] (26) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+17:15:49 [DEBUG] (2) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+17:15:49 [DEBUG] (29) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+17:15:49 [DEBUG] (29) goxlr_daemon::device: Setting MicInputMute to 1
+17:15:49 [DEBUG] (29) goxlr_daemon::device: Applying Routing to Microphone:
+17:15:49 [DEBUG] (29) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+17:15:49 [DEBUG] (29) goxlr_daemon::tts: Received TTS Message: Mic Muted
+17:15:58 [DEBUG] (26) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+17:15:58 [DEBUG] (26) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+17:15:58 [DEBUG] (26) goxlr_daemon::device: Setting MicInputMute to 0
+17:15:58 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Microphone:
+17:15:58 [DEBUG] (26) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+17:15:58 [DEBUG] (26) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+17:15:59 [DEBUG] (2) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+17:15:59 [DEBUG] (2) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+17:15:59 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 1
+17:15:59 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+17:15:59 [DEBUG] (2) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+17:15:59 [DEBUG] (2) goxlr_daemon::tts: Received TTS Message: Mic Muted
+17:17:58 [DEBUG] (29) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+17:17:58 [DEBUG] (29) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+17:17:58 [DEBUG] (29) goxlr_daemon::device: Setting MicInputMute to 0
+17:17:58 [DEBUG] (29) goxlr_daemon::device: Applying Routing to Microphone:
+17:17:58 [DEBUG] (29) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+17:17:58 [DEBUG] (29) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+17:22:13 [DEBUG] (29) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+17:22:13 [DEBUG] (29) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+17:22:13 [DEBUG] (29) goxlr_daemon::device: Setting MicInputMute to 1
+17:22:13 [DEBUG] (29) goxlr_daemon::device: Applying Routing to Microphone:
+17:22:13 [DEBUG] (29) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+17:22:13 [DEBUG] (29) goxlr_daemon::tts: Received TTS Message: Mic Muted
+17:26:31 [DEBUG] (26) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+17:26:31 [DEBUG] (26) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+17:26:31 [DEBUG] (26) goxlr_daemon::device: Setting MicInputMute to 0
+17:26:31 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Microphone:
+17:26:31 [DEBUG] (26) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+17:26:32 [DEBUG] (26) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+17:26:43 [DEBUG] (26) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+17:26:44 [DEBUG] (26) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+17:26:44 [DEBUG] (26) goxlr_daemon::device: Setting MicInputMute to 1
+17:26:44 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Microphone:
+17:26:44 [DEBUG] (26) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+17:26:44 [DEBUG] (26) goxlr_daemon::tts: Received TTS Message: Mic Muted
+18:00:12 [DEBUG] (29) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+18:00:12 [DEBUG] (29) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+18:00:12 [DEBUG] (29) goxlr_daemon::device: Setting MicInputMute to 0
+18:00:12 [DEBUG] (29) goxlr_daemon::device: Applying Routing to Microphone:
+18:00:12 [DEBUG] (29) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+18:00:12 [DEBUG] (29) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+18:00:14 [DEBUG] (29) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+18:00:14 [DEBUG] (29) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+18:00:14 [DEBUG] (29) goxlr_daemon::device: Setting MicInputMute to 1
+18:00:14 [DEBUG] (29) goxlr_daemon::device: Applying Routing to Microphone:
+18:00:14 [DEBUG] (29) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+18:00:14 [DEBUG] (29) goxlr_daemon::tts: Received TTS Message: Mic Muted
+18:53:50 [DEBUG] (2) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+18:53:50 [DEBUG] (2) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+18:53:50 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 0
+18:53:50 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+18:53:50 [DEBUG] (2) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+18:53:50 [DEBUG] (2) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+18:53:58 [DEBUG] (2) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+18:53:58 [DEBUG] (29) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+18:53:58 [DEBUG] (29) goxlr_daemon::device: Setting MicInputMute to 1
+18:53:58 [DEBUG] (29) goxlr_daemon::device: Applying Routing to Microphone:
+18:53:58 [DEBUG] (29) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+18:53:58 [DEBUG] (29) goxlr_daemon::tts: Received TTS Message: Mic Muted
+18:54:01 [DEBUG] (29) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+18:54:01 [DEBUG] (2) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+18:54:01 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 0
+18:54:01 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+18:54:01 [DEBUG] (2) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+18:54:01 [DEBUG] (2) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+18:55:01 [DEBUG] (2) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+18:55:01 [DEBUG] (2) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+18:55:01 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 1
+18:55:01 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+18:55:01 [DEBUG] (2) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+18:55:01 [DEBUG] (2) goxlr_daemon::tts: Received TTS Message: Mic Muted
+18:55:07 [DEBUG] (2) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+18:55:07 [DEBUG] (2) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+18:55:07 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 0
+18:55:07 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+18:55:07 [DEBUG] (2) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+18:55:07 [DEBUG] (2) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+18:55:10 [DEBUG] (2) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+18:55:10 [DEBUG] (2) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+18:55:10 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 1
+18:55:10 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+18:55:10 [DEBUG] (2) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+18:55:10 [DEBUG] (2) goxlr_daemon::tts: Received TTS Message: Mic Muted
+18:55:30 [DEBUG] (29) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+18:55:30 [DEBUG] (2) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+18:55:30 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 0
+18:55:30 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+18:55:30 [DEBUG] (2) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+18:55:30 [DEBUG] (2) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+19:00:31 [DEBUG] (2) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+19:00:31 [DEBUG] (2) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+19:00:31 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 1
+19:00:31 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+19:00:31 [DEBUG] (2) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+19:00:31 [DEBUG] (2) goxlr_daemon::tts: Received TTS Message: Mic Muted
+19:05:04 [DEBUG] (29) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+19:05:04 [DEBUG] (29) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+19:05:04 [DEBUG] (29) goxlr_daemon::device: Setting MicInputMute to 0
+19:05:04 [DEBUG] (29) goxlr_daemon::device: Applying Routing to Microphone:
+19:05:04 [DEBUG] (29) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+19:05:04 [DEBUG] (29) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+20:58:06 [DEBUG] (26) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+20:58:07 [DEBUG] (26) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+20:58:07 [DEBUG] (26) goxlr_daemon::device: Setting MicInputMute to 1
+20:58:07 [DEBUG] (26) goxlr_daemon::device: Applying Routing to Microphone:
+20:58:07 [DEBUG] (26) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+20:58:07 [DEBUG] (26) goxlr_daemon::tts: Received TTS Message: Mic Muted
+20:58:10 [DEBUG] (29) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+20:58:10 [DEBUG] (29) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+20:58:10 [DEBUG] (29) goxlr_daemon::device: Setting MicInputMute to 0
+20:58:10 [DEBUG] (29) goxlr_daemon::device: Applying Routing to Microphone:
+20:58:10 [DEBUG] (29) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+20:58:10 [DEBUG] (29) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+21:32:21 [DEBUG] (2) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+21:32:21 [DEBUG] (2) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+21:32:21 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 1
+21:32:21 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+21:32:21 [DEBUG] (2) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+21:32:21 [DEBUG] (2) goxlr_daemon::tts: Received TTS Message: Mic Muted
+21:32:27 [DEBUG] (2) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+21:32:28 [DEBUG] (2) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+21:32:28 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 0
+21:32:28 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+21:32:28 [DEBUG] (2) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+21:32:28 [DEBUG] (2) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+21:32:29 [DEBUG] (2) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+21:32:29 [DEBUG] (2) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+21:32:29 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 1
+21:32:29 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+21:32:29 [DEBUG] (2) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+21:32:29 [DEBUG] (2) goxlr_daemon::tts: Received TTS Message: Mic Muted
+21:34:41 [DEBUG] (2) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+21:34:41 [DEBUG] (2) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+21:34:41 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 0
+21:34:41 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+21:34:41 [DEBUG] (2) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+21:34:41 [DEBUG] (2) goxlr_daemon::tts: Received TTS Message: Mic Unmuted
+21:40:24 [DEBUG] (2) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+21:40:24 [DEBUG] (2) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+21:40:24 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 1
+21:40:24 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+21:40:24 [DEBUG] (2) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: false, Sampler: false, LineOut: false}
+21:40:24 [DEBUG] (2) goxlr_daemon::tts: Received TTS Message: Mic Muted
+21:43:09 [DEBUG] (26) goxlr_daemon::device: Handling Button Down: MicrophoneMute
+21:43:09 [DEBUG] (2) goxlr_daemon::device: Handling Button Release: MicrophoneMute, Has Long Press Handled: false
+21:43:09 [DEBUG] (2) goxlr_daemon::device: Setting MicInputMute to 0
+21:43:09 [DEBUG] (2) goxlr_daemon::device: Applying Routing to Microphone:
+21:43:09 [DEBUG] (2) goxlr_daemon::device: {Headphones: false, BroadcastMix: false, ChatMic: true, Sampler: false, LineOut: false}
+21:43:09 [DEBUG] (2) goxlr_daemon::tts: Received TTS Message: Mic Unmuted

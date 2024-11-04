@@ -62,9 +62,9 @@ htop
 inkscape
 iwd
 jdk17-openjdk
-jdk21-openjdk
 jmtpfs
 jq
+jre21-openjdk
 kde-gtk-config
 keepassxc
 kitty
@@ -85,6 +85,7 @@ linux-lts-headers
 linux-zen
 linux-zen-headers
 linuxconsole
+logisim-evolution-bin
 lutris
 man-db
 mangohud
@@ -142,6 +143,7 @@ qt5ct
 qt6ct
 r2modman-bin
 remmina
+rnote
 rocm-hip-libraries
 rocm-hip-runtime
 rocm-hip-sdk
@@ -270,9 +272,9 @@ htop
 inkscape
 iwd
 jdk17-openjdk
-jdk21-openjdk
 jmtpfs
 jq
+jre21-openjdk
 kde-gtk-config
 keepassxc
 kitty
@@ -293,6 +295,7 @@ linux-lts-headers
 linux-zen
 linux-zen-headers
 linuxconsole
+logisim-evolution-bin
 lutris
 man-db
 mangohud
@@ -350,6 +353,7 @@ qt5ct
 qt6ct
 r2modman-bin
 remmina
+rnote
 rocm-hip-libraries
 rocm-hip-runtime
 rocm-hip-sdk
