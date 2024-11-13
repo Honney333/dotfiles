@@ -4,7 +4,7 @@
 source "$HOME/.config/function_helper.sh"
 
 # Configuration
-SERVER_IP="192.168.0.1"
+SERVER_IP="192.168.1.22"
 CRENDENTIALS="$HOME/.cred/.smbcred"
 MOUNT_POINT_RAID="$HOME/Raid/"
 MOUNT_POINT_SSD="$HOME/Server-SSD/"

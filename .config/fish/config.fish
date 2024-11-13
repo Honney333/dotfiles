@@ -75,7 +75,7 @@ if status is-interactive
 		alias mkvenv='python3 -m venv'
 
 		zoxide init fish | source
-		alias zd='z'
+		alias cd='z'
 
 		alias print_cam='ssh honney@192.168.1.184'
 
@@ -85,6 +85,9 @@ if status is-interactive
         alias right='sudo chmod -R 755'
 
 		alias reload='clear && omf reload'
+
+    # ffprobe
+        alias ff='$HOME/.bin/simple_ffprobe_script'
 
 	# Garuda Alias
 		# Replace ls with eza

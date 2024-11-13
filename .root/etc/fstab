@@ -28,4 +28,9 @@ UUID=74C0B455C0B41EF4 /home/honney/mount/Langsam ntfs-3g defaults,nls=utf8,umask
 
 # fritzNAS
 # curlftpfs#192.168.1.1 /home/honney/mount/fritzNAS fuse allow_other,uid=1000,gid=1000,umask=0022 0 0
-//192.168.1.1/FRITZ.NAS /home/honney/mount/fritzNAS cifs credentials=/home/honney/.cred/samba_credentials,uid=1000,gid=1000,vers=3.0,cache=none,nounix,noserverino,file_mode=0755,dir_mode=0755 0 0
+//192.168.1.1/FRITZ.NAS /home/honney/mount/fritzNAS cifs credentials=/home/honney/.cred/samba_credentials,nofail,uid=1000,gid=1000,vers=3.0,cache=none,nounix,noserverino,file_mode=0755,dir_mode=0755 0 0
+
+# trueNAS
+//192.168.1.202/Storage /home/honney/mount/Data cifs credentials=/home/honney/.cred/trueNAS_credentials,nofail,vers=3.0,iocharset=utf8,rw,uid=1000,gid=1000,file_mode=0660,dir_mode=0770 0 0
+//192.168.1.202/Media /home/honney/mount/Media cifs credentials=/home/honney/.cred/trueNAS_credentials,nofail,vers=3.0,iocharset=utf8,rw,uid=1000,gid=1000,file_mode=0660,dir_mode=0770 0 0
+//192.168.1.202/Ripping /home/honney/mount/Ripping cifs credentials=/home/honney/.cred/trueNAS_credentials,nofail,vers=3.0,iocharset=utf8,rw,uid=1000,gid=1000,file_mode=0660,dir_mode=0770 0 0

@@ -1,5 +1,23 @@
 # dotfiles for OLED theme
 
+## tmux
+
+useage:
+```
+ssh {user}@{domain}
+```
+
+```
+tmux new-session -d -s {serssion_name}
+```
+
+```
+tmux attach-session -t {session_name}
+```
+then you are in the session and can close the ssh while commands are still running
+
+## choose Primary Display for Games:
+
 xrandr --output DP-7 --primary
 
 For some Java-based applications like Logism-Evolution, IntelliJ, CLion, or PyCharm you need to edit the following line in the .desktop file in ```/usr/share/application```:

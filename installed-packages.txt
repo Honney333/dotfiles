@@ -20,6 +20,7 @@ brave-bin
 brightnessctl
 btop
 btrfs-progs
+certbot
 crunchyroll
 cups
 curlftpfs
@@ -29,7 +30,6 @@ dmenu
 dracut
 efibootmgr
 evtest
-exfat-utils
 eza
 fastfetch
 firefox
@@ -41,6 +41,7 @@ foot
 furmark
 game-devices-udev
 geeqie
+ghdl
 git
 git-lfs
 github-cli
@@ -54,6 +55,8 @@ grub
 gst-plugin-pipewire
 gvfs-mtp
 gvfs-smb
+handbrake
+handbrake-cli
 hardcode-tray
 hip-runtime-amd
 homeassistant-desktop-bin
@@ -66,11 +69,13 @@ jmtpfs
 jq
 jre21-openjdk
 kde-gtk-config
+kdenlive
 keepassxc
 kitty
 krita
 kvantum-qt5-git
 less
+lib32-vulkan-radeon
 libpulse
 libreoffice-fresh
 libreoffice-fresh-de
@@ -148,6 +153,7 @@ rocm-hip-libraries
 rocm-hip-runtime
 rocm-hip-sdk
 rofi
+rust
 rustdesk
 sassc
 screen
@@ -166,13 +172,15 @@ swayidle
 swaylock
 swaync
 system-config-printer
+tailscale
+tmuxp
 torchvision-rocm
 ttf-clear-sans
 twitch
 ugrep
 usbimager
 vencord
-ventoy
+ventoy-bin
 viewnior
 vim
 virtualbox
@@ -207,7 +215,6 @@ yubico-authenticator
 zfs-dkms
 zfs-utils
 zoom
-zoxide
 alacritty
 amd-ucode
 amf-amdgpu-pro
@@ -230,6 +237,7 @@ brave-bin
 brightnessctl
 btop
 btrfs-progs
+certbot
 crunchyroll
 cups
 curlftpfs
@@ -239,7 +247,6 @@ dmenu
 dracut
 efibootmgr
 evtest
-exfat-utils
 eza
 fastfetch
 firefox
@@ -251,6 +258,7 @@ foot
 furmark
 game-devices-udev
 geeqie
+ghdl
 git
 git-lfs
 github-cli
@@ -264,6 +272,8 @@ grub
 gst-plugin-pipewire
 gvfs-mtp
 gvfs-smb
+handbrake
+handbrake-cli
 hardcode-tray
 hip-runtime-amd
 homeassistant-desktop-bin
@@ -276,11 +286,13 @@ jmtpfs
 jq
 jre21-openjdk
 kde-gtk-config
+kdenlive
 keepassxc
 kitty
 krita
 kvantum-qt5-git
 less
+lib32-vulkan-radeon
 libpulse
 libreoffice-fresh
 libreoffice-fresh-de
@@ -358,6 +370,7 @@ rocm-hip-libraries
 rocm-hip-runtime
 rocm-hip-sdk
 rofi
+rust
 rustdesk
 sassc
 screen
@@ -376,13 +389,15 @@ swayidle
 swaylock
 swaync
 system-config-printer
+tailscale
+tmuxp
 torchvision-rocm
 ttf-clear-sans
 twitch
 ugrep
 usbimager
 vencord
-ventoy
+ventoy-bin
 viewnior
 vim
 virtualbox
@@ -417,4 +432,3 @@ yubico-authenticator
 zfs-dkms
 zfs-utils
 zoom
-zoxide
