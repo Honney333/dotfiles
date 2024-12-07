@@ -24,9 +24,12 @@ certbot
 crunchyroll
 cups
 curlftpfs
+davfs2
 davinci-resolve
 debtap
 dmenu
+docker
+docker-compose
 dracut
 efibootmgr
 evtest
@@ -59,9 +62,11 @@ handbrake
 handbrake-cli
 hardcode-tray
 hip-runtime-amd
+hiprt
 homeassistant-desktop-bin
 hplip
 htop
+immich-go
 inkscape
 iwd
 jdk17-openjdk
@@ -79,7 +84,6 @@ lib32-vulkan-radeon
 libpulse
 libreoffice-fresh
 libreoffice-fresh-de
-libva-mesa-driver
 libva-utils
 libva-vdpau-driver
 libvncserver
@@ -94,11 +98,12 @@ logisim-evolution-bin
 lutris
 man-db
 mangohud
-mesa-vdpau
 mingw-w64-libde265
 mingw-w64-openh264
 minicom
 mousepad
+mplayer
+mpv
 nano
 nemo
 nemo-fileroller
@@ -106,6 +111,7 @@ nemo-preview
 nemo-share
 nemo-terminal
 network-manager-applet
+nextcloud-client
 nfs-utils
 nm-connection-editor
 ntfs-3g
@@ -127,7 +133,7 @@ pipewire-media-session
 polkit-kde-agent
 polkit-qt5
 polkit-qt6
-prismlauncher
+proton-vpn-gtk-app
 protontricks
 prusa-slicer
 python-bcrypt
@@ -135,7 +141,6 @@ python-distro
 python-gnupg
 python-keyring
 python-pip
-python-proton-client
 python-pyopenssl
 python-pythondialog
 python-pytorch-opt-rocm
@@ -173,9 +178,11 @@ swaylock
 swaync
 system-config-printer
 tailscale
+texlive-mathscience
 tmuxp
 torchvision-rocm
 ttf-clear-sans
+ttf-ms-win11-auto
 twitch
 ugrep
 usbimager
@@ -241,9 +248,12 @@ certbot
 crunchyroll
 cups
 curlftpfs
+davfs2
 davinci-resolve
 debtap
 dmenu
+docker
+docker-compose
 dracut
 efibootmgr
 evtest
@@ -276,9 +286,11 @@ handbrake
 handbrake-cli
 hardcode-tray
 hip-runtime-amd
+hiprt
 homeassistant-desktop-bin
 hplip
 htop
+immich-go
 inkscape
 iwd
 jdk17-openjdk
@@ -296,7 +308,6 @@ lib32-vulkan-radeon
 libpulse
 libreoffice-fresh
 libreoffice-fresh-de
-libva-mesa-driver
 libva-utils
 libva-vdpau-driver
 libvncserver
@@ -311,11 +322,12 @@ logisim-evolution-bin
 lutris
 man-db
 mangohud
-mesa-vdpau
 mingw-w64-libde265
 mingw-w64-openh264
 minicom
 mousepad
+mplayer
+mpv
 nano
 nemo
 nemo-fileroller
@@ -323,6 +335,7 @@ nemo-preview
 nemo-share
 nemo-terminal
 network-manager-applet
+nextcloud-client
 nfs-utils
 nm-connection-editor
 ntfs-3g
@@ -344,7 +357,7 @@ pipewire-media-session
 polkit-kde-agent
 polkit-qt5
 polkit-qt6
-prismlauncher
+proton-vpn-gtk-app
 protontricks
 prusa-slicer
 python-bcrypt
@@ -352,7 +365,6 @@ python-distro
 python-gnupg
 python-keyring
 python-pip
-python-proton-client
 python-pyopenssl
 python-pythondialog
 python-pytorch-opt-rocm
@@ -390,9 +402,11 @@ swaylock
 swaync
 system-config-printer
 tailscale
+texlive-mathscience
 tmuxp
 torchvision-rocm
 ttf-clear-sans
+ttf-ms-win11-auto
 twitch
 ugrep
 usbimager

@@ -1,4 +1,4 @@
-# Static information about the filesystems.
+Failed 'up' action for 'nextcloud' app# Static information about the filesystems.
 # See fstab(5) for details.
 
 # <file system> <dir> <type> <options> <dump> <pass>
@@ -34,3 +34,5 @@ UUID=74C0B455C0B41EF4 /home/honney/mount/Langsam ntfs-3g defaults,nls=utf8,umask
 //192.168.1.202/Storage /home/honney/mount/Data cifs credentials=/home/honney/.cred/trueNAS_credentials,nofail,vers=3.0,iocharset=utf8,rw,uid=1000,gid=1000,file_mode=0660,dir_mode=0770 0 0
 //192.168.1.202/Media /home/honney/mount/Media cifs credentials=/home/honney/.cred/trueNAS_credentials,nofail,vers=3.0,iocharset=utf8,rw,uid=1000,gid=1000,file_mode=0660,dir_mode=0770 0 0
 //192.168.1.202/Ripping /home/honney/mount/Ripping cifs credentials=/home/honney/.cred/trueNAS_credentials,nofail,vers=3.0,iocharset=utf8,rw,uid=1000,gid=1000,file_mode=0660,dir_mode=0770 0 0
+//192.168.1.202/Apps /home/honney/mount/Apps cifs credentials=/home/honney/.cred/trueNAS_credentials,nofail,vers=3.0,iocharset=utf8,rw,uid=1000,gid=1000,file_mode=0660,dir_mode=0770 0 0
+

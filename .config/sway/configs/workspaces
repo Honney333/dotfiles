@@ -54,6 +54,7 @@ assign [class="^whatsdesk$"] $wsF1
 set $wsF2  '12: '
 workspace $wsF2 output $top_right
 assign [class="^betterbird$"] $wsF2
+assign [app_id="^eu.betterbird.Betterbird$"] $wsF2
 
 set $wsF3  '13:13'
 # workspace $wsF3 output $top_right
@@ -147,3 +148,5 @@ for_window [title="Meeting" class="zoom"] floating disable
 
 # Make qt-sudo windows float by default
 for_window [app_id="qt-sudo"] floating enable
+for_window [app_id="python3"] floating enable
+for_window [class="Matplotlib"] floating enable

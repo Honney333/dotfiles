@@ -22,7 +22,7 @@ set $system_icons "BeautyLine-Garuda"
 set $system_dpi_scaling_factor 1
 set $cursor_theme "DJ-FOX-C"
 set $cursor_size 36
-set $font "DejaVuSansM Nerd Font"
+set $font "SauceCodePro NF"
 set $font_size 12
 set $color-scheme "prefer-dark"
 #
@@ -39,11 +39,11 @@ include $HOME/.config/sway/configs/screens
 
 ### Idle configuration
 # exec $home/.config/sway/scripts/swayidle.sh "$lock"
-exec swayidle \
-    timeout 300 'exec $lock' \
+#exec swayidle \
+#    timeout 300 'exec $lock' \
 #    timeout 600 'swaymsg "output * dpms off"' \
 #    after-resume 'swaymsg "output * dpms on"' \
-    before-sleep 'exec $lock'
+#    before-sleep 'exec $lock'
 
 bindsym $mod+shift+r exec swaymsg "output * dpms on"
 

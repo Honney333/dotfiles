@@ -8,3 +8,4 @@ exec brave
 exec whatsdesk
 exec crunchyroll
 exec alacritty -e /usr/bin/onedrive --skip-size 10240 --monitor --verbose --sync-root-files
+exec nextcloud %u

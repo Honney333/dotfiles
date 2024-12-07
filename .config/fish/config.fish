@@ -45,6 +45,8 @@ if status is-interactive
 
 	# Alias needed inside interactive
 
+        alias ff="simple_ffprobe_script"
+
 	# My custom alias
 		alias force_delete='sudo rm -rf' # Delete Folder/Files with included Folder/Files 
 
@@ -85,9 +87,6 @@ if status is-interactive
         alias right='sudo chmod -R 755'
 
 		alias reload='clear && omf reload'
-
-    # ffprobe
-        alias ff='$HOME/.bin/simple_ffprobe_script'
 
 	# Garuda Alias
 		# Replace ls with eza

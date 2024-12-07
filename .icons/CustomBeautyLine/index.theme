@@ -1,5 +1,5 @@
 [Icon Theme]
-Name=BeautyLine
+Name=CustomBeautyLine
 Inherits=breeze,gnome,ubuntu-mono,Mint-X,elementary,hicolor
 
 # Directory list

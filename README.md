@@ -55,7 +55,7 @@ Alternatively for other Distros: Download your font: https://www.nerdfonts.com/f
 fc-cache -f -v
 ```
 
-[Here](https://www.nerdfonts.com/cheat-sheet) you can find the Icons (https://www.nerdfonts.com/cheat-sheet)
+[Here](https://www.nerdfonts.com/cheat-sheet) you can find the Icons (https://www.nerdfonts.com/cheat-sheet)  If you want to write the Icons (Unicodecharacters) for Kitty it is with ctrl+shift+u
 
 ## additional changes
 
