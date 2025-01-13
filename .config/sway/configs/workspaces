@@ -79,8 +79,11 @@ set $wsF8  18:18
 set $wsF9  19:19
 # workspace $wsF9 output $top_right
 
-set $wsF10 20:20
-# workspace $wsF0 output $top_right
+set $wsF10 '20: '
+workspace $wsF10 output $bot_left
+assign [class="^Viewnior$"] $wsF10
+assign [class="^Geeqie$"] $wsF10
+assign [class="^vlc$"] $wsF10
 
 set $wsF11 '21: '
 workspace $wsF11 output $top_left
@@ -150,3 +153,4 @@ for_window [title="Meeting" class="zoom"] floating disable
 for_window [app_id="qt-sudo"] floating enable
 for_window [app_id="python3"] floating enable
 for_window [class="Matplotlib"] floating enable
+for_window [app_id="org.gnome.FileRoller"] floating enable
