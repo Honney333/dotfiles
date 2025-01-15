@@ -32,6 +32,17 @@ Exec=env _JAVA_AWT_WM_NONREPARENTING=1 /usr/bin/<name_of_application>
 
 ## Make Controllers Work:
 
+You need to add your User to the lp Group:
+
+Look if you are part of the Group:
+```
+sudo usermod -aG lp $(whoami)
+```
+If not add yourself to the group:
+```
+sudo usermod -aG lp $USER
+```
+
 ### Install bluetooth settings manager:
 ```
 sudo pacman -S blueman
