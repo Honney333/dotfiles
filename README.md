@@ -30,6 +30,47 @@ to
 Exec=env _JAVA_AWT_WM_NONREPARENTING=1 /usr/bin/<name_of_application>
 ```
 
+## Make Controllers Work:
+
+### Install bluetooth settings manager:
+```
+sudo pacman -S blueman
+```
+In blueman (Blootooth Manager) you can click on the magnifying glass for search mode and then trust and connect the device. 
+
+### You can also just use commandline:
+```
+sudo pacman bluez-utils
+```
+Usage:
+```
+bluetoothctl
+power on
+scan on (you can type "scan off" when you found the MAC-Address of your device)
+pair {MAC-Address}
+trust {MAC-Address}
+connect {MAC-Address}
+```
+### You need to edit the bluetooth config
+```
+sudo nano /etc/bluetooth/main.conf
+```
+make sure both of these are set:
+```
+ControllerMode = dual
+```
+```
+FastConnectable = true
+```
+### Start or restart bluetooth-daemon
+```
+sudo systemctl enable bluetooth
+sudo systemctl start bluetooth
+```
+```
+sudo systemctl restart bluetooth
+```
+
 ## additional information
 
 ### Nerd-Fonts
