@@ -53,6 +53,8 @@ foot
 furmark
 fwupd
 game-devices-udev
+gamemode
+gamescope
 geeqie
 ghdl
 gimp
@@ -87,12 +89,14 @@ joyutils
 jq
 jre21-openjdk
 kde-gtk-config
+kdeconnect
 kdenlive
 keepassxc
 kitty
 krita
 kvantum-qt5-git
 less
+lib32-gamemode
 lib32-vulkan-radeon
 libpulse
 libreoffice-fresh
@@ -110,6 +114,7 @@ logisim-evolution-bin
 lutris
 man-db
 mangohud
+mesa-demos
 mingw-w64-libde265
 mingw-w64-openh264
 minicom
@@ -151,8 +156,10 @@ protontricks
 prusa-slicer
 python-bcrypt
 python-distro
+python-ffmpeg-python
 python-gnupg
 python-keyring
+python-moviepy
 python-pip
 python-pyopenssl
 python-pythondialog
@@ -172,6 +179,7 @@ rocm-hip-libraries
 rocm-hip-runtime
 rocm-hip-sdk
 rofi
+rpi-imager
 rust
 rustdesk
 sassc
@@ -181,6 +189,8 @@ seatd
 signal-desktop
 slurp
 smartmontools
+spicetify-themes-git
+spotify
 sshfs
 sshpass
 stable-diffusion-ui
@@ -224,7 +234,6 @@ wireshark-qt
 wlogout
 wpa_supplicant
 wtype
-xdg-desktop-portal-wlr
 xdg-utils
 xf86-video-amdgpu
 xf86-video-ati
@@ -293,6 +302,8 @@ foot
 furmark
 fwupd
 game-devices-udev
+gamemode
+gamescope
 geeqie
 ghdl
 gimp
@@ -327,12 +338,14 @@ joyutils
 jq
 jre21-openjdk
 kde-gtk-config
+kdeconnect
 kdenlive
 keepassxc
 kitty
 krita
 kvantum-qt5-git
 less
+lib32-gamemode
 lib32-vulkan-radeon
 libpulse
 libreoffice-fresh
@@ -350,6 +363,7 @@ logisim-evolution-bin
 lutris
 man-db
 mangohud
+mesa-demos
 mingw-w64-libde265
 mingw-w64-openh264
 minicom
@@ -391,8 +405,10 @@ protontricks
 prusa-slicer
 python-bcrypt
 python-distro
+python-ffmpeg-python
 python-gnupg
 python-keyring
+python-moviepy
 python-pip
 python-pyopenssl
 python-pythondialog
@@ -412,6 +428,7 @@ rocm-hip-libraries
 rocm-hip-runtime
 rocm-hip-sdk
 rofi
+rpi-imager
 rust
 rustdesk
 sassc
@@ -421,6 +438,8 @@ seatd
 signal-desktop
 slurp
 smartmontools
+spicetify-themes-git
+spotify
 sshfs
 sshpass
 stable-diffusion-ui
@@ -464,7 +483,6 @@ wireshark-qt
 wlogout
 wpa_supplicant
 wtype
-xdg-desktop-portal-wlr
 xdg-utils
 xf86-video-amdgpu
 xf86-video-ati

@@ -160,3 +160,5 @@ set -U __done_notify_sound 1
 set -U __done_sway_ignore_visible 0
 
 fish_add_path /home/honney/.millennium/ext/bin
+
+fish_add_path /home/honney/.spicetify
