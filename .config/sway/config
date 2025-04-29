@@ -106,6 +106,7 @@ include $HOME/.config/sway/configs/workspaces
     # bindsym $mod+a focus parent
 #
 #
+
 ### Decorations:
 #
 ### Set theme settings
@@ -118,8 +119,11 @@ exec_always {
     gsettings set $gnome-schema text-scaling-factor $system_dpi_scaling_factor
     gsettings set $gnome-schema cursor-theme $cursor_theme
     gsettings set $gnome-schema cursor-size $cursor_size
-    export QT_QPA_PLATFORMTHEME=qt6ct
-    export QT_STYLE_OVERRIDE=kvantum
+    export XDG_CURRENT_DESKTOP=sway
+    export XDG_SESSION_TYPE=wayland
+    export QT_QPA_PLATFORMTHEME=gtk3  # For Qt apps using GTK dialogs
+    export KDE_SESSION_VERSION=5
+    export XDG_DATA_DIRS="$HOME/.local/share:$HOME/.icons:/usr/share"
 }
 #
 font pango:$font $font_size

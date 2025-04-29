@@ -28,6 +28,10 @@ bindsym $mod+ctrl+k exec keepassxc -platform xcb
 
 # Start Steam
 bindsym $mod+ctrl+s exec $HOME/.config/sway/scripts/steam-start.sh
+bindsym $mod+ctrl+alt+s exec "flatpak run com.valvesoftware.Steam"
+
+# Start Grayjay
+bindsym $mod+g exec grayjay
 
 # Start Discord
 bindsym $mod+ctrl+d exec $HOME/.config/sway/scripts/discord-start.sh

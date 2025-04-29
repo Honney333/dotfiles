@@ -1,11 +1,18 @@
-exec firefox
-exec firefox-developer-edition
+exec librewolf
+exec floorp
 exec $HOME/.config/sway/scripts/discord-start.sh
-exec signal-desktop
+exec flatpak run org.signal.Signal
 exec keepassxc
 exec betterbird
 exec brave
 exec whatsdesk
 exec crunchyroll
 exec alacritty -e /usr/bin/onedrive --skip-size 10240 --monitor --verbose --sync-root-files
-exec nextcloud %u
+exec alacritty -e /usr/bin/ollama serve
+exec /opt/Chatbox/Chatbox-1.11.5-x86_64.AppImage
+exec env QT_STYLE_OVERRIDE=Fusion nextcloud %u
+exec grayjay
+# Autostart dawarich
+exec --no-startup-id podman-compose -f /home/honney/projects/dawarich/docker-compose.yml up -d
+# mount external drives
+exec $HOME/.config/sway/scripts/mount.sh

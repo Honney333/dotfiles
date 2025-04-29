@@ -5,21 +5,23 @@
 
 set $ws1   '1: '
 workspace $ws1 output $bot_right
-assign [class="^steam$"] $ws1
 assign [class="^Code$"] $ws1
 
 set $ws2   '2: '
 workspace $ws2 output $bot_left
 assign [class="^Brave-browser$"] $ws2
 assign [app_id="^Crunchyroll$"] $ws2
+assign [app_id="Grayjay"] $ws2
 
 set $ws3   '3:󰈹 '
 workspace $ws3 output $top_right
+assign [app_id="floorp"] $ws3
 assign [title="Firefox Developer Edition"] $ws3
 
 set $ws4   '4: '
 workspace $ws4 output $top_left
 assign [class="^vesktop$"] $ws4
+assign [class="xyz.chatboxapp.app"] $ws4
 
 set $ws5   '5: '
 workspace $ws5 output $bot_right
@@ -29,6 +31,7 @@ set $ws6   '6: '
 workspace $ws6 output $bot_right
 assign [title="Prominence II*"] $ws6
 assign [class="^steam_app_.*$"] $ws6
+assign [class="^steam$"] $ws6
 
 set $ws7   7:7
 # workspace $ws7 output $bot_right
@@ -61,6 +64,7 @@ set $wsF3  '13:13'
 
 set $wsF4  '14:󰑴 '
 workspace $wsF4 output $top_right
+assign [app_id="librewolf"] $wsF4
 assign [title="Mozilla Firefox"] $wsF4
 
 set $wsF5  '15:󰏊 '

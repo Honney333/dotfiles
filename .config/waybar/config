@@ -16,9 +16,6 @@
 
     "modules-right": [
         "pulseaudio", 
-        "network#wifi", 
-        "network#ethernet1", 
-        "network#ethernet2", 
         "custom/gpu-usage",
         "custom/cpu",
         "custom/gpu",
@@ -65,7 +62,8 @@
         "timezone": "Europe/Berlin",
         "format": "{:%d-%m-%Y - %H:%M:%S}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "interval": 1
+        "interval": 1,
+        "on-click": "wlogout"
     },
 
 
@@ -103,7 +101,8 @@
         "format-ethernet": "{ipaddr} 󰈀",
         "tooltip-format": "{ifname}: {ipaddr}/{cidr} via {gwaddr}",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠"
+        "format-disconnected": "Disconnected ⚠",
+        "family": "ipv4"
     },
 
     "network#ethernet2": {
@@ -112,9 +111,10 @@
         "format-linked": "",
         "format-disconnected": "",
         "tooltip-format": "{ifname}: {ipaddr}/{cidr} via {gwaddr}",
-        "on-click": "nm-connection-editor"
+        "on-click": "nm-connection-editor",
+        "family": "ipv4"
     },
-    
+
     "custom/cpu": {
         "exec": "~/.config/waybar/modules/cpu.sh",
         "interval": 2.5,
@@ -148,3 +148,7 @@
         }
     }
 }
+Old Modules:
+"network#wifi",
+"network#ethernet1",
+"network#ethernet2",
