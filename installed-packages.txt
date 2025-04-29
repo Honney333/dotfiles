@@ -271,8 +271,6 @@ xorg-xinit
 xorg-xinput
 xorg-xwayland
 xournalpp
-yay
-yay-debug
 yubico-authenticator
 zfs-utils
 zoom
@@ -550,8 +548,6 @@ xorg-xinit
 xorg-xinput
 xorg-xwayland
 xournalpp
-yay
-yay-debug
 yubico-authenticator
 zfs-utils
 zoom
