@@ -1,0 +1,1 @@
+alias uninstall='sudo apt purge -y'
