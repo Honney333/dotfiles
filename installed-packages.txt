@@ -225,13 +225,9 @@ swaylock
 swaync
 system-config-printer
 tailscale
-texlive-langother
-texlive-mathscience
 tmuxp
-torchvision-rocm
 ttf-clear-sans
 ttf-ms-fonts
-twitch
 ugrep
 usbimager
 vencord
@@ -256,7 +252,6 @@ winetricks
 wireless-regdb
 wireless_tools
 wireplumber
-wireshark-qt
 wlogout
 wlrobs
 wpa_supplicant
@@ -270,7 +265,6 @@ xorg-server
 xorg-xinit
 xorg-xinput
 xorg-xwayland
-xournalpp
 yubico-authenticator
 zfs-utils
 zoom
@@ -502,13 +496,9 @@ swaylock
 swaync
 system-config-printer
 tailscale
-texlive-langother
-texlive-mathscience
 tmuxp
-torchvision-rocm
 ttf-clear-sans
 ttf-ms-fonts
-twitch
 ugrep
 usbimager
 vencord
@@ -533,7 +523,6 @@ winetricks
 wireless-regdb
 wireless_tools
 wireplumber
-wireshark-qt
 wlogout
 wlrobs
 wpa_supplicant
@@ -547,7 +536,6 @@ xorg-server
 xorg-xinit
 xorg-xinput
 xorg-xwayland
-xournalpp
 yubico-authenticator
 zfs-utils
 zoom
