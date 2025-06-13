@@ -66,3 +66,5 @@ alias vdir 'vdir --color=auto'
 alias wget 'wget -c '
 
 alias jctl 'journalctl -p 3 -xb'
+
+alias ocrmypdf 'ocrmypdf --deskew --clean --rotate-pages'

@@ -11,7 +11,7 @@ alias umount_all='$HOME/.config/fish/scripts/umount.sh'
 
 alias print_cam='ssh honney@192.168.1.184'
 
-alias updateall='sudo pacman -Syu && paru -Sua && yay -Syu && flatpak update'
+alias updateall='sudo pacman -Syu && paru -Sua --sudoloop && flatpak update'
 
 alias mirror='sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist'
 alias mirrora='sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist'
@@ -28,4 +28,9 @@ function cleanup
     while pacman -Qdtq
 	    sudo pacman -R (pacman -Qdtq)
     end
+end
+
+function scenedetectenv
+    source ~/.venvs/scenedetect-env/bin/activate.fish
+    set -gx PATH ~/.venvs/scenedetect-env/bin $PATH
 end

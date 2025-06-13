@@ -3,6 +3,8 @@
 # Workspace Screen
 # Assigned Software filter get name via: swaymsg -t get_tree
 
+for_window [title="Die Sims™ 3 Into the Future"] floating enable, fullscreen enable, border none
+
 set $ws1   '1: '
 workspace $ws1 output $bot_right
 assign [class="^Code$"] $ws1
