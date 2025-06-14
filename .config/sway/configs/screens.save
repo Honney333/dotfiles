@@ -1,0 +1,14 @@
+# swaymsg -t get_outputs to get monitor info
+set $top_left HDMI-A-1
+set $top_right DP-3
+set $bot_left DP-4
+set $bot_right DP-1
+
+output $top_left pos 1920 0 res 1920x1080@60Hz scale 1 transform 180 scale_filter smart
+output $top_right pos 3840 0 res 1920x1080@143.981Hz scale 1 transform 180 scale_filter smart
+output $bot_left pos 0 1080 res 3840x2160@60Hz scale 1
+output $bot_right pos 3840 1080 res 3840x2160@144Hz scale 1
+
+# Set Main Output for Games
+exec allways xrandr --output $bot_right --primary
+ 
