@@ -21,7 +21,7 @@ UUID=5f509b45-e04d-4c9c-b3be-e82a7efb12ca	/.snapshots	btrfs     	rw,relatime,nod
 UUID=A59D-7FFF      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
 
 # /dev/nvme2n1p1
-UUID=702d6c48-c4c8-44fb-836f-7fee2b4657ec /home/honney/mount/Storage btrfs defaults,rw,noatime,ssd 0 0
+UUID=ae6773c5-c45c-4804-9871-ccee8233a0b2 /home/honney/mount/Storage btrfs defaults,rw,noatime,ssd,nofail 0 0
 
 # /dev/nvme1n1p5
 # UUID=74C0B455C0B41EF4 /home/honney/mount/Langsam ntfs-3g defaults,nls=utf8,umask=000,dmask=027,fmask=137,uid=1000,gid=1000,windows_names 0 0 
